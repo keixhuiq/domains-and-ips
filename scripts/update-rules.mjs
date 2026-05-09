@@ -1,22 +1,26 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname } from 'node:path';
 
+const old = (file) => `https://raw.githubusercontent.com/whxhuiq-creator/proxy-rules/main/Surge/${file}`;
+const b7 = (path) => `https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/${path}`;
+const qh = (path) => `https://raw.githubusercontent.com/QuixoticHeart/rule-set/ruleset/surge/${path}`;
+
 const directSources = [
   {
     target: 'Surge/ChinaDirect.list',
-    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax_All.list',
+    url: b7('ChinaMax/ChinaMax_All.list'),
   },
   {
     target: 'Surge/Apple.list',
-    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All.list',
+    url: b7('Apple/Apple_All.list'),
   },
   {
     target: 'Surge/Google.list',
-    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list',
+    url: b7('Google/Google.list'),
   },
   {
     target: 'Surge/ChinaIPv4.list',
-    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPsBGP/ChinaIPsBGP.list',
+    url: b7('ChinaIPsBGP/ChinaIPsBGP.list'),
   },
   {
     target: 'Surge/ChinaIPv6.list',
@@ -28,88 +32,140 @@ const mergedSources = [
   {
     name: 'Abema',
     target: 'Surge/Abema.list',
-    sources: [
-      'whxhuiq-creator/proxy-rules Surge/Abema',
-      'blackmatrix7/ios_rule_script Abema',
-      'blackmatrix7/ios_rule_script AbemaTV',
-      'QuixoticHeart/rule-set abema',
-    ],
-    urls: [
-      'https://raw.githubusercontent.com/whxhuiq-creator/proxy-rules/main/Surge/Abema.list',
-      'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Abema/Abema.list',
-      'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AbemaTV/AbemaTV.list',
-      'https://raw.githubusercontent.com/QuixoticHeart/rule-set/ruleset/surge/abema.list',
-    ],
+    sources: ['old manual Abema', 'blackmatrix7 Abema/AbemaTV', 'QuixoticHeart abema'],
+    urls: [old('Abema.list'), b7('Abema/Abema.list'), b7('AbemaTV/AbemaTV.list'), qh('abema.list')],
   },
   {
     name: 'UNEXT',
     target: 'Surge/UNEXT.list',
-    sources: [
-      'whxhuiq-creator/proxy-rules Surge/UNEXT',
-      'HotKids/Rules U-NEXT',
-    ],
-    urls: [
-      'https://raw.githubusercontent.com/whxhuiq-creator/proxy-rules/main/Surge/UNEXT.list',
-      'https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/U-NEXT.list',
-    ],
+    sources: ['old manual UNEXT', 'HotKids U-NEXT'],
+    urls: [old('UNEXT.list'), 'https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/U-NEXT.list'],
   },
   {
     name: 'X',
     target: 'Surge/X.list',
-    sources: [
-      'whxhuiq-creator/proxy-rules Surge/X',
-      'blackmatrix7/ios_rule_script Twitter',
-      'ACL4SSR/ACL4SSR Twitter',
-    ],
-    urls: [
-      'https://raw.githubusercontent.com/whxhuiq-creator/proxy-rules/main/Surge/X.list',
-      'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list',
-      'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list',
-    ],
+    sources: ['old manual X', 'blackmatrix7 Twitter', 'ACL4SSR Twitter'],
+    urls: [old('X.list'), b7('Twitter/Twitter.list'), 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list'],
   },
   {
     name: 'TikTok',
     target: 'Surge/TikTok.list',
-    sources: [
-      'whxhuiq-creator/proxy-rules Surge/TikTok',
-      'blackmatrix7/ios_rule_script TikTok',
-      'QuixoticHeart/rule-set tiktok',
-    ],
-    urls: [
-      'https://raw.githubusercontent.com/whxhuiq-creator/proxy-rules/main/Surge/TikTok.list',
-      'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list',
-      'https://raw.githubusercontent.com/QuixoticHeart/rule-set/ruleset/surge/tiktok.list',
-    ],
+    sources: ['old manual TikTok', 'blackmatrix7 TikTok', 'QuixoticHeart tiktok'],
+    urls: [old('TikTok.list'), b7('TikTok/TikTok.list'), qh('tiktok.list')],
   },
   {
     name: 'OpenAI',
     target: 'Surge/OpenAI.list',
-    sources: [
-      'whxhuiq-creator/proxy-rules Surge/OpenAI',
-      'blackmatrix7/ios_rule_script OpenAI',
-      'geekdada/surge-list openai',
-    ],
-    urls: [
-      'https://raw.githubusercontent.com/whxhuiq-creator/proxy-rules/main/Surge/OpenAI.list',
-      'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list',
-      'https://raw.githubusercontent.com/geekdada/surge-list/master/openai.list',
-    ],
+    sources: ['old manual OpenAI', 'blackmatrix7 OpenAI', 'geekdada openai'],
+    urls: [old('OpenAI.list'), b7('OpenAI/OpenAI.list'), 'https://raw.githubusercontent.com/geekdada/surge-list/master/openai.list'],
   },
   {
     name: 'Claude',
     target: 'Surge/Claude.list',
-    sources: [
-      'whxhuiq-creator/proxy-rules Surge/Claude',
-      'blackmatrix7/ios_rule_script Claude',
-      'blackmatrix7/ios_rule_script Anthropic',
-      'HotKids/Rules Anthropic',
-    ],
-    urls: [
-      'https://raw.githubusercontent.com/whxhuiq-creator/proxy-rules/main/Surge/Claude.list',
-      'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list',
-      'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Anthropic/Anthropic.list',
-      'https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Anthropic.list',
-    ],
+    sources: ['old manual Claude', 'blackmatrix7 Claude/Anthropic', 'HotKids Anthropic'],
+    urls: [old('Claude.list'), b7('Claude/Claude.list'), b7('Anthropic/Anthropic.list'), 'https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Anthropic.list'],
+  },
+  {
+    name: 'Bahamut',
+    target: 'Surge/Bahamut.list',
+    sources: ['old manual Bahamut', 'blackmatrix7 Bahamut', 'QuixoticHeart bahamut'],
+    urls: [old('Bahamut.list'), b7('Bahamut/Bahamut.list'), qh('bahamut.list')],
+  },
+  {
+    name: 'Bilibili',
+    target: 'Surge/Bilibili.list',
+    sources: ['old manual Bilibili', 'blackmatrix7 BiliBili', 'QuixoticHeart bilibili'],
+    urls: [old('Bilibili.list'), b7('BiliBili/BiliBili.list'), qh('bilibili.list')],
+  },
+  {
+    name: 'Crypto',
+    target: 'Surge/Crypto.list',
+    sources: ['old manual Crypto', 'blackmatrix7 Cryptocurrency', 'QuixoticHeart crypto'],
+    urls: [old('Crypto.list'), b7('Cryptocurrency/Cryptocurrency.list'), qh('crypto.list')],
+  },
+  {
+    name: 'CustomProxy',
+    target: 'Surge/CustomProxy.list',
+    sources: ['old manual CustomProxy', 'blackmatrix7 ProxyLite', 'ACL4SSR ProxyLite'],
+    urls: [old('CustomProxy.list'), b7('ProxyLite/ProxyLite.list'), 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list'],
+  },
+  {
+    name: 'DisneyPlus',
+    target: 'Surge/DisneyPlus.list',
+    sources: ['old manual DisneyPlus', 'blackmatrix7 Disney', 'QuixoticHeart disney'],
+    urls: [old('DisneyPlus.list'), b7('Disney/Disney.list'), qh('disney.list')],
+  },
+  {
+    name: 'Epic',
+    target: 'Surge/Epic.list',
+    sources: ['old manual Epic', 'blackmatrix7 Epic'],
+    urls: [old('Epic.list'), b7('Epic/Epic.list')],
+  },
+  {
+    name: 'HBO',
+    target: 'Surge/HBO.list',
+    sources: ['old manual HBO', 'blackmatrix7 HBO/HBOUSA', 'QuixoticHeart hbo'],
+    urls: [old('HBO.list'), b7('HBO/HBO.list'), b7('HBOUSA/HBOUSA.list'), qh('hbo.list')],
+  },
+  {
+    name: 'LINE',
+    target: 'Surge/LINE.list',
+    sources: ['old manual LINE', 'blackmatrix7 Line'],
+    urls: [old('LINE.list'), b7('Line/Line.list')],
+  },
+  {
+    name: 'Microsoft',
+    target: 'Surge/Microsoft.list',
+    sources: ['old manual Microsoft', 'blackmatrix7 Microsoft', 'QuixoticHeart microsoft'],
+    urls: [old('Microsoft.list'), b7('Microsoft/Microsoft.list'), qh('microsoft.list')],
+  },
+  {
+    name: 'MyTVSuper',
+    target: 'Surge/MyTVSuper.list',
+    sources: ['old manual MyTVSuper', 'blackmatrix7 myTVSUPER', 'QuixoticHeart mytvsuper'],
+    urls: [old('MyTVSuper.list'), b7('myTVSUPER/myTVSUPER.list'), qh('mytvsuper.list')],
+  },
+  {
+    name: 'Netflix',
+    target: 'Surge/Netflix.list',
+    sources: ['old manual Netflix', 'blackmatrix7 Netflix', 'QuixoticHeart netflix'],
+    urls: [old('Netflix.list'), b7('Netflix/Netflix.list'), qh('netflix.list')],
+  },
+  {
+    name: 'PlayStation',
+    target: 'Surge/PlayStation.list',
+    sources: ['old manual PlayStation', 'blackmatrix7 PlayStation'],
+    urls: [old('PlayStation.list'), b7('PlayStation/PlayStation.list')],
+  },
+  {
+    name: 'Scholar',
+    target: 'Surge/Scholar.list',
+    sources: ['old manual Scholar', 'blackmatrix7 Scholar'],
+    urls: [old('Scholar.list'), b7('Scholar/Scholar.list')],
+  },
+  {
+    name: 'Steam',
+    target: 'Surge/Steam.list',
+    sources: ['old manual Steam', 'blackmatrix7 Steam'],
+    urls: [old('Steam.list'), b7('Steam/Steam.list')],
+  },
+  {
+    name: 'Telegram',
+    target: 'Surge/Telegram.list',
+    sources: ['old manual Telegram', 'blackmatrix7 Telegram', 'ACL4SSR Telegram'],
+    urls: [old('Telegram.list'), b7('Telegram/Telegram.list'), 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list'],
+  },
+  {
+    name: 'Xbox',
+    target: 'Surge/Xbox.list',
+    sources: ['old manual Xbox', 'blackmatrix7 Xbox'],
+    urls: [old('Xbox.list'), b7('Xbox/Xbox.list')],
+  },
+  {
+    name: 'YouTube',
+    target: 'Surge/YouTube.list',
+    sources: ['old manual YouTube', 'blackmatrix7 YouTube', 'QuixoticHeart youtube'],
+    urls: [old('YouTube.list'), b7('YouTube/YouTube.list'), qh('youtube.list')],
   },
 ];
 
