@@ -1,6 +1,6 @@
 # NAME: UNEXT
 # FORMAT: Surge rule-set
-# SOURCES: whxhuiq-creator/proxy-rules Surge/UNEXT; HotKids/Rules U-NEXT
+# SOURCES: old manual UNEXT; HotKids U-NEXT
 # TOTAL: 6
 DOMAIN-SUFFIX,nx-cdn.com
 DOMAIN-SUFFIX,hnext.jp

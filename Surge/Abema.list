@@ -1,6 +1,6 @@
 # NAME: Abema
 # FORMAT: Surge rule-set
-# SOURCES: whxhuiq-creator/proxy-rules Surge/Abema; blackmatrix7/ios_rule_script Abema; blackmatrix7/ios_rule_script AbemaTV; QuixoticHeart/rule-set abema
+# SOURCES: old manual Abema; blackmatrix7 Abema/AbemaTV; QuixoticHeart abema
 # TOTAL: 33
 DOMAIN-KEYWORD,abematv
 DOMAIN-KEYWORD,abema

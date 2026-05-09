@@ -1,6 +1,6 @@
 # NAME: TikTok
 # FORMAT: Surge rule-set
-# SOURCES: whxhuiq-creator/proxy-rules Surge/TikTok; blackmatrix7/ios_rule_script TikTok; QuixoticHeart/rule-set tiktok
+# SOURCES: old manual TikTok; blackmatrix7 TikTok; QuixoticHeart tiktok
 # TOTAL: 129
 IP-CIDR,34.102.0.0/16,no-resolve
 IP-CIDR,130.211.0.0/16,no-resolve

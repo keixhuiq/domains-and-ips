@@ -1,6 +1,6 @@
 # NAME: Claude
 # FORMAT: Surge rule-set
-# SOURCES: whxhuiq-creator/proxy-rules Surge/Claude; blackmatrix7/ios_rule_script Claude; blackmatrix7/ios_rule_script Anthropic; HotKids/Rules Anthropic
+# SOURCES: old manual Claude; blackmatrix7 Claude/Anthropic; HotKids Anthropic
 # TOTAL: 41
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai

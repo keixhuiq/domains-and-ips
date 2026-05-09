@@ -1,0 +1,11 @@
+# NAME: MyTVSuper
+# FORMAT: Surge rule-set
+# SOURCES: old manual MyTVSuper; blackmatrix7 myTVSUPER; QuixoticHeart mytvsuper
+# TOTAL: 7
+DOMAIN,mytvsuperlimited.hb.omtrdc.net
+DOMAIN,mytvsuperlimited.sc.omtrdc.net
+DOMAIN-SUFFIX,mytvsuper.com
+DOMAIN-SUFFIX,tvb.com
+DOMAIN-KEYWORD,nowtv100
+DOMAIN-KEYWORD,rthklive
+USER-AGENT,mytv*

@@ -1,6 +1,6 @@
 # NAME: OpenAI
 # FORMAT: Surge rule-set
-# SOURCES: whxhuiq-creator/proxy-rules Surge/OpenAI; blackmatrix7/ios_rule_script OpenAI; geekdada/surge-list openai
+# SOURCES: old manual OpenAI; blackmatrix7 OpenAI; geekdada openai
 # TOTAL: 44
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com

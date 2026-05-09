@@ -1,0 +1,8 @@
+# NAME: PlayStation
+# FORMAT: Surge rule-set
+# SOURCES: old manual PlayStation; blackmatrix7 PlayStation
+# TOTAL: 4
+DOMAIN-SUFFIX,playstation.com
+DOMAIN-SUFFIX,playstation.net
+DOMAIN-SUFFIX,playstationnetwork.com
+DOMAIN-SUFFIX,sonyentertainmentnetwork.com

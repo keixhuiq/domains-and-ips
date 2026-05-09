@@ -1,6 +1,6 @@
 # NAME: X
 # FORMAT: Surge rule-set
-# SOURCES: whxhuiq-creator/proxy-rules Surge/X; blackmatrix7/ios_rule_script Twitter; ACL4SSR/ACL4SSR Twitter
+# SOURCES: old manual X; blackmatrix7 Twitter; ACL4SSR Twitter
 # TOTAL: 39
 DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,cms-twdigitalassets.com
