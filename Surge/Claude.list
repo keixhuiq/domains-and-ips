@@ -1,29 +1,34 @@
-# Claude
-# === A 类：Claude 核心链路，必须同出口 ===
-DOMAIN-SUFFIX,anthropic.com,Claude
-DOMAIN-SUFFIX,claude.ai,Claude
-DOMAIN-SUFFIX,claude.com,Claude
-DOMAIN-SUFFIX,anthropicusercontent.com,Claude
-DOMAIN-SUFFIX,claudeusercontent.com,Claude
+# NAME: Claude
+# FORMAT: Surge rule-set (external)
+# USAGE: RULE-SET, <url>, Claude
+# NOTE: 严格防火墙下完整可用；与 OpenAI.list 共用部分基础设施
 
-# === B 类：身份、会话、功能配置，建议同出口 ===
-DOMAIN-SUFFIX,statsigapi.net,Claude
-DOMAIN-SUFFIX,statsig.com,Claude
-DOMAIN-SUFFIX,statsigcdn.com,Claude
-DOMAIN-SUFFIX,featuregates.org,Claude
-DOMAIN-SUFFIX,featureassets.org,Claude
-DOMAIN-SUFFIX,assetsconfigcdn.org,Claude
-DOMAIN-SUFFIX,prodregistryv2.org,Claude
+# === A 类：Claude / Anthropic 核心链路，必须同 IP 出口 ===
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,anthropicusercontent.com
+DOMAIN-SUFFIX,claudeusercontent.com
 
-# === C 类：验证码 / 风控挑战，稳定优先时同出口 ===
-DOMAIN-SUFFIX,hcaptcha.com,Claude
-DOMAIN-SUFFIX,arkoselabs.com,Claude
-DOMAIN,challenges.cloudflare.com,Claude
+# === B 类：身份 / 会话 / Feature Flag（与 OpenAI 共用）===
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN-SUFFIX,statsigcdn.com
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,featureassets.org
+DOMAIN-SUFFIX,assetsconfigcdn.org
+DOMAIN-SUFFIX,prodregistryv2.org
 
+# === C 类：验证码 / 风控挑战（与 OpenAI 共用）===
+DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN-SUFFIX,arkoselabs.com
+DOMAIN,challenges.cloudflare.com
 
-# === D 类：支持、客服、状态页，可选 ===
-DOMAIN-SUFFIX,intercom.io,Claude
-DOMAIN-SUFFIX,intercomcdn.com,Claude
-DOMAIN-SUFFIX,intercom-sheets.com,Claude
-DOMAIN,status.claude.com,Claude
-DOMAIN,anthropic.statuspage.io,Claude
+# === D 类：客服 / 支持组件（与 OpenAI 共用）===
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,intercom-sheets.com
+
+# === E 类：状态页 ===
+DOMAIN,status.claude.com
+DOMAIN,anthropic.statuspage.io
