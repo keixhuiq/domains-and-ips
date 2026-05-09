@@ -1,34 +1,50 @@
 # NAME: Claude
-# FORMAT: Surge rule-set (external)
-# USAGE: RULE-SET, <url>, Claude
-# NOTE: 严格防火墙下完整可用；与 OpenAI.list 共用部分基础设施
-
-# === A 类：Claude / Anthropic 核心链路，必须同 IP 出口 ===
+# FORMAT: Surge rule-set
+# SOURCES: old manual Claude; blackmatrix7 Claude/Anthropic; HotKids Anthropic
+# TOTAL: 38
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,anthropicusercontent.com
 DOMAIN-SUFFIX,claudeusercontent.com
-
-# === B 类：身份 / 会话 / Feature Flag（与 OpenAI 共用）===
-DOMAIN-SUFFIX,statsig.com
-DOMAIN-SUFFIX,statsigapi.net
-DOMAIN-SUFFIX,statsigcdn.com
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,featureassets.org
-DOMAIN-SUFFIX,assetsconfigcdn.org
-DOMAIN-SUFFIX,prodregistryv2.org
-
-# === C 类：验证码 / 风控挑战 ===
 DOMAIN-SUFFIX,hcaptcha.com
 DOMAIN-SUFFIX,arkoselabs.com
-DOMAIN,challenges.cloudflare.com
-
-# === D 类：客服 / 支持组件 ===
+# SHARED: OpenAI
+DOMAIN-SUFFIX,stripe.com
+# SHARED: OpenAI
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,sentry-cdn.com
+DOMAIN-SUFFIX,datadoghq.com
+# SHARED: OpenAI
 DOMAIN-SUFFIX,intercom.io
+# SHARED: OpenAI
 DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN-SUFFIX,intercom-sheets.com
-
-# === E 类：状态页 ===
-DOMAIN,status.claude.com
+# SHARED: OpenAI
+DOMAIN-SUFFIX,statsigapi.net
+# SHARED: OpenAI
+DOMAIN-SUFFIX,featuregates.org
+# SHARED: OpenAI
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,usefathom.com
 DOMAIN,anthropic.statuspage.io
+DOMAIN,sentry.anthropic.com
+DOMAIN-SUFFIX,amplitude.com
+DOMAIN-SUFFIX,segment.com
+# SHARED: OpenAI
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,fullstory.com
+DOMAIN-SUFFIX,clarity.ms
+DOMAIN-SUFFIX,fonts.googleapis.com
+DOMAIN-SUFFIX,fonts.gstatic.com
+DOMAIN-SUFFIX,js.stripe.com
+DOMAIN,cdn.usefathom.com
+DOMAIN,servd-anthropic-website.b-cdn.net
+DOMAIN-SUFFIX,clau.de
+DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN,anthropic.com.cdn.cloudflare.net
+DOMAIN,anthropic.auth0.com
+DOMAIN,anthropic-com.ghost.io
+DOMAIN,browser-intake-us5-datadoghq.com
+IP-CIDR,160.79.104.0/21,no-resolve
+IP-CIDR6,2607:6bc0::/32,no-resolve
+IP-ASN,399358,no-resolve
