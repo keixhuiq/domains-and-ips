@@ -1,38 +1,72 @@
 # NAME: OpenAI
 # FORMAT: Surge rule-set
-# SOURCES: old manual OpenAI; blackmatrix7 OpenAI; geekdada openai
-# TOTAL: 32
+# NOTE: OpenAI / ChatGPT / Sora / Codex；按官方 allowlist + 少量兼容项整理
+
+# === A 类：OpenAI / ChatGPT 核心链路，必须同IP出口 ===
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
+
+# Sora
 DOMAIN-SUFFIX,sora.com
+
+# 旧 ChatGPT 主站兼容；已被 openai.com / chatgpt.com 覆盖，保留注释即可
+# DOMAIN,chat.openai.com
+# DOMAIN,ios.chat.openai.com
+# DOMAIN,android.chat.openai.com
+# DOMAIN,desktop.chat.openai.com
+
+# === B 类：登录 / 认证 / 企业 SSO，建议同出口 ===
+DOMAIN-SUFFIX,auth.openai.com
+DOMAIN,auth0.openai.com
+DOMAIN,setup.auth.openai.com
+
+DOMAIN,cdn.workos.com
+DOMAIN,forwarder.workos.com
+DOMAIN,setup.workos.com
+DOMAIN,images.workoscdn.com
+DOMAIN,workos.imgix.net
+
+# === C 类：Feature Flag / 实验配置；与 Claude 共用 ===
+DOMAIN-SUFFIX,featuregates.org        # Claude 共用
+DOMAIN,featureassets.org              # Claude 共用
+DOMAIN,prodregistryv2.org             # Claude 共用
+DOMAIN-SUFFIX,statsig.com             # Claude 共用
+DOMAIN,statsigapi.net                 # Claude 共用
+DOMAIN,events.statsigapi.net          # Claude 共用
+
+# === D 类：Cloudflare Challenge / 风控挑战；与 Claude 共用 ===
+DOMAIN,challenges.cloudflare.com      # Claude 共用
+
+# === E 类：客服 / 支持组件；与 Claude 共用 ===
+DOMAIN-SUFFIX,intercom.io             # Claude 共用
+DOMAIN-SUFFIX,intercomcdn.com         # Claude 共用
+DOMAIN,js.intercomcdn.com             # Claude 共用；被 intercomcdn.com 覆盖，可留作说明
+
+# === F 类：上传、静态资源、官网 CDN / 存储兼容 ===
 DOMAIN,openaiapi-site.azureedge.net
 DOMAIN,openaicom.imgix.net
 DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN,cdn.openaimerge.com
+
+# === G 类：遥测 / 错误上报，低优先级但官方列出 ===
+DOMAIN,rum.browser-intake-datadoghq.com
+DOMAIN,o207216.ingest.sentry.io
+DOMAIN,o33249.ingest.sentry.io
+
+# === H 类：支付 / 邮件 / iOS 相关，按需保留 ===
+DOMAIN,js.stripe.com
+DOMAIN-SUFFIX,ct.sendgrid.net
+DOMAIN,humb.apple.com
+
+# === I 类：Arkose，人机验证；第三方规则常见，官方 allowlist 未列 ===
+DOMAIN,openai-api.arkoselabs.com
+DOMAIN,client-api.arkoselabs.com
+
+# === J 类：旧 Cloudflare CNAME 兼容；非官方 allowlist，按需保留 ===
 DOMAIN,openai.com.cdn.cloudflare.net
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,ios.chat.openai.com.cdn.cloudflare.net
-DOMAIN-SUFFIX,livekit.cloud
-IP-CIDR,24.199.123.28/32,no-resolve
-IP-CIDR,64.23.132.171/32,no-resolve
-IP-ASN,20473,no-resolve
-DOMAIN,browser-intake-datadoghq.com
-DOMAIN,openai-api.arkoselabs.com
-DOMAIN,static.cloudflareinsights.com
-DOMAIN-SUFFIX,ai.com
-DOMAIN,api.statsig.com
-DOMAIN-SUFFIX,auth0.com
-DOMAIN,client-api.arkoselabs.com
-
-#与Claude共用
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN-SUFFIX,launchdarkly.com
-DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,stripe.com
-DOMAIN-SUFFIX,statsigapi.net
