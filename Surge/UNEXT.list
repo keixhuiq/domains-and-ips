@@ -2,9 +2,9 @@
 # FORMAT: Surge rule-set
 # SOURCES: old manual UNEXT; HotKids U-NEXT
 # TOTAL: 6
-DOMAIN-SUFFIX,unext.jp
-DOMAIN-SUFFIX,nxtv.jp
-DOMAIN-SUFFIX,hnext.jp
 DOMAIN-SUFFIX,nx-cdn.com
+DOMAIN-SUFFIX,hnext.jp
 DOMAIN-KEYWORD,unext
+DOMAIN-SUFFIX,nxtv.jp
+DOMAIN-SUFFIX,unext.jp
 DOMAIN,us-central1-u-next-apps.cloudfunctions.net
