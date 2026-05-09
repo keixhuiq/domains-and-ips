@@ -19,12 +19,12 @@ DOMAIN-SUFFIX,featureassets.org
 DOMAIN-SUFFIX,assetsconfigcdn.org
 DOMAIN-SUFFIX,prodregistryv2.org
 
-# === C 类：验证码 / 风控挑战（与 OpenAI 共用）===
+# === C 类：验证码 / 风控挑战 ===
 DOMAIN-SUFFIX,hcaptcha.com
 DOMAIN-SUFFIX,arkoselabs.com
 DOMAIN,challenges.cloudflare.com
 
-# === D 类：客服 / 支持组件（与 OpenAI 共用）===
+# === D 类：客服 / 支持组件 ===
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,intercom-sheets.com
