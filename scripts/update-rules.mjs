@@ -1,3 +1,5 @@
+import { writeFile } from 'node:fs/promises';
+
 const sources = [
   {
     target: 'ChinaDirect.list',
@@ -38,9 +40,6 @@ async function fetchRule(url) {
 
 for (const source of sources) {
   const content = await fetchRule(source.url);
-  await Bun.write(source.target, content).catch(async () => {
-    const { writeFile } = await import('node:fs/promises');
-    await writeFile(source.target, content, 'utf8');
-  });
+  await writeFile(source.target, content, 'utf8');
   console.log(`Updated ${source.target} from ${source.url}`);
 }
