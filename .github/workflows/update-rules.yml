@@ -27,7 +27,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git rm -f --ignore-unmatch ChinaDirect.list Apple.list Google.list ChinaIPv4.list ChinaIPv6.list
-          git add Surge/ChinaDirect.list Surge/Apple.list Surge/Google.list Surge/ChinaIPv4.list Surge/ChinaIPv6.list
+          git add Surge/*.list
           if git diff --cached --quiet; then
             echo "No rule changes"
           else
