@@ -1,5 +1,5 @@
+# Claude
 # === A 类：Claude 核心链路，必须同出口 ===
-
 DOMAIN-SUFFIX,anthropic.com,Claude
 DOMAIN-SUFFIX,claude.ai,Claude
 DOMAIN-SUFFIX,claude.com,Claude
@@ -7,7 +7,6 @@ DOMAIN-SUFFIX,anthropicusercontent.com,Claude
 DOMAIN-SUFFIX,claudeusercontent.com,Claude
 
 # === B 类：身份、会话、功能配置，建议同出口 ===
-
 DOMAIN-SUFFIX,statsigapi.net,Claude
 DOMAIN-SUFFIX,statsig.com,Claude
 DOMAIN-SUFFIX,statsigcdn.com,Claude
@@ -17,14 +16,12 @@ DOMAIN-SUFFIX,assetsconfigcdn.org,Claude
 DOMAIN-SUFFIX,prodregistryv2.org,Claude
 
 # === C 类：验证码 / 风控挑战，稳定优先时同出口 ===
-
 DOMAIN-SUFFIX,hcaptcha.com,Claude
 DOMAIN-SUFFIX,arkoselabs.com,Claude
 DOMAIN,challenges.cloudflare.com,Claude
 
 
 # === D 类：支持、客服、状态页，可选 ===
-
 DOMAIN-SUFFIX,intercom.io,Claude
 DOMAIN-SUFFIX,intercomcdn.com,Claude
 DOMAIN-SUFFIX,intercom-sheets.com,Claude
