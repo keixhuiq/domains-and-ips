@@ -5,11 +5,11 @@
 # DOMAIN: 1
 # DOMAIN-KEYWORD: 5
 # DOMAIN-SUFFIX: 691
-# IP-CIDR: 4
+# IP-CIDR: 20
 # IP-CIDR6: 1
 # PROCESS-NAME: 5
 # USER-AGENT: 3
-# TOTAL: 710
+# TOTAL: 726
 DOMAIN,voice.telephony.goog
 DOMAIN-SUFFIX,0emm.com
 DOMAIN-SUFFIX,1e100.net
@@ -720,3 +720,20 @@ PROCESS-NAME,com.google.android.gms
 PROCESS-NAME,com.google.android.gsf
 PROCESS-NAME,com.google.android.play.games
 PROCESS-NAME,BackupandSync
+# SOURCE: blackmatrix7 GoogleFCM uncovered IP supplement
+IP-CIDR,108.177.125.188/32,no-resolve
+IP-CIDR,142.250.10.188/32,no-resolve
+IP-CIDR,142.250.31.188/32,no-resolve
+IP-CIDR,142.250.4.188/32,no-resolve
+IP-CIDR,142.250.96.188/32,no-resolve
+IP-CIDR,172.217.194.188/32,no-resolve
+IP-CIDR,172.217.218.188/32,no-resolve
+IP-CIDR,172.217.219.188/32,no-resolve
+IP-CIDR,172.253.122.188/32,no-resolve
+IP-CIDR,172.253.63.188/32,no-resolve
+IP-CIDR,209.85.233.188/32,no-resolve
+IP-CIDR,64.233.177.188/32,no-resolve
+IP-CIDR,64.233.186.188/32,no-resolve
+IP-CIDR,64.233.187.188/32,no-resolve
+IP-CIDR,64.233.188.188/32,no-resolve
+IP-CIDR,64.233.189.188/32,no-resolve

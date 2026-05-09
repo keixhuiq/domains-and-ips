@@ -1,7 +1,7 @@
 # NAME: Bilibili
 # FORMAT: Surge rule-set
-# SOURCES: old manual Bilibili; blackmatrix7 BiliBili; QuixoticHeart bilibili
-# TOTAL: 143
+# SOURCES: old manual Bilibili; blackmatrix7 BiliBili/BiliBiliIntl additions; QuixoticHeart bilibili
+# TOTAL: 136
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3z.ourdvsss.com
@@ -117,14 +117,6 @@ DOMAIN-SUFFIX,smtcdns.net
 DOMAIN-SUFFIX,upos-hz-mirrorakam.akamaized.net
 DOMAIN-SUFFIX,uposdash-302-bilivideo.yfcdn.net
 DOMAIN-SUFFIX,yo9.com
-IP-CIDR,106.75.74.76/32
-IP-CIDR,111.206.25.147/32
-IP-CIDR,119.3.238.64/32
-IP-CIDR,120.92.108.182/32
-IP-CIDR,120.92.113.99/32
-IP-CIDR,120.92.153.217/32
-IP-CIDR,134.175.207.130/32
-IP-CIDR,203.107.1.0/24
 IP-CIDR,106.75.74.76/32,no-resolve
 IP-CIDR,111.206.25.147/32,no-resolve
 IP-CIDR,119.3.238.64/32,no-resolve
@@ -145,3 +137,4 @@ PROCESS-NAME,tv.danmaku.bili
 PROCESS-NAME,tv.danmaku.bilibilihd
 DOMAIN-SUFFIX,bilicomic.com
 DOMAIN-SUFFIX,huasheng.cn
+PROCESS-NAME,com.bstar.intl

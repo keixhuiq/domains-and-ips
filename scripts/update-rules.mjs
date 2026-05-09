@@ -21,12 +21,12 @@ const mergedSources = [
   { name: 'OpenAI', target: 'Surge/OpenAI.list', sources: ['old manual OpenAI', 'blackmatrix7 OpenAI', 'geekdada openai'], urls: [old('OpenAI.list'), b7('OpenAI/OpenAI.list'), 'https://raw.githubusercontent.com/geekdada/surge-list/master/openai.list'] },
   { name: 'Claude', target: 'Surge/Claude.list', sources: ['old manual Claude', 'blackmatrix7 Claude/Anthropic', 'HotKids Anthropic'], urls: [old('Claude.list'), b7('Claude/Claude.list'), b7('Anthropic/Anthropic.list'), 'https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Anthropic.list'] },
   { name: 'Bahamut', target: 'Surge/Bahamut.list', sources: ['old manual Bahamut', 'blackmatrix7 Bahamut', 'QuixoticHeart bahamut'], urls: [old('Bahamut.list'), b7('Bahamut/Bahamut.list'), qh('bahamut.list')] },
-  { name: 'Bilibili', target: 'Surge/Bilibili.list', sources: ['old manual Bilibili', 'blackmatrix7 BiliBili', 'QuixoticHeart bilibili'], urls: [old('Bilibili.list'), b7('BiliBili/BiliBili.list'), qh('bilibili.list')] },
+  { name: 'Bilibili', target: 'Surge/Bilibili.list', sources: ['old manual Bilibili', 'blackmatrix7 BiliBili/BiliBiliIntl additions', 'QuixoticHeart bilibili'], urls: [old('Bilibili.list'), b7('BiliBili/BiliBili.list'), qh('bilibili.list')] },
   { name: 'Crypto', target: 'Surge/Crypto.list', sources: ['old manual Crypto', 'blackmatrix7 Cryptocurrency', 'QuixoticHeart crypto'], urls: [old('Crypto.list'), b7('Cryptocurrency/Cryptocurrency.list'), qh('crypto.list')] },
   { name: 'CustomProxy', target: 'Surge/CustomProxy.list', sources: ['old manual CustomProxy', 'blackmatrix7 ProxyLite', 'ACL4SSR ProxyLite'], urls: [old('CustomProxy.list'), b7('ProxyLite/ProxyLite.list'), 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list'] },
   { name: 'DisneyPlus', target: 'Surge/DisneyPlus.list', sources: ['old manual DisneyPlus', 'blackmatrix7 Disney', 'QuixoticHeart disney'], urls: [old('DisneyPlus.list'), b7('Disney/Disney.list'), qh('disney.list')] },
   { name: 'Epic', target: 'Surge/Epic.list', sources: ['old manual Epic', 'blackmatrix7 Epic'], urls: [old('Epic.list'), b7('Epic/Epic.list')] },
-  { name: 'HBO', target: 'Surge/HBO.list', sources: ['old manual HBO', 'blackmatrix7 HBO/HBOUSA', 'QuixoticHeart hbo'], urls: [old('HBO.list'), b7('HBO/HBO.list'), b7('HBOUSA/HBOUSA.list'), qh('hbo.list')] },
+  { name: 'HBO', target: 'Surge/HBO.list', sources: ['old manual HBO', 'blackmatrix7 HBO/HBOUSA/HBOAsia additions', 'QuixoticHeart hbo'], urls: [old('HBO.list'), b7('HBO/HBO.list'), b7('HBOUSA/HBOUSA.list'), qh('hbo.list')] },
   { name: 'LINE', target: 'Surge/LINE.list', sources: ['old manual LINE', 'blackmatrix7 Line'], urls: [old('LINE.list'), b7('Line/Line.list')] },
   { name: 'Microsoft', target: 'Surge/Microsoft.list', sources: ['old manual Microsoft', 'blackmatrix7 Microsoft', 'QuixoticHeart microsoft'], urls: [old('Microsoft.list'), b7('Microsoft/Microsoft.list'), qh('microsoft.list')] },
   { name: 'MyTVSuper', target: 'Surge/MyTVSuper.list', sources: ['old manual MyTVSuper', 'blackmatrix7 myTVSUPER', 'QuixoticHeart mytvsuper'], urls: [old('MyTVSuper.list'), b7('myTVSUPER/myTVSUPER.list'), qh('mytvsuper.list')] },
@@ -39,8 +39,30 @@ const mergedSources = [
   { name: 'YouTube', target: 'Surge/YouTube.list', sources: ['old manual YouTube', 'blackmatrix7 YouTube', 'QuixoticHeart youtube'], urls: [old('YouTube.list'), b7('YouTube/YouTube.list'), qh('youtube.list')] },
 ];
 
+const skipTargets = new Set((process.env.SKIP_TARGETS ?? '').split(',').map((target) => target.trim()).filter(Boolean));
 const ipRuleTypes = new Set(['IP-CIDR', 'IP-CIDR6', 'IP-ASN', 'GEOIP']);
 const supportedFlags = new Set(['no-resolve', 'extended-matching', 'force-remote-dns', 'no-alert']);
+const typeAliases = new Map([
+  ['HOST', 'DOMAIN'],
+  ['HOST-SUFFIX', 'DOMAIN-SUFFIX'],
+  ['HOST-KEYWORD', 'DOMAIN-KEYWORD'],
+  ['IP6-CIDR', 'IP-CIDR6'],
+]);
+
+function normalizeHostWildcard(value) {
+  const wildcard = value.trim();
+  const suffixMatch = wildcard.match(/^\*\.([^*]+)$/);
+  if (suffixMatch) {
+    return `DOMAIN-SUFFIX,${suffixMatch[1]}`;
+  }
+
+  const keywordMatch = wildcard.match(/^([A-Za-z0-9-]+)\.(?:\*|\*\.\*|com\.\*)$/);
+  if (keywordMatch) {
+    return `DOMAIN-KEYWORD,${keywordMatch[1]}`;
+  }
+
+  return null;
+}
 
 const claudeOpenAISharedRules = [
   'DOMAIN-SUFFIX,stripe.com',
@@ -112,9 +134,37 @@ const removalsByTarget = {
 };
 
 const additionsByTarget = {
+  'Surge/Bilibili.list': ['PROCESS-NAME,com.bstar.intl'],
+  'Surge/Google.list': [
+    'IP-CIDR,108.177.125.188/32,no-resolve',
+    'IP-CIDR,142.250.10.188/32,no-resolve',
+    'IP-CIDR,142.250.31.188/32,no-resolve',
+    'IP-CIDR,142.250.4.188/32,no-resolve',
+    'IP-CIDR,142.250.96.188/32,no-resolve',
+    'IP-CIDR,172.217.194.188/32,no-resolve',
+    'IP-CIDR,172.217.218.188/32,no-resolve',
+    'IP-CIDR,172.217.219.188/32,no-resolve',
+    'IP-CIDR,172.253.122.188/32,no-resolve',
+    'IP-CIDR,172.253.63.188/32,no-resolve',
+    'IP-CIDR,209.85.233.188/32,no-resolve',
+    'IP-CIDR,64.233.177.188/32,no-resolve',
+    'IP-CIDR,64.233.186.188/32,no-resolve',
+    'IP-CIDR,64.233.187.188/32,no-resolve',
+    'IP-CIDR,64.233.188.188/32,no-resolve',
+    'IP-CIDR,64.233.189.188/32,no-resolve',
+  ],
+  'Surge/HBO.list': [
+    'DOMAIN,s3-ap-southeast-1.amazonaws.com',
+    'DOMAIN-KEYWORD,.hbogoasia.',
+    'USER-AGENT,HBO%20GO%20PROD*',
+  ],
   'Surge/LINE.list': ['IP-ASN,38631,no-resolve'],
   'Surge/OpenAI.list': ['DOMAIN-SUFFIX,statsigapi.net'],
   'Surge/X.list': ['DOMAIN-SUFFIX,x.ai', 'IP-ASN,13414,no-resolve'],
+};
+
+const additionCommentsByTarget = {
+  'Surge/Google.list': '# SOURCE: blackmatrix7 GoogleFCM uncovered IP supplement',
 };
 
 async function fetchRule(url) {
@@ -157,9 +207,14 @@ function normalizeRuleLine(line) {
     return null;
   }
 
-  const type = parts[0].toUpperCase();
+  const originalType = parts[0].toUpperCase();
+  const type = typeAliases.get(originalType) ?? originalType;
   if (!/^[A-Z0-9-]+$/.test(type)) {
     return null;
+  }
+
+  if (originalType === 'HOST-WILDCARD') {
+    return normalizeHostWildcard(parts[1]);
   }
 
   if (ipRuleTypes.has(type)) {
@@ -185,12 +240,22 @@ function forceNoResolveForIpRules(rules) {
 }
 
 function uniqueRules(rules) {
-  const seen = new Set();
+  const seen = new Map();
   const result = [];
 
   for (const rule of rules) {
-    if (!seen.has(rule)) {
-      seen.add(rule);
+    const parts = rule.split(',');
+    const key = ipRuleTypes.has(parts[0]) ? `${parts[0]},${parts[1]}` : rule;
+    const existingIndex = seen.get(key);
+
+    if (existingIndex !== undefined) {
+      if (ipRuleTypes.has(parts[0])) {
+        const existingParts = result[existingIndex].split(',');
+        const flags = new Set([...existingParts.slice(2), ...parts.slice(2)]);
+        result[existingIndex] = [parts[0], parts[1], ...flags].join(',');
+      }
+    } else {
+      seen.set(key, result.length);
       result.push(rule);
     }
   }
@@ -237,18 +302,73 @@ function buildMergedContent(ruleSet, rules) {
   ].join('\n');
 }
 
+function buildDirectContent(target, content) {
+  const additions = additionsByTarget[target] ?? [];
+  if (!additions.length) {
+    return content;
+  }
+
+  const normalizedRules = new Set();
+  for (const line of content.split('\n')) {
+    const rule = normalizeRuleLine(line);
+    if (rule) {
+      normalizedRules.add(rule);
+    }
+  }
+
+  const missingAdditions = additions.filter((rule) => !normalizedRules.has(rule));
+  if (!missingAdditions.length) {
+    return content;
+  }
+
+  const additionCounts = new Map();
+  for (const rule of missingAdditions) {
+    const type = rule.split(',')[0];
+    additionCounts.set(type, (additionCounts.get(type) ?? 0) + 1);
+  }
+
+  const updatedLines = content.trimEnd().split('\n').map((line) => {
+    const countMatch = line.match(/^# ([A-Z0-9-]+): (\d+)$/);
+    if (!countMatch) {
+      return line;
+    }
+
+    const [, type, count] = countMatch;
+    const additionCount = type === 'TOTAL'
+      ? missingAdditions.length
+      : (additionCounts.get(type) ?? 0);
+
+    return additionCount ? `# ${type}: ${Number(count) + additionCount}` : line;
+  });
+
+  return [
+    ...updatedLines,
+    additionCommentsByTarget[target],
+    ...missingAdditions,
+    '',
+  ].filter((line) => line !== undefined).join('\n');
+}
+
 async function writeRule(target, content) {
   await mkdir(dirname(target), { recursive: true });
   await writeFile(target, content, 'utf8');
 }
 
 for (const source of directSources) {
+  if (skipTargets.has(source.target)) {
+    continue;
+  }
+
   const content = await fetchRule(source.url);
-  await writeRule(source.target, content);
+  await writeRule(source.target, buildDirectContent(source.target, content));
   console.log(`Updated ${source.target} from ${source.url}`);
 }
 
 for (const ruleSet of mergedSources) {
+  if (skipTargets.has(ruleSet.target)) {
+    continue;
+  }
+
   const rules = new Map();
 
   for (const url of ruleSet.urls) {

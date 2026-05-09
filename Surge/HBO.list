@@ -1,7 +1,7 @@
 # NAME: HBO
 # FORMAT: Surge rule-set
-# SOURCES: old manual HBO; blackmatrix7 HBO/HBOUSA; QuixoticHeart hbo
-# TOTAL: 93
+# SOURCES: old manual HBO; blackmatrix7 HBO/HBOUSA/HBOAsia additions; QuixoticHeart hbo
+# TOTAL: 96
 USER-AGENT,HBOMAX*
 USER-AGENT,Max*
 DOMAIN-SUFFIX,max.com
@@ -95,3 +95,6 @@ DOMAIN-SUFFIX,hbotvsales.com
 DOMAIN-SUFFIX,homebox.com
 DOMAIN-SUFFIX,homeboxoffice.com
 DOMAIN-SUFFIX,redbyhbo.com
+DOMAIN,s3-ap-southeast-1.amazonaws.com
+DOMAIN-KEYWORD,.hbogoasia.
+USER-AGENT,HBO%20GO%20PROD*

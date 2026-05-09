@@ -40,11 +40,11 @@ The original `whxhuiq-creator/proxy-rules` repository is kept untouched.
 
 ## Surge Sources
 
-Single-source rules:
+Direct-source rules:
 
 - `Surge/ChinaDirect.list`: `blackmatrix7/ios_rule_script` ChinaMax_All
 - `Surge/Apple.list`: `blackmatrix7/ios_rule_script` Apple_All
-- `Surge/Google.list`: `blackmatrix7/ios_rule_script` Google
+- `Surge/Google.list`: `blackmatrix7/ios_rule_script` Google plus uncovered GoogleFCM IP rules
 - `Surge/ChinaIPv4.list`: `blackmatrix7/ios_rule_script` ChinaIPsBGP
 - `Surge/ChinaIPv6.list`: `ACL4SSR/ACL4SSR` ChinaIpV6
 
