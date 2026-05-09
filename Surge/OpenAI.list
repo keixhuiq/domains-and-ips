@@ -2,7 +2,6 @@
 # FORMAT: Surge rule-set (external)
 # USAGE: RULE-SET, <url>, OpenAI
 # NOTE: 按 OpenAI 官方 allowlist + 兼容项整理，保证企业网络/严格防火墙下完整可用
-# 注意：Surge 规则文件不支持行内注释，所有注释必须独占一行
 
 # === A 类：OpenAI / ChatGPT / Sora 核心链路，必须同 IP 出口 ===
 DOMAIN-SUFFIX,openai.com
