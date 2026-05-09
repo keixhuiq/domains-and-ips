@@ -26,19 +26,13 @@ DOMAIN-SUFFIX,ai.com
 DOMAIN,api.statsig.com
 DOMAIN-SUFFIX,auth0.com
 DOMAIN,client-api.arkoselabs.com
-# SHARED: Claude
+
+#与Claude共用
 DOMAIN-SUFFIX,featuregates.org
-# SHARED: Claude
 DOMAIN-SUFFIX,intercom.io
-# SHARED: Claude
 DOMAIN-SUFFIX,intercomcdn.com
-# SHARED: Claude
 DOMAIN-SUFFIX,launchdarkly.com
-# SHARED: Claude
 DOMAIN-SUFFIX,segment.io
-# SHARED: Claude
 DOMAIN-SUFFIX,sentry.io
-# SHARED: Claude
 DOMAIN-SUFFIX,stripe.com
-# SHARED: Claude
 DOMAIN-SUFFIX,statsigapi.net
