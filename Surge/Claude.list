@@ -9,20 +9,28 @@ DOMAIN-SUFFIX,anthropicusercontent.com
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,hcaptcha.com
 DOMAIN-SUFFIX,arkoselabs.com
+# SHARED: OpenAI
 DOMAIN-SUFFIX,stripe.com
+# SHARED: OpenAI
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,sentry-cdn.com
 DOMAIN-SUFFIX,datadoghq.com
+# SHARED: OpenAI
 DOMAIN-SUFFIX,intercom.io
+# SHARED: OpenAI
 DOMAIN-SUFFIX,intercomcdn.com
+# SHARED: OpenAI
 DOMAIN-SUFFIX,statsigapi.net
+# SHARED: OpenAI
 DOMAIN-SUFFIX,featuregates.org
+# SHARED: OpenAI
 DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,usefathom.com
 DOMAIN,anthropic.statuspage.io
 DOMAIN,sentry.anthropic.com
 DOMAIN-SUFFIX,amplitude.com
 DOMAIN-SUFFIX,segment.com
+# SHARED: OpenAI
 DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,fullstory.com
 DOMAIN-SUFFIX,clarity.ms
