@@ -42,6 +42,22 @@ const mergedSources = [
 const ipRuleTypes = new Set(['IP-CIDR', 'IP-CIDR6', 'IP-ASN', 'GEOIP']);
 const supportedFlags = new Set(['no-resolve', 'extended-matching', 'force-remote-dns', 'no-alert']);
 
+const claudeOpenAISharedRules = [
+  'DOMAIN-SUFFIX,stripe.com',
+  'DOMAIN-SUFFIX,sentry.io',
+  'DOMAIN-SUFFIX,intercom.io',
+  'DOMAIN-SUFFIX,intercomcdn.com',
+  'DOMAIN-SUFFIX,statsigapi.net',
+  'DOMAIN-SUFFIX,featuregates.org',
+  'DOMAIN-SUFFIX,launchdarkly.com',
+  'DOMAIN-SUFFIX,segment.io',
+];
+
+const sharedRuleMarkersByTarget = {
+  'Surge/Claude.list': new Map(claudeOpenAISharedRules.map((rule) => [rule, '# SHARED: OpenAI'])),
+  'Surge/OpenAI.list': new Map(claudeOpenAISharedRules.map((rule) => [rule, '# SHARED: Claude'])),
+};
+
 const replacementsByTarget = {
   'Surge/Claude.list': new Map([
     ['DOMAIN-SUFFIX,anthropic.statuspage.io', 'DOMAIN,anthropic.statuspage.io'],
@@ -195,13 +211,28 @@ function cleanupRules(target, rules) {
   return cleaned;
 }
 
+function markSharedRules(target, rules) {
+  const markers = sharedRuleMarkersByTarget[target] ?? new Map();
+  const result = [];
+
+  for (const rule of rules) {
+    const marker = markers.get(rule);
+    if (marker) {
+      result.push(marker);
+    }
+    result.push(rule);
+  }
+
+  return result;
+}
+
 function buildMergedContent(ruleSet, rules) {
   return [
     `# NAME: ${ruleSet.name}`,
     '# FORMAT: Surge rule-set',
     `# SOURCES: ${ruleSet.sources.join('; ')}`,
     `# TOTAL: ${rules.length}`,
-    ...rules,
+    ...markSharedRules(ruleSet.target, rules),
     '',
   ].join('\n');
 }
