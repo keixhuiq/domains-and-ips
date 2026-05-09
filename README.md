@@ -1,17 +1,24 @@
 # proxy-rules-clean
 
-Cleaned proxy rule sets for Surge-style `.list` rules.
+Cleaned proxy rule sets for Surge, Mihomo, and Quantumult X.
 
-Initial rule files:
-- `ChinaDirect.list` - comprehensive mainland China direct rules
-- `Apple.list` - Apple service rules
-- `Google.list` - Google service rules
-- `ChinaIPv4.list` - mainland China IPv4 CIDR rules
-- `ChinaIPv6.list` - mainland China IPv6 CIDR rules
+Current rule layout:
 
-Sources are credited in each rule file header. The original `whxhuiq-creator/proxy-rules` repository is kept untouched.
+```text
+Surge/
+  ChinaDirect.list
+  Apple.list
+  Google.list
+  ChinaIPv4.list
+  ChinaIPv6.list
+```
 
-## Sources
+The original `whxhuiq-creator/proxy-rules` repository is kept untouched.
 
-- `blackmatrix7/ios_rule_script`: Apple, Google, ChinaMax, ChinaIPsBGP
-- `ACL4SSR/ACL4SSR`: ChinaIpV6
+## Surge Sources
+
+- `Surge/ChinaDirect.list`: `blackmatrix7/ios_rule_script` ChinaMax_All
+- `Surge/Apple.list`: `blackmatrix7/ios_rule_script` Apple_All
+- `Surge/Google.list`: `blackmatrix7/ios_rule_script` Google
+- `Surge/ChinaIPv4.list`: `blackmatrix7/ios_rule_script` ChinaIPsBGP
+- `Surge/ChinaIPv6.list`: `ACL4SSR/ACL4SSR` ChinaIpV6
