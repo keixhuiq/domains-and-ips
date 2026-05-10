@@ -25,7 +25,9 @@ DOMAIN-SUFFIX,prodregistryv2.org
 # === C 类：验证码 / 风控挑战 ===
 DOMAIN-SUFFIX,hcaptcha.com
 DOMAIN-SUFFIX,arkoselabs.com
-DOMAIN,challenges.cloudflare.com        # OpenAI 共用
+# OpenAI 共用
+DOMAIN,challenges.cloudflare.com 
+
 
 # === D 类：客服 / 支持组件 ===
 # OpenAI 共用
