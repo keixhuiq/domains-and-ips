@@ -1,70 +1,146 @@
-# NAME: OpenAI
+# NAME: TikTok
 # FORMAT: Surge rule-set
-# NOTE: OpenAI / ChatGPT / Sora / Codex (web & app, not API)
-# SOURCE: OpenAI official network recommendations + blackmatrix7 cross-reference
+# SOURCES: old manual TikTok; blackmatrix7 TikTok; QuixoticHeart tiktok
 # UPDATED: 2026-05-10
+# NOTE: removed snssdk.com, bytedapm.com (both potentially affect Douyin)
 
-# === A 类：OpenAI / ChatGPT 主域 ===
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
+# === A 类：TikTok 主域 ===
+DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tiktok.in
+DOMAIN-SUFFIX,tiktok.org
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,tiktokv.us
+DOMAIN-SUFFIX,tiktokv.eu
+DOMAIN-SUFFIX,tiktokw.us
+DOMAIN-SUFFIX,tiktokw.eu
+DOMAIN-SUFFIX,tiktokd.net
+DOMAIN-SUFFIX,tiktokd.org
+DOMAIN-SUFFIX,tiktokmusic.app
+DOMAIN-SUFFIX,tiktokshop.com
+DOMAIN-SUFFIX,tiktokglobalshop.com
+DOMAIN-SUFFIX,tiktokglobalshopv.com
+DOMAIN-SUFFIX,tiktok-minis.com
+DOMAIN-SUFFIX,tiktokminis.us
+DOMAIN-SUFFIX,tiktok-row.net
+DOMAIN-SUFFIX,tiktokstaticb.com
+DOMAIN-SUFFIX,tik-tokapi.com
+DOMAIN-SUFFIX,musical.ly
+DOMAIN-SUFFIX,musically.ly
+DOMAIN-SUFFIX,musemuse.cn
 
-# Sora
-DOMAIN-SUFFIX,sora.com
+# === B 类：API / 负载均衡 ===
+DOMAIN-SUFFIX,tiktok-lb-alisg.byteoversea.net
+DOMAIN-SUFFIX,tiktok-lb-maliva.byteoversea.net
+DOMAIN-SUFFIX,tiktok-lb-texas.useast5.byteoversea.net.byteigtm.com
+DOMAIN-SUFFIX,tiktok-platform-lb-alisg.byteoversea.net
+DOMAIN-SUFFIX,tiktok-platform-lb-maliva.byteoversea.net
+DOMAIN-SUFFIX,quic-tiktok-core-proxy-i18n-gcpva.byteoversea.net
+DOMAIN-SUFFIX,quic-tiktok-proxy-i18n-gcpva.byteoversea.net
+DOMAIN-SUFFIX,sgali3.l.byteoversea.net
+DOMAIN-SUFFIX,gts.byteoversea.net
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,ttoversea.net
+DOMAIN-SUFFIX,ttoverseaus.net
+DOMAIN-SUFFIX,ttapis.com
+DOMAIN-SUFFIX,ttdns2.com
+DOMAIN-SUFFIX,ttwstatic.com
+DOMAIN-SUFFIX,ttwebview.com
 
-# === B 类：高级语音模式（Advanced Voice，依赖 LiveKit）===
-DOMAIN-SUFFIX,livekit.cloud
+# === C 类：字节国际化基础设施（i 前缀 / i18n / 海外）===
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,ibyteimg.com
+DOMAIN-SUFFIX,ipstatp.com
+DOMAIN-SUFFIX,isnssdk.com
+DOMAIN-SUFFIX,sgsnssdk.com
+DOMAIN-SUFFIX,sgpstatp.com
+DOMAIN-SUFFIX,bytegecko-i18n.com
+DOMAIN-SUFFIX,byteintlapi.com
+DOMAIN-SUFFIX,byteglb.com
 
-# === C 类：登录 / 企业 SSO（WorkOS）===
-# 注：auth.openai.com / auth0.openai.com / setup.auth.openai.com 均被 openai.com 覆盖，不再列出
-DOMAIN,cdn.workos.com
-DOMAIN,forwarder.workos.com
-DOMAIN,setup.workos.com
-DOMAIN,images.workoscdn.com
-DOMAIN,workos.imgix.net
+# === D 类：TikTok CDN / 媒体 ===
+DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,tiktokcdn-us.com
+DOMAIN-SUFFIX,tiktokcdn-eu.com
+DOMAIN-SUFFIX,tiktokcdn-eu.net
+DOMAIN-SUFFIX,tiktokcdn-in.com
+DOMAIN-SUFFIX,tiktokeu-cdn.com
+DOMAIN-SUFFIX,tiktokrow-cdn.com
+DOMAIN-SUFFIX,ttcdn-us.com
+DOMAIN-SUFFIX,muscdn.com
+DOMAIN-SUFFIX,tlivecdn.com
+DOMAIN-SUFFIX,ttlivecdn.com
 
-# === D 类：Feature Flag / 实验配置（与 Claude 共用）===
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,featureassets.org
-DOMAIN-SUFFIX,prodregistryv2.org
-DOMAIN-SUFFIX,statsig.com
-DOMAIN-SUFFIX,statsigapi.net
-# LaunchDarkly：BM7 列出，OpenAI Web 用作并行 feature flag
-DOMAIN-SUFFIX,launchdarkly.com
+# === E 类：TikTok CDN 边缘代理路径（akamai / cloudfront 系）===
+DOMAIN,p16-tiktokcdn-com.akamaized.net
+DOMAIN-SUFFIX,v16-tiktokcdn-com.akamaized.net
+DOMAIN-SUFFIX,tiktokcdn-com.akamaized.net
+DOMAIN-SUFFIX,tiktokcdn.com.akamaized.net
+DOMAIN-SUFFIX,tiktokcdn-us.com.atomile.com
+DOMAIN-SUFFIX,tiktokcdn-us.com.c.worldfcdn2.com
+DOMAIN-SUFFIX,tiktokcdn-us.com.edgesuite.net
+DOMAIN-SUFFIX,tiktokcdn.com.atomile.com
+DOMAIN-SUFFIX,tiktokcdn.com.c.bytefcdn-oversea.com
+DOMAIN-SUFFIX,tiktokcdn.com.c.bytefcdn-ttpeu.com
+DOMAIN-SUFFIX,tiktokcdn.com.c.bytetcdn.com
+DOMAIN-SUFFIX,tiktokcdn.com.c.worldfcdn.com
+DOMAIN-SUFFIX,tiktokcdn.com.edgesuite.net
+DOMAIN-SUFFIX,tiktokcdn.com.qlivecdn.com
+DOMAIN-SUFFIX,tiktokcdn.com.rocket-cdn.com
+DOMAIN-SUFFIX,tiktokcdn.com.tlivepush.com
+DOMAIN-SUFFIX,tiktokv.com.c.bytefcdn-oversea.com
+DOMAIN-SUFFIX,tiktokv.com.c.worldfcdn.com
+DOMAIN-SUFFIX,tiktokv.com.c.worldfcdn2.com
+DOMAIN-SUFFIX,tiktokv.com.edgekey.net
+DOMAIN-SUFFIX,tiktokv.com.edgesuite.net
+DOMAIN-SUFFIX,ttlivecdn.com.c.bytefcdn-oversea.com
+DOMAIN-SUFFIX,ttlivecdn.com.c.worldfcdn.com
 
-# === E 类：Cloudflare Challenge / 风控挑战（与 Claude 共用）===
-DOMAIN,challenges.cloudflare.com
+# === F 类：musical.ly 时代直播推流（仅国际版历史遗留）===
+DOMAIN-SUFFIX,pull-f3-hs.pstatp.com
+DOMAIN-SUFFIX,pull-f5-hs.flive.pstatp.com
+DOMAIN-SUFFIX,pull-f5-hs.pstatp.com
+DOMAIN-SUFFIX,pull-f5-mus.pstatp.com
+DOMAIN-SUFFIX,pull-flv-f1-hs.pstatp.com
+DOMAIN-SUFFIX,pull-flv-f6-hs.pstatp.com
+DOMAIN-SUFFIX,pull-flv-l1-hs.pstatp.com
+DOMAIN-SUFFIX,pull-flv-l1-mus.pstatp.com
+DOMAIN-SUFFIX,pull-flv-l6-hs.pstatp.com
+DOMAIN-SUFFIX,pull-hls-l1-mus.pstatp.com
+DOMAIN-SUFFIX,pull-l3-hs.pstatp.com
+DOMAIN-SUFFIX,pull-rtmp-f1-hs.pstatp.com
+DOMAIN-SUFFIX,pull-rtmp-f6-hs.pstatp.com
+DOMAIN-SUFFIX,pull-rtmp-l1-hs.pstatp.com
+DOMAIN-SUFFIX,pull-rtmp-l1-mus.pstatp.com
+DOMAIN-SUFFIX,pull-rtmp-l6-hs.pstatp.com
 
-# === F 类：客服 / 支持组件（与 Claude 共用）===
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
+# === G 类：TikTok 专用 pstatp.com / byteimg.com 子域 ===
+DOMAIN-SUFFIX,lf1-ttcdn-tos.pstatp.com
+DOMAIN-SUFFIX,sf1-ttcdn-tos.pstatp.com
+DOMAIN-SUFFIX,sf6-ttcdn-tos.pstatp.com
+DOMAIN-SUFFIX,p1-tt.byteimg.com
+DOMAIN-SUFFIX,p1-tt-ipv6.byteimg.com
+DOMAIN-SUFFIX,p3-tt-ipv6.byteimg.com
+DOMAIN-SUFFIX,p9-tt.byteimg.com
+DOMAIN-SUFFIX,p26-tt.byteimg.com
+DOMAIN-SUFFIX,p16.hypstarcdn.com
 
-# === G 类：上传、静态资源、官网 CDN / 存储 ===
-DOMAIN,openaiapi-site.azureedge.net
-DOMAIN,openaicom.imgix.net
-DOMAIN,openaicomproductionae4b.blob.core.windows.net
-DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-DOMAIN,production-openaicom-storage.azureedge.net
-DOMAIN,cdn.openaimerge.com
+# === H 类：CapCut / Trae / MarsCode（字节系工具）===
+DOMAIN-SUFFIX,capcut.com
+DOMAIN-SUFFIX,trae.ai
+DOMAIN,trae-api-sg.mchost.guru
+DOMAIN-SUFFIX,marscode.com
 
-# === H 类：搜索基础设施（BM7 列出，ChatGPT Web 文档/检索功能在用）===
-DOMAIN-SUFFIX,algolia.net
+# === I 类：杂项（其他 TikTok 命中域）===
+DOMAIN,lf16-effectcdn.byteeffecttos-g.com
+DOMAIN,lf16-pkgcdn.pitaya-clientai.com
+DOMAIN-SUFFIX,dm.bytedance.com
+DOMAIN,roovza-launches.appsflyersdk.com
+DOMAIN,roovza.inapps.appsflyersdk.com
+DOMAIN,roovza.launches.appsflyersdk.com
+DOMAIN,roovza.skadsdk.appsflyersdk.com
 
-# === I 类：遥测 / 错误上报 ===
-DOMAIN-SUFFIX,browser-intake-datadoghq.com
-DOMAIN,o207216.ingest.sentry.io
-DOMAIN,o33249.ingest.sentry.io
+# === J 类：进程标识 ===
+USER-AGENT,TikTok*
 
-# === J 类：iOS / 邮件相关 ===
-DOMAIN-SUFFIX,ct.sendgrid.net
-DOMAIN,humb.apple.com
-
-# === K 类：Arkose Labs，人机验证 ===
-DOMAIN,openai-api.arkoselabs.com
-DOMAIN,client-api.arkoselabs.com
-
-# === L 类：旧 Cloudflare CNAME 兼容；非官方 allowlist，按需保留 ===
-DOMAIN,openai.com.cdn.cloudflare.net
-DOMAIN,chat.openai.com.cdn.cloudflare.net
-DOMAIN,ios.chat.openai.com.cdn.cloudflare.net
+# === K 类：兜底关键词 ===
+DOMAIN-KEYWORD,tiktok
