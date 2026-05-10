@@ -1,10 +1,12 @@
 # NAME: YouTube
 # FORMAT: Surge rule-set
-# SOURCES: old manual YouTube; blackmatrix7 YouTube; QuixoticHeart youtube
-# TOTAL: 194
-DOMAIN,music.youtube.com
-DOMAIN,youtubei.googleapis.com
-DOMAIN,yt3.ggpht.com
+# UPDATED: 2026-05-10
+# CHANGES from previous version:
+#   - Removed DOMAIN,music.youtube.com (covered by DOMAIN-SUFFIX,youtube.com)
+#   - Removed DOMAIN,youtubei.googleapis.com (duplicate of same-name SUFFIX)
+#   - Removed DOMAIN,yt3.ggpht.com (covered by DOMAIN-SUFFIX,ggpht.com)
+# NOTE: 168 SUFFIX entries are technically covered by DOMAIN-KEYWORD,youtube,
+#       but kept intentionally as explicit fallback (double-coverage by design)
 DOMAIN-SUFFIX,ggpht.cn
 DOMAIN-SUFFIX,ggpht.com
 DOMAIN-SUFFIX,googlevideo.com
