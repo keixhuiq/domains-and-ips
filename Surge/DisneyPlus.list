@@ -1,8 +1,8 @@
 # NAME: DisneyPlus
 # FORMAT: Surge rule-set
-# SOURCES: old manual DisneyPlus; blackmatrix7 Disney; QuixoticHeart disney
-# TOTAL: 176
-DOMAIN,cdn.registerdisney.go.com
+# UPDATED: 2026-05-10
+# CHANGES from previous version:
+#   - Removed DOMAIN,cdn.registerdisney.go.com (covered by DOMAIN-SUFFIX,go.com)
 DOMAIN-SUFFIX,20thcenturystudios.com.au
 DOMAIN-SUFFIX,20thcenturystudios.com.br
 DOMAIN-SUFFIX,20thcenturystudios.jp
