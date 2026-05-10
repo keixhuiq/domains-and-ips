@@ -1,13 +1,15 @@
 # NAME: HBO
 # FORMAT: Surge rule-set
-# SOURCES: old manual HBO; blackmatrix7 HBO/HBOUSA/HBOAsia additions; QuixoticHeart hbo
-# TOTAL: 96
+# UPDATED: 2026-05-10
+# CHANGES from previous version:
+#   - Removed DOMAIN,wmff.warnermediacdn.com (covered by DOMAIN-SUFFIX,warnermediacdn.com)
+#   - Removed DOMAIN-KEYWORD,.hbogoasia. (zero practical effect; 7 hbogoasia.* SUFFIX
+#     already cover all known TLDs, and HBO Asia service ceased operation in 2023)
 USER-AGENT,HBOMAX*
 USER-AGENT,Max*
 DOMAIN-SUFFIX,max.com
 DOMAIN-SUFFIX,hbomax.com
 DOMAIN-SUFFIX,discomax.com
-DOMAIN,wmff.warnermediacdn.com
 DOMAIN-SUFFIX,cinemax.com
 DOMAIN-SUFFIX,h264.io
 DOMAIN-SUFFIX,hbomaxcdn.com
@@ -96,5 +98,4 @@ DOMAIN-SUFFIX,homebox.com
 DOMAIN-SUFFIX,homeboxoffice.com
 DOMAIN-SUFFIX,redbyhbo.com
 DOMAIN,s3-ap-southeast-1.amazonaws.com
-DOMAIN-KEYWORD,.hbogoasia.
 USER-AGENT,HBO%20GO%20PROD*
