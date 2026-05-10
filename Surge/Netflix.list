@@ -1,3 +1,74 @@
+# Netflix (Cleaned)
+# Source: whxhuiq-creator/proxy-rules-clean (manual + blackmatrix7 + QuixoticHeart)
+# Cleanup actions:
+#   - Removed 12 entries covered by DOMAIN-KEYWORD,netflixdnstest
+#     (11 SUFFIX netflixdnstest{0-10}.com + 1 WILDCARD netflixdnstest*.com)
+#   - Replaced 1119 stale IP entries with consensus list (AWS region blocks removed)
+#   - IP source: AS2906 RIPEstat + ACL4SSR/SukkaW consensus (Open Connect / historical)
+#   - CIDR aggregated: 241 raw IPv4 -> 20 merged; 265 raw IPv6 -> 4 merged
+# Note: Netflix's AWS-hosted services (API/login/control plane) are matched
+#   via DOMAIN-SUFFIX rules above, so AWS IP blocks are not needed.
+# Original: 1163 lines -> Cleaned: 58 lines
+#
+# NAME: Netflix
+# FORMAT: Surge rule-set
+# SOURCES: old manual Netflix; blackmatrix7 Netflix; QuixoticHeart netflix
+DOMAIN,e13252.dscg.akamaiedge.net
+DOMAIN,h-netflix.online-metrix.net
+DOMAIN,netflix.com.edgesuite.net
+DOMAIN-SUFFIX,cookielaw.org
+DOMAIN-SUFFIX,fast.com
+DOMAIN-SUFFIX,flxvpn.net
+DOMAIN-SUFFIX,netflix.ca
+DOMAIN-SUFFIX,netflix.com
+DOMAIN-SUFFIX,netflix.com.au
+DOMAIN-SUFFIX,netflix.com.edgesuite.net
+DOMAIN-SUFFIX,netflix.net
+DOMAIN-SUFFIX,netflixinvestor.com
+DOMAIN-SUFFIX,netflixstudios.com
+DOMAIN-SUFFIX,netflixtechblog.com
+DOMAIN-SUFFIX,nflxext.com
+DOMAIN-SUFFIX,nflximg.com
+DOMAIN-SUFFIX,nflximg.net
+DOMAIN-SUFFIX,nflxsearch.net
+DOMAIN-SUFFIX,nflxso.net
+DOMAIN-SUFFIX,nflxvideo.net
+DOMAIN-SUFFIX,onetrust.com
+DOMAIN-SUFFIX,us-west-2.amazonaws.com
+DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
+DOMAIN-KEYWORD,dualstack.apiproxy-
+DOMAIN-KEYWORD,dualstack.ichnaea-web-
+DOMAIN-KEYWORD,netflixdnstest
+# === IP-CIDR (AS2906 + ACL4SSR/SukkaW consensus, CIDR-aggregated) ===
+IP-CIDR,8.41.4.0/24,no-resolve
+IP-CIDR,23.246.0.0/18,no-resolve
+IP-CIDR,35.186.224.47/32,no-resolve
+IP-CIDR,37.77.184.0/21,no-resolve
+IP-CIDR,38.72.126.0/24,no-resolve
+IP-CIDR,45.57.0.0/17,no-resolve
+IP-CIDR,64.120.128.0/17,no-resolve
+IP-CIDR,66.197.128.0/17,no-resolve
+IP-CIDR,69.53.224.0/19,no-resolve
+IP-CIDR,103.87.204.0/22,no-resolve
+IP-CIDR,108.175.32.0/20,no-resolve
+IP-CIDR,150.109.28.51/32,no-resolve
+IP-CIDR,185.2.220.0/22,no-resolve
+IP-CIDR,185.9.188.0/22,no-resolve
+IP-CIDR,192.173.64.0/18,no-resolve
+IP-CIDR,198.38.96.0/19,no-resolve
+IP-CIDR,198.45.48.0/20,no-resolve
+IP-CIDR,203.75.84.0/24,no-resolve
+IP-CIDR,207.45.72.0/22,no-resolve
+IP-CIDR,208.75.76.0/22,no-resolve
+# === IP-CIDR6 (AS2906 + SukkaW consensus, CIDR-aggregated) ===
+IP-CIDR6,2607:fb10::/32,no-resolve
+IP-CIDR6,2620:10c:7000::/44,no-resolve
+IP-CIDR6,2a00:86c0::/32,no-resolve
+IP-CIDR6,2a03:5640::/32,no-resolve
+USER-AGENT,Argo*
+PROCESS-NAME,com.netflix.mediaclient
+
+# ==========================================
 # NAME: Netflix
 # FORMAT: Surge rule-set
 # SOURCES: old manual Netflix; blackmatrix7 Netflix; QuixoticHeart netflix
