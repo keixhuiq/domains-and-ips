@@ -1,4 +1,4 @@
-NAME: OpenAI
+# NAME: OpenAI
 # FORMAT: Surge rule-set
 # NOTE: OpenAI / ChatGPT / Sora / Codex (web & app, not API)
 # SOURCE: OpenAI official network recommendations + blackmatrix7 cross-reference
