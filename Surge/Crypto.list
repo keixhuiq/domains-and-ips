@@ -1,7 +1,16 @@
 # NAME: Crypto
 # FORMAT: Surge rule-set
-# SOURCES: old manual Crypto; blackmatrix7 Cryptocurrency; QuixoticHeart crypto
-# TOTAL: 373
+# UPDATED: 2026-05-10
+# CHANGES from previous version:
+#   - Removed 31 binance.* SUFFIX (covered by DOMAIN-KEYWORD,binance)
+#   - Removed 11 huobi.* SUFFIX (covered by DOMAIN-KEYWORD,huobi)
+#   - Removed DOMAIN-KEYWORD,okx (3 chars too short, kept 6 SUFFIX explicit)
+#   - Added MetaMask official SUFFIX (intentional double-coverage with KEYWORD):
+#       metamask.io, metamask.app -> redundant with KEYWORD,metamask but
+#         provides explicit path; you can drop KEYWORD,metamask in future
+#         without losing core MetaMask coverage
+#       codefi.network -> NOT covered by KEYWORD (no 'metamask' substring),
+#         this is the actual new coverage
 DOMAIN,bybit.ada.support
 DOMAIN,bybit-exchange.github.io
 DOMAIN-SUFFIX,1inch.io
@@ -18,12 +27,6 @@ DOMAIN-SUFFIX,asproexapi.com
 DOMAIN-SUFFIX,asproex.com
 DOMAIN-SUFFIX,avax.network
 DOMAIN-SUFFIX,bibox.com
-DOMAIN-SUFFIX,binance.cloud
-DOMAIN-SUFFIX,binancecnt.com
-DOMAIN-SUFFIX,binance.com
-DOMAIN-SUFFIX,binancefuture.com
-DOMAIN-SUFFIX,binance.info
-DOMAIN-SUFFIX,binance.me
 DOMAIN-SUFFIX,bisq.io
 DOMAIN-SUFFIX,bisq.network
 DOMAIN-SUFFIX,bitbank.cc
@@ -163,13 +166,6 @@ DOMAIN-SUFFIX,hecochain.com
 DOMAIN-SUFFIX,heco-scan.com
 DOMAIN-SUFFIX,hecoview.com
 DOMAIN-SUFFIX,htx.com
-DOMAIN-SUFFIX,huobiasia.vip
-DOMAIN-SUFFIX,huobi.com
-DOMAIN-SUFFIX,huobigroup.com
-DOMAIN-SUFFIX,huobi.me
-DOMAIN-SUFFIX,huobi.pro
-DOMAIN-SUFFIX,huobi.sc
-DOMAIN-SUFFIX,huobitoken.com
 DOMAIN-SUFFIX,icodrops.com
 DOMAIN-SUFFIX,infura.io
 DOMAIN-SUFFIX,intotheblock.com
@@ -263,11 +259,7 @@ DOMAIN-SUFFIX,zb.io
 DOMAIN-SUFFIX,zb.live
 DOMAIN-SUFFIX,zkscan.io
 DOMAIN-SUFFIX,zksync.io
-DOMAIN,token-api.metaswap.codefi.network
 DOMAIN-SUFFIX,ledger.com
-DOMAIN-SUFFIX,binance.cc
-DOMAIN-SUFFIX,binance.im
-DOMAIN-SUFFIX,binance.us
 DOMAIN,d3r7nsslvs6aaf.cloudfront.net
 DOMAIN,deribit.cdn.prismic.io
 DOMAIN,onekey.zendesk.com
@@ -276,28 +268,6 @@ DOMAIN-SUFFIX,365huo.xyz
 DOMAIN-SUFFIX,altcoinsbox.com
 DOMAIN-SUFFIX,bb-os.com
 DOMAIN-SUFFIX,biconomy.com
-DOMAIN-SUFFIX,binance.charity
-DOMAIN-SUFFIX,binance.co
-DOMAIN-SUFFIX,binance.net
-DOMAIN-SUFFIX,binance.org
-DOMAIN-SUFFIX,binance.vision
-DOMAIN-SUFFIX,binanceapi.com
-DOMAIN-SUFFIX,binanceru.net
-DOMAIN-SUFFIX,binancezh.be
-DOMAIN-SUFFIX,binancezh.biz
-DOMAIN-SUFFIX,binancezh.cc
-DOMAIN-SUFFIX,binancezh.co
-DOMAIN-SUFFIX,binancezh.com
-DOMAIN-SUFFIX,binancezh.info
-DOMAIN-SUFFIX,binancezh.ink
-DOMAIN-SUFFIX,binancezh.kim
-DOMAIN-SUFFIX,binancezh.link
-DOMAIN-SUFFIX,binancezh.live
-DOMAIN-SUFFIX,binancezh.mobi
-DOMAIN-SUFFIX,binancezh.net
-DOMAIN-SUFFIX,binancezh.pro
-DOMAIN-SUFFIX,binancezh.sh
-DOMAIN-SUFFIX,binancezh.top
 DOMAIN-SUFFIX,bingx.com
 DOMAIN-SUFFIX,bitcoincore.org
 DOMAIN-SUFFIX,bitget.fit
@@ -325,10 +295,6 @@ DOMAIN-SUFFIX,greentreeone.com
 DOMAIN-SUFFIX,guardarian.com
 DOMAIN-SUFFIX,hkd.com
 DOMAIN-SUFFIX,hkd.mobi
-DOMAIN-SUFFIX,huobi.br.com
-DOMAIN-SUFFIX,huobi.co.ma
-DOMAIN-SUFFIX,huobi.ug
-DOMAIN-SUFFIX,huobi.ws
 DOMAIN-SUFFIX,kraken.onl
 DOMAIN-SUFFIX,kucoin.plus
 DOMAIN-SUFFIX,mocortech.com
@@ -371,7 +337,12 @@ DOMAIN-SUFFIX,xhpjc6-cdn-settings.appsflyersdk.com
 DOMAIN-KEYWORD,binance
 DOMAIN-KEYWORD,huobi
 DOMAIN-KEYWORD,metamask
-DOMAIN-KEYWORD,okx
+
+# MetaMask 官方域名（KEYWORD,metamask 已覆盖大多数，这些为不含 metamask 字样的兜底）
+DOMAIN-SUFFIX,metamask.io
+DOMAIN-SUFFIX,metamask.app
+DOMAIN-SUFFIX,codefi.network
+
 PROCESS-NAME,Binance.exe
 PROCESS-NAME,Huobi.exe
 PROCESS-NAME,OKX.exe
