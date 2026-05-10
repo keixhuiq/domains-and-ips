@@ -42,16 +42,16 @@ DOMAIN,anthropic.statuspage.io
 
 # === Optional: QX extra domains, disabled by default ===
 # 支付 / 监控 / 分析 / 字体等泛第三方服务；只在 Claude 页面异常时再启用
-DOMAIN-SUFFIX,stripe.com
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,sentry-cdn.com
-DOMAIN-SUFFIX,datadoghq.com
-DOMAIN-SUFFIX,launchdarkly.com
-DOMAIN-SUFFIX,usefathom.com
-DOMAIN-SUFFIX,amplitude.com
-DOMAIN-SUFFIX,segment.com
-DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,fullstory.com
-DOMAIN-SUFFIX,clarity.ms
-DOMAIN-SUFFIX,fonts.googleapis.com
-DOMAIN-SUFFIX,fonts.gstatic.com
+#DOMAIN-SUFFIX,stripe.com
+#DOMAIN-SUFFIX,sentry.io
+#DOMAIN-SUFFIX,sentry-cdn.com
+#DOMAIN-SUFFIX,datadoghq.com
+#DOMAIN-SUFFIX,launchdarkly.com
+#DOMAIN-SUFFIX,usefathom.com
+#DOMAIN-SUFFIX,amplitude.com
+#DOMAIN-SUFFIX,segment.com
+#DOMAIN-SUFFIX,segment.io
+#DOMAIN-SUFFIX,fullstory.com
+#DOMAIN-SUFFIX,clarity.ms
+#DOMAIN-SUFFIX,fonts.googleapis.com
+#DOMAIN-SUFFIX,fonts.gstatic.com
