@@ -2,6 +2,23 @@
 # FORMAT: Surge rule-set
 # SOURCES: old manual CustomProxy; blackmatrix7 ProxyLite; ACL4SSR ProxyLite
 # TOTAL: 1678
+
+# === GitHub 生态补充（之前在 Microsoft.list 里走 DIRECT，是 bug）===
+# 已通过 DOMAIN-KEYWORD,github 命中的不重复列出
+DOMAIN-SUFFIX,atom.io
+DOMAIN-SUFFIX,dependabot.com
+DOMAIN-SUFFIX,gh.io
+DOMAIN-SUFFIX,ghcr.io
+DOMAIN-SUFFIX,git.io
+DOMAIN-SUFFIX,myoctocat.com
+DOMAIN-SUFFIX,npm.community
+DOMAIN-SUFFIX,npmjs.com
+DOMAIN-SUFFIX,npmjs.org
+DOMAIN-SUFFIX,octocaptcha.com
+DOMAIN-SUFFIX,opensource.guide
+DOMAIN-SUFFIX,repo.new
+
+# ================================= #
 DOMAIN-SUFFIX,signal.org
 DOMAIN-KEYWORD,clashofclans
 DOMAIN-SUFFIX,browserleaks.com
