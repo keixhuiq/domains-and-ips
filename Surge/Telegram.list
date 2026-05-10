@@ -47,6 +47,6 @@ PROCESS-NAME,org.telegram.messenger
 PROCESS-NAME,telegram-desktop
 PROCESS-NAME,tw.nekomimi.nekogram
 PROCESS-NAME,xyz.nextalone.nagram
-OR,((IP-ASN
+# OR,((IP-ASN
 IP-CIDR,95.161.64.0/20,no-resolve
 IP-CIDR6,2001:b28:f23d::/48,no-resolve
