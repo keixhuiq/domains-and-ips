@@ -1,10 +1,11 @@
 # NAME: Bahamut
 # FORMAT: Surge rule-set
-# SOURCES: old manual Bahamut; blackmatrix7 Bahamut; QuixoticHeart bahamut
-# TOTAL: 11
-DOMAIN,bahamut.akamaized.net
-DOMAIN,gamer-cds.cdn.hinet.net
-DOMAIN,gamer2-cds.cdn.hinet.net
+# UPDATED: 2026-05-10
+# CHANGES from previous version:
+#   - Removed DOMAIN,bahamut.akamaized.net (covered by same-name SUFFIX)
+#   - Removed DOMAIN,gamer-cds.cdn.hinet.net (covered by SUFFIX,hinet.net)
+#   - Removed DOMAIN,gamer2-cds.cdn.hinet.net (covered by SUFFIX,hinet.net)
+DOMAIN-SUFFIX,bahamut.akamaized.net
 DOMAIN-SUFFIX,bahamut.com.tw
 DOMAIN-SUFFIX,gamer.com.tw
 DOMAIN-SUFFIX,digicert.com
@@ -12,4 +13,3 @@ DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,hinet.net
 DOMAIN-SUFFIX,viblast.com
 USER-AGENT,Anime*
-DOMAIN-SUFFIX,bahamut.akamaized.net
