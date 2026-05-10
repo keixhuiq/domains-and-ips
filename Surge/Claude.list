@@ -40,18 +40,85 @@ DOMAIN-SUFFIX,intercom-sheets.com
 DOMAIN,status.claude.com
 DOMAIN,anthropic.statuspage.io
 
-# === Optional: QX extra domains, disabled by default ===
-# 支付 / 监控 / 分析 / 字体等泛第三方服务；只在 Claude 页面异常时再启用
-#DOMAIN-SUFFIX,stripe.com
-#DOMAIN-SUFFIX,sentry.io
-#DOMAIN-SUFFIX,sentry-cdn.com
-#DOMAIN-SUFFIX,datadoghq.com
-#DOMAIN-SUFFIX,launchdarkly.com
-#DOMAIN-SUFFIX,usefathom.com
-#DOMAIN-SUFFIX,amplitude.com
-#DOMAIN-SUFFIX,segment.com
-#DOMAIN-SUFFIX,segment.io
-#DOMAIN-SUFFIX,fullstory.com
-#DOMAIN-SUFFIX,clarity.ms
-#DOMAIN-SUFFIX,fonts.googleapis.com
-#DOMAIN-SUFFIX,fonts.gstatic.com
+# === Claude 补充 ===
+# 说明：
+# 这些不是当前 clean 版的必需规则，主要来自 Claude Code 官方网络需求、
+# 第三方 2026 规则集、桌面端/CLI/遥测/MCP/登录/下载相关补充。
+# 默认不要启用；只有在 Claude 网页、App、Desktop、Claude Code、登录、下载、遥测阻断异常时再按需打开。
+
+# --- Claude short URL / ecosystem ---
+# Claude CLI / 分享链接里可能出现的短域名
+# DOMAIN-SUFFIX,clau.de
+
+# MCP 官方生态/协议站点；Claude Code / MCP 场景可能相关
+# DOMAIN-SUFFIX,modelcontextprotocol.io
+# DOMAIN-SUFFIX,claudemcpclient.com
+
+# --- Claude Code / Desktop / installer / updater ---
+# Claude Code / Desktop 下载、更新相关；downloads.claude.ai 已被 claude.ai 覆盖，这里只是精确标注
+# DOMAIN,downloads.claude.ai
+
+# 官方文档提到：旧版 native installer / auto-updater 可能用到；很泛，谨慎启用
+# DOMAIN,storage.googleapis.com
+
+# Claude in Chrome extension WebSocket bridge；已被 claudeusercontent.com 覆盖，这里只是精确标注
+# DOMAIN,bridge.claudeusercontent.com
+
+# --- Login / auth / console ---
+# 第三方规则集中出现的 Anthropic Auth0 精确域名；比直接放开 auth0.com 更稳
+# DOMAIN,anthropic.auth0.com
+
+# Console / Workbench / Platform；已被 anthropic.com 或 claude.com 覆盖，精确备用
+# DOMAIN,console.anthropic.com
+# DOMAIN,workbench.anthropic.com
+# DOMAIN,platform.claude.com
+# DOMAIN,code.claude.com
+# DOMAIN,docs.claude.com
+# DOMAIN,support.claude.com
+
+# --- Telemetry / monitoring / error reporting ---
+# Claude Code 官方文档提到 telemetry / error reporting；默认不建议启用泛域名
+# DOMAIN,statsig.anthropic.com
+# DOMAIN,sentry.anthropic.com
+
+# 第三方 2026 规则中出现的 Datadog RUM 精确域名；比 DOMAIN-KEYWORD,datadog 或 datadoghq.com 更稳
+# DOMAIN,browser-intake-us5-datadoghq.com
+
+# Fathom 精确 CDN；比 usefathom.com 泛规则更稳
+# DOMAIN,cdn.usefathom.com
+
+# GrowthBook feature flag / rollout；第三方 Claude 规则集出现过
+# DOMAIN,cdn.growthbook.io
+
+# --- Website / blog / marketing / CDN fallback ---
+# Anthropic 官网/博客/边缘 CDN 相关，通常不影响 Claude 主功能
+# DOMAIN,anthropic-com.ghost.io
+# DOMAIN,anthropic.com.cdn.cloudflare.net
+# DOMAIN,servd-anthropic-website.b-cdn.net
+
+# Trust / compliance center；已被 anthropic.com 覆盖，精确备用
+# DOMAIN,trust.anthropic.com
+
+# --- Payment / analytics / broad third-party fallback ---
+# 这些是 QX 版里有、但 clean 版没有的泛第三方域名。
+# 污染范围较大，只在明确看到 Claude 请求失败时再启用。
+# DOMAIN-SUFFIX,stripe.com
+# DOMAIN-SUFFIX,sentry.io
+# DOMAIN-SUFFIX,sentry-cdn.com
+# DOMAIN-SUFFIX,datadoghq.com
+# DOMAIN-SUFFIX,launchdarkly.com
+# DOMAIN-SUFFIX,usefathom.com
+# DOMAIN-SUFFIX,amplitude.com
+# DOMAIN-SUFFIX,segment.com
+# DOMAIN-SUFFIX,segment.io
+# DOMAIN-SUFFIX,fullstory.com
+# DOMAIN-SUFFIX,clarity.ms
+# DOMAIN-SUFFIX,fonts.googleapis.com
+# DOMAIN-SUFFIX,fonts.gstatic.com
+
+# --- Anthropic IP fallback, optional ---
+# 官方文档列出的 Anthropic 固定 IP。一般不建议启用 IP 兜底；
+# 只有在请求直接表现为 IP 连接、且域名规则抓不到时再考虑。
+# IP-CIDR,160.79.104.0/23,no-resolve
+# IP-CIDR,160.79.104.0/21,no-resolve
+# IP-CIDR6,2607:6bc0::/48,no-resolve
