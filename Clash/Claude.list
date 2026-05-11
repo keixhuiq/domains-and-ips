@@ -50,10 +50,10 @@ DOMAIN,anthropic.statuspage.io
 
 # --- Claude short URL / ecosystem ---
 # Claude CLI / 分享链接里可能出现的短域名
-# DOMAIN-SUFFIX,clau.de
+DOMAIN-SUFFIX,clau.de
 
 # MCP 官方生态/协议站点；Claude Code / MCP 场景可能相关
-# DOMAIN-SUFFIX,modelcontextprotocol.io
+DOMAIN-SUFFIX,modelcontextprotocol.io
 # DOMAIN-SUFFIX,claudemcpclient.com
 
 # --- Claude Code / Desktop / installer / updater ---
@@ -68,7 +68,7 @@ DOMAIN,anthropic.statuspage.io
 
 # --- Login / auth / console ---
 # 第三方规则集中出现的 Anthropic Auth0 精确域名；比直接放开 auth0.com 更稳
-# DOMAIN,anthropic.auth0.com
+DOMAIN,anthropic.auth0.com
 
 # Console / Workbench / Platform；已被 anthropic.com 或 claude.com 覆盖，精确备用
 # DOMAIN,console.anthropic.com
@@ -80,8 +80,8 @@ DOMAIN,anthropic.statuspage.io
 
 # --- Telemetry / monitoring / error reporting ---
 # Claude Code 官方文档提到 telemetry / error reporting；默认不建议启用泛域名
-# DOMAIN,statsig.anthropic.com
-# DOMAIN,sentry.anthropic.com
+DOMAIN,statsig.anthropic.com
+DOMAIN,sentry.anthropic.com
 
 # 第三方 2026 规则中出现的 Datadog RUM 精确域名；比 DOMAIN-KEYWORD,datadog 或 datadoghq.com 更稳
 # DOMAIN,browser-intake-us5-datadoghq.com
