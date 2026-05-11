@@ -1,0 +1,72 @@
+# OpenAI for Clash/Mihomo
+# Source: whxhuiq-creator/proxy-rules-clean/Surge/OpenAI.list
+# Adaptation: removed USER-AGENT rules (not supported by Mihomo without MITM)
+# Format: Clash classical, suitable for rule-providers behavior=classical, format=text
+#
+# NOTE: OpenAI / ChatGPT / Sora / Codex (web & app, not API)
+# SOURCE: OpenAI official network recommendations + blackmatrix7 cross-reference
+
+# === A 类：OpenAI / ChatGPT 主域 ===
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+
+# Sora
+DOMAIN-SUFFIX,sora.com
+
+# === B 类：高级语音模式（Advanced Voice，依赖 LiveKit）===
+DOMAIN-SUFFIX,livekit.cloud
+
+# === C 类：登录 / 企业 SSO（WorkOS）===
+# 注：auth.openai.com / auth0.openai.com / setup.auth.openai.com 均被 openai.com 覆盖，不再列出
+DOMAIN,cdn.workos.com
+DOMAIN,forwarder.workos.com
+DOMAIN,setup.workos.com
+DOMAIN,images.workoscdn.com
+DOMAIN,workos.imgix.net
+
+# === D 类：Feature Flag / 实验配置（与 Claude 共用）===
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,featureassets.org
+DOMAIN-SUFFIX,prodregistryv2.org
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,statsigapi.net
+# LaunchDarkly：BM7 列出，OpenAI Web 用作并行 feature flag
+DOMAIN-SUFFIX,launchdarkly.com
+
+# === E 类：Cloudflare Challenge / 风控挑战（与 Claude 共用）===
+DOMAIN,challenges.cloudflare.com
+
+# === F 类：客服 / 支持组件（与 Claude 共用）===
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+
+# === G 类：上传、静态资源、官网 CDN / 存储 ===
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN,openaicom.imgix.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN,cdn.openaimerge.com
+
+# === H 类：搜索基础设施（BM7 列出，ChatGPT Web 文档/检索功能在用）===
+DOMAIN-SUFFIX,algolia.net
+
+# === I 类：遥测 / 错误上报 ===
+DOMAIN-SUFFIX,browser-intake-datadoghq.com
+DOMAIN,o207216.ingest.sentry.io
+DOMAIN,o33249.ingest.sentry.io
+
+# === J 类：iOS / 邮件相关 ===
+DOMAIN-SUFFIX,ct.sendgrid.net
+DOMAIN,humb.apple.com
+
+# === K 类：Arkose Labs，人机验证 ===
+DOMAIN,openai-api.arkoselabs.com
+DOMAIN,client-api.arkoselabs.com
+
+# === L 类：旧 Cloudflare CNAME 兼容；非官方 allowlist，按需保留 ===
+DOMAIN,openai.com.cdn.cloudflare.net
+DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,ios.chat.openai.com.cdn.cloudflare.net
