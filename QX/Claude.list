@@ -1,0 +1,29 @@
+# Claude for Quantumult X
+# Source: Keixhuiq/proxy-rules-clean/Clash/Claude.list
+# Format: Quantumult X filter, policy=Claude
+
+HOST-SUFFIX,anthropic.com,Claude
+HOST-SUFFIX,claude.ai,Claude
+HOST-SUFFIX,claude.com,Claude
+HOST-SUFFIX,anthropicusercontent.com,Claude
+HOST-SUFFIX,claudeusercontent.com,Claude
+HOST-SUFFIX,statsigapi.net,Claude
+HOST-SUFFIX,statsig.com,Claude
+HOST-SUFFIX,statsigcdn.com,Claude
+HOST-SUFFIX,featuregates.org,Claude
+HOST-SUFFIX,featureassets.org,Claude
+HOST-SUFFIX,assetsconfigcdn.org,Claude
+HOST-SUFFIX,prodregistryv2.org,Claude
+HOST-SUFFIX,hcaptcha.com,Claude
+HOST-SUFFIX,arkoselabs.com,Claude
+HOST,challenges.cloudflare.com,Claude
+HOST-SUFFIX,intercom.io,Claude
+HOST-SUFFIX,intercomcdn.com,Claude
+HOST-SUFFIX,intercom-sheets.com,Claude
+HOST,status.claude.com,Claude
+HOST,anthropic.statuspage.io,Claude
+HOST-SUFFIX,clau.de,Claude
+HOST-SUFFIX,modelcontextprotocol.io,Claude
+HOST,anthropic.auth0.com,Claude
+HOST,statsig.anthropic.com,Claude
+HOST,sentry.anthropic.com,Claude
