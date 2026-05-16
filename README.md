@@ -1,4 +1,4 @@
-# proxy-rules-clean
+# proxy-rules
 
 Cleaned proxy rule sets for Surge, Mihomo, and Quantumult X.
 
