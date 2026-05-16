@@ -1,6 +1,6 @@
 # proxy-rules
 
-Cleaned proxy rule sets for Surge, Mihomo, and Quantumult X.
+自用的一些规则集，用于Surge Mihomo Quantumult X
 
 Current Surge rule layout:
 
@@ -35,8 +35,6 @@ Surge/
   Xbox.list
   YouTube.list
 ```
-
-The original `whxhuiq-creator/proxy-rules` repository is kept untouched.
 
 ## Maintenance
 
