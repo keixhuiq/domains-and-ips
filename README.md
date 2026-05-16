@@ -1,4 +1,4 @@
-# proxy-rules
+# Proxy-rules
 
 自用的一些规则集，用于Surge Mihomo Quantumult X
 
@@ -33,6 +33,6 @@
   YouTube.list
 ```
 
-## Maintenance
+# Maintenance
 
-规则由人工维护。本仓库未设置自动更新流程或上游拉取脚本
+规则手动维护。本仓库未设置自动更新流程或上游拉取脚本
