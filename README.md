@@ -2,10 +2,7 @@
 
 自用的一些规则集，用于Surge Mihomo Quantumult X
 
-Current Surge rule layout:
-
 ```text
-Surge/
   Abema.list
   Apple.list
   Bahamut.list
