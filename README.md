@@ -40,6 +40,4 @@ The original `whxhuiq-creator/proxy-rules` repository is kept untouched.
 
 ## Maintenance
 
-Rules are maintained manually. This repository intentionally does not keep an
-automatic update workflow or upstream pull script, so checked and hand-edited
-rule files will not be overwritten by scheduled jobs.
+规则由人工维护。本仓库未设置自动更新流程或上游拉取脚本
