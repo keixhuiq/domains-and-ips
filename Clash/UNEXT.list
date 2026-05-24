@@ -2,10 +2,14 @@
 # Source: whxhuiq-creator/proxy-rules-clean/Surge/UNEXT.list
 # Adaptation: removed USER-AGENT rules (not supported by Mihomo without MITM)
 # Format: Clash classical, suitable for rule-providers behavior=classical, format=text
-#
-DOMAIN-SUFFIX,nx-cdn.com
-DOMAIN-SUFFIX,hnext.jp
-DOMAIN-KEYWORD,unext
-DOMAIN-SUFFIX,nxtv.jp
+
 DOMAIN-SUFFIX,unext.jp
+DOMAIN-SUFFIX,nxtv.jp
+DOMAIN-SUFFIX,hnext.jp
+DOMAIN-SUFFIX,nx-cdn.com
+DOMAIN-KEYWORD,unext
+DOMAIN-KEYWORD,hnext
 DOMAIN,us-central1-u-next-apps.cloudfunctions.net
+
+# Optional / backup
+# DOMAIN,streamd01ca-nxtv-jp.akamaized.net
