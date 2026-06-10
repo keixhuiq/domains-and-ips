@@ -4,6 +4,7 @@
 
 HOST-SUFFIX,openai.com,OpenAI
 HOST-SUFFIX,chatgpt.com,OpenAI
+HOST-SUFFIX,crixet.com,OpenAI
 HOST-SUFFIX,oaistatic.com,OpenAI
 HOST-SUFFIX,oaiusercontent.com,OpenAI
 HOST-SUFFIX,sora.com,OpenAI
@@ -18,10 +19,12 @@ HOST-SUFFIX,featureassets.org,OpenAI
 HOST-SUFFIX,prodregistryv2.org,OpenAI
 HOST-SUFFIX,statsig.com,OpenAI
 HOST-SUFFIX,statsigapi.net,OpenAI
+HOST-SUFFIX,oaistatsig.com,OpenAI
 HOST-SUFFIX,launchdarkly.com,OpenAI
 HOST,challenges.cloudflare.com,OpenAI
 HOST-SUFFIX,intercom.io,OpenAI
 HOST-SUFFIX,intercomcdn.com,OpenAI
+HOST,js.stripe.com,OpenAI
 HOST,openaiapi-site.azureedge.net,OpenAI
 HOST,openaicom.imgix.net,OpenAI
 HOST,openaicomproductionae4b.blob.core.windows.net,OpenAI
