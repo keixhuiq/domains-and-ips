@@ -10,6 +10,8 @@ DOMAIN-SUFFIX,nx-cdn.com
 DOMAIN-KEYWORD,unext
 DOMAIN-KEYWORD,hnext
 DOMAIN,us-central1-u-next-apps.cloudfunctions.net
+DOMAIN-SUFFIX,unext-info.jp
+DOMAIN-SUFFIX,unext.co.jp
 
 # Optional / backup
 # DOMAIN,streamd01ca-nxtv-jp.akamaized.net
