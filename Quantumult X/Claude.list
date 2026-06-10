@@ -24,6 +24,12 @@ HOST,status.claude.com,Claude
 HOST,anthropic.statuspage.io,Claude
 HOST-SUFFIX,clau.de,Claude
 HOST-SUFFIX,modelcontextprotocol.io,Claude
+HOST-SUFFIX,claudemcpclient.com,Claude
+HOST-SUFFIX,claudemcpcontent.com,Claude
+HOST,downloads.claude.ai,Claude
 HOST,anthropic.auth0.com,Claude
 HOST,statsig.anthropic.com,Claude
 HOST,sentry.anthropic.com,Claude
+HOST,anthropic-com.ghost.io,Claude
+HOST,anthropic.com.cdn.cloudflare.net,Claude
+HOST,servd-anthropic-website.b-cdn.net,Claude
