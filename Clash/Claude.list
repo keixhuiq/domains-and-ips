@@ -55,6 +55,7 @@ DOMAIN-SUFFIX,clau.de
 # MCP 官方生态/协议站点；Claude Code / MCP 场景可能相关
 DOMAIN-SUFFIX,modelcontextprotocol.io
 DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
 
 # --- Claude Code / Desktop / installer / updater ---
 # Claude Code / Desktop 下载、更新相关；downloads.claude.ai 已被 claude.ai 覆盖，这里只是精确标注
