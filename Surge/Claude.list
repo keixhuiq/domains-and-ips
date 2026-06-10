@@ -2,7 +2,7 @@
 # FORMAT: Surge rule-set
 # NOTE: Claude / Anthropic / Claude Code
 # SOURCE: Anthropic service domains + Statsig / Intercom official infrastructure docs
-# UPDATED: 2026-05-09
+# UPDATED: 2026-06-10
 
 # === A 类：Claude / Anthropic 核心链路，必须同出口 ===
 DOMAIN-SUFFIX,anthropic.com
@@ -52,11 +52,12 @@ DOMAIN-SUFFIX,clau.de
 
 # MCP 官方生态/协议站点；Claude Code / MCP 场景可能相关
 DOMAIN-SUFFIX,modelcontextprotocol.io
-# DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
 
 # --- Claude Code / Desktop / installer / updater ---
 # Claude Code / Desktop 下载、更新相关；downloads.claude.ai 已被 claude.ai 覆盖，这里只是精确标注
-# DOMAIN,downloads.claude.ai
+DOMAIN,downloads.claude.ai
 
 # 官方文档提到：旧版 native installer / auto-updater 可能用到；很泛，谨慎启用
 # DOMAIN,storage.googleapis.com
@@ -92,9 +93,9 @@ DOMAIN,sentry.anthropic.com
 
 # --- Website / blog / marketing / CDN fallback ---
 # Anthropic 官网/博客/边缘 CDN 相关，通常不影响 Claude 主功能
-# DOMAIN,anthropic-com.ghost.io
-# DOMAIN,anthropic.com.cdn.cloudflare.net
-# DOMAIN,servd-anthropic-website.b-cdn.net
+DOMAIN,anthropic-com.ghost.io
+DOMAIN,anthropic.com.cdn.cloudflare.net
+DOMAIN,servd-anthropic-website.b-cdn.net
 
 # Trust / compliance center；已被 anthropic.com 覆盖，精确备用
 # DOMAIN,trust.anthropic.com
