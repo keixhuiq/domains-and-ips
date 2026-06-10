@@ -2,9 +2,12 @@
 # Source: Keixhuiq/proxy-rules-clean/Clash/UNEXT.list
 # Format: Quantumult X filter, policy=UNEXT
 
-HOST-SUFFIX,nx-cdn.com,UNEXT
-HOST-SUFFIX,hnext.jp,UNEXT
-HOST-KEYWORD,unext,UNEXT
-HOST-SUFFIX,nxtv.jp,UNEXT
 HOST-SUFFIX,unext.jp,UNEXT
+HOST-SUFFIX,nxtv.jp,UNEXT
+HOST-SUFFIX,hnext.jp,UNEXT
+HOST-SUFFIX,nx-cdn.com,UNEXT
+HOST-KEYWORD,unext,UNEXT
+HOST-KEYWORD,hnext,UNEXT
 HOST,us-central1-u-next-apps.cloudfunctions.net,UNEXT
+HOST-SUFFIX,unext-info.jp,UNEXT
+HOST-SUFFIX,unext.co.jp,UNEXT
