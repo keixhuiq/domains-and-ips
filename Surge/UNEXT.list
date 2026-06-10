@@ -1,10 +1,18 @@
 # NAME: UNEXT
 # FORMAT: Surge rule-set
-# SOURCES: old manual UNEXT; HotKids U-NEXT
-# TOTAL: 6
-DOMAIN-SUFFIX,nx-cdn.com
-DOMAIN-SUFFIX,hnext.jp
-DOMAIN-KEYWORD,unext
-DOMAIN-SUFFIX,nxtv.jp
+# SOURCES: old manual UNEXT; HotKids U-NEXT; v2fly domain-list-community
+# UPDATED: 2026-06-10
+# TOTAL: 9
+
 DOMAIN-SUFFIX,unext.jp
+DOMAIN-SUFFIX,nxtv.jp
+DOMAIN-SUFFIX,hnext.jp
+DOMAIN-SUFFIX,nx-cdn.com
+DOMAIN-KEYWORD,unext
+DOMAIN-KEYWORD,hnext
 DOMAIN,us-central1-u-next-apps.cloudfunctions.net
+DOMAIN-SUFFIX,unext-info.jp
+DOMAIN-SUFFIX,unext.co.jp
+
+# Optional / backup
+# DOMAIN,streamd01ca-nxtv-jp.akamaized.net
