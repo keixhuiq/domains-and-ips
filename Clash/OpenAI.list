@@ -76,3 +76,7 @@ DOMAIN,client-api.arkoselabs.com
 DOMAIN,openai.com.cdn.cloudflare.net
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,ios.chat.openai.com.cdn.cloudflare.net
+
+# === 其它 ===
+DOMAIN,openai-api.arkoselabs.com,OpenAI
+DOMAIN,client-api.arkoselabs.com,OpenAI
