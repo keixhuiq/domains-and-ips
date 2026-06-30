@@ -1,11 +1,12 @@
 # Crunchyroll - core
-DOMAIN-SUFFIX,crunchyroll.com,Crunchyroll
-DOMAIN-SUFFIX,crunchyrollcdn.com,Crunchyroll
-DOMAIN-SUFFIX,crunchyrollsvc.com,Crunchyroll
+DOMAIN-SUFFIX,crunchyroll.com
+DOMAIN-SUFFIX,crunchyrollcdn.com
+DOMAIN-SUFFIX,crunchyrollsvc.com
 
 # Crunchyroll - explicit API hosts
-DOMAIN,beta-api.crunchyroll.com,Crunchyroll
-DOMAIN,cr-api.crunchyroll.com,Crunchyroll
+DOMAIN,beta-api.crunchyroll.com
+DOMAIN,cr-api.crunchyroll.com
+DOMAIN,sso.crunchyroll.com
 
 # Legacy / optional
-DOMAIN-SUFFIX,vrv.co,Crunchyroll
+DOMAIN-SUFFIX,vrv.co
