@@ -1,12 +1,8 @@
-# ===== Crunchyroll Core =====
-HOST-SUFFIX,crunchyroll.com,Crunchyroll
-HOST-SUFFIX,crunchyrollcdn.com,Crunchyroll
-HOST-SUFFIX,crunchyrollsvc.com,Crunchyroll
-
-# ===== API / 登录（可选）=====
-HOST,api.crunchyroll.com,Crunchyroll
-HOST,beta-api.crunchyroll.com,Crunchyroll
-HOST,sso.crunchyroll.com,Crunchyroll
-
-# ===== legacy / 边缘域名 =====
-HOST-SUFFIX,vrv.co,Crunchyroll
+# ——————
+host-suffix, crunchyroll.com, Crunchyroll
+host-suffix, crunchyroll.net, Crunchyroll
+host-suffix, crunchyrollsvc.com, Crunchyroll
+host-suffix, gccrunchyroll.com, Crunchyroll
+host-suffix, crunchyrollcdn.com, Crunchyroll
+host-suffix, vrv.co, Crunchyroll
+host, licensing.bitmovin.com, Crunchyroll
