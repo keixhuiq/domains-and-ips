@@ -1,0 +1,12 @@
+# ===== Crunchyroll Core =====
+HOST-SUFFIX,crunchyroll.com,Crunchyroll
+HOST-SUFFIX,crunchyrollcdn.com,Crunchyroll
+HOST-SUFFIX,crunchyrollsvc.com,Crunchyroll
+
+# ===== API / 登录（可选）=====
+HOST,api.crunchyroll.com,Crunchyroll
+HOST,beta-api.crunchyroll.com,Crunchyroll
+HOST,sso.crunchyroll.com,Crunchyroll
+
+# ===== legacy / 边缘域名 =====
+HOST-SUFFIX,vrv.co,Crunchyroll
