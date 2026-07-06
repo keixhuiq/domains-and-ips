@@ -1,0 +1,57 @@
+# =========================
+# 主站入口
+# =========================
+DOMAIN,bookwalker.jp
+DOMAIN,www.bookwalker.jp
+DOMAIN,global.bookwalker.jp
+
+=========================
+# API
+=========================
+DOMAIN,api.bookwalker.jp
+DOMAIN,prx.bookwalker.jp
+DOMAIN,bookwalker.jp
+
+# API path fallback
+DOMAIN-SUFFIX,bookwalker.jp
+
+# =========================
+# 登录 / 账号系统（SSO）
+# =========================
+DOMAIN,auth.bookwalker.jp
+DOMAIN,account.bookwalker.jp
+DOMAIN,id.bookwalker.jp
+DOMAIN,login.bookwalker.jp
+
+# =========================
+# CDN / 图片 / 资源
+# =========================
+DOMAIN,c.bookwalker.jp
+DOMAIN,rimg.bookwalker.jp
+DOMAIN,img.bookwalker.jp
+DOMAIN,cdn.bookwalker.jp
+DOMAIN,assets.bookwalker.jp
+
+# 书籍封面/缩略图
+DOMAIN-SUFFIX,rimg.bookwalker.jp
+DOMAIN-SUFFIX,c.bookwalker.jp
+
+# =========================
+# 购买 / 结算
+# =========================
+DOMAIN,checkout.bookwalker.jp
+DOMAIN,payment.bookwalker.jp
+DOMAIN,order.bookwalker.jp
+
+# =========================
+# 可能的外部依赖
+# =========================
+DOMAIN,cdn.jsdelivr.net
+DOMAIN,fonts.googleapis.com
+DOMAIN,fonts.gstatic.com
+
+# =========================
+# 埋点 / 统计
+# =========================
+DOMAIN,analytics.bookwalker.jp
+DOMAIN,log.bookwalker.jp
