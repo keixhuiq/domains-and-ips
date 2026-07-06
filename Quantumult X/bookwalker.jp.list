@@ -1,34 +1,34 @@
 # BOOK☆WALKER JP + Global
+# Format: Quantumult X filter, policy=BOOK☆WALKER JP
 
 # 主站
-host,bookwalker.jp
-host,www.bookwalker.jp
-host,global.bookwalker.jp
+HOST,bookwalker.jp,BOOK☆WALKER JP
+HOST,www.bookwalker.jp,BOOK☆WALKER JP
+HOST,global.bookwalker.jp,BOOK☆WALKER JP
 
 # API / 核心接口
-host,api.bookwalker.jp
-host,prx.bookwalker.jp
-host-suffix,bookwalker.jp
+HOST,api.bookwalker.jp,BOOK☆WALKER JP
+HOST,prx.bookwalker.jp,BOOK☆WALKER JP
 
 # 登录 / SSO
-host,auth.bookwalker.jp
-host,account.bookwalker.jp
-host,id.bookwalker.jp
-host,login.bookwalker.jp
+HOST,auth.bookwalker.jp,BOOK☆WALKER JP
+HOST,account.bookwalker.jp,BOOK☆WALKER JP
+HOST,id.bookwalker.jp,BOOK☆WALKER JP
+HOST,login.bookwalker.jp,BOOK☆WALKER JP
 
 # CDN / 图片资源
-host,c.bookwalker.jp
-host,rimg.bookwalker.jp
-host,img.bookwalker.jp
-host,cdn.bookwalker.jp
+HOST,c.bookwalker.jp,BOOK☆WALKER JP
+HOST,rimg.bookwalker.jp,BOOK☆WALKER JP
+HOST,img.bookwalker.jp,BOOK☆WALKER JP
+HOST,cdn.bookwalker.jp,BOOK☆WALKER JP
 
-host-suffix,rimg.bookwalker.jp
-host-suffix,c.bookwalker.jp
+HOST-SUFFIX,rimg.bookwalker.jp,BOOK☆WALKER JP
+HOST-SUFFIX,c.bookwalker.jp,BOOK☆WALKER JP
 
 # 购买 / checkout
-host,checkout.bookwalker.jp
-host,payment.bookwalker.jp
-host,order.bookwalker.jp
+HOST,checkout.bookwalker.jp,BOOK☆WALKER JP
+HOST,payment.bookwalker.jp,BOOK☆WALKER JP
+HOST,order.bookwalker.jp,BOOK☆WALKER JP
 
-# 兜底
-host-suffix,bookwalker.jp
+# 兜底（合并了原先重复出现的 host-suffix,bookwalker.jp）
+HOST-SUFFIX,bookwalker.jp,BOOK☆WALKER JP
