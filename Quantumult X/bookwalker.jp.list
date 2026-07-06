@@ -5,6 +5,7 @@
 HOST,bookwalker.jp,BOOKWALKERJP
 HOST,www.bookwalker.jp,BOOKWALKERJP
 HOST,global.bookwalker.jp,BOOKWALKERJP
+HOST-SUFFIX,bookwalker.com,BOOKWALKERJP
 
 # API / 核心接口
 HOST,api.bookwalker.jp,BOOKWALKERJP
