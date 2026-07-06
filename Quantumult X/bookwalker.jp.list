@@ -1,0 +1,34 @@
+# BOOK☆WALKER JP + Global
+
+# 主站
+host,bookwalker.jp
+host,www.bookwalker.jp
+host,global.bookwalker.jp
+
+# API / 核心接口
+host,api.bookwalker.jp
+host,prx.bookwalker.jp
+host-suffix,bookwalker.jp
+
+# 登录 / SSO
+host,auth.bookwalker.jp
+host,account.bookwalker.jp
+host,id.bookwalker.jp
+host,login.bookwalker.jp
+
+# CDN / 图片资源
+host,c.bookwalker.jp
+host,rimg.bookwalker.jp
+host,img.bookwalker.jp
+host,cdn.bookwalker.jp
+
+host-suffix,rimg.bookwalker.jp
+host-suffix,c.bookwalker.jp
+
+# 购买 / checkout
+host,checkout.bookwalker.jp
+host,payment.bookwalker.jp
+host,order.bookwalker.jp
+
+# 兜底
+host-suffix,bookwalker.jp
