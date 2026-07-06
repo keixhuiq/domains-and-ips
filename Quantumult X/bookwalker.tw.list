@@ -1,25 +1,28 @@
+# BOOK☆WALKER Taiwan
+# Format: Quantumult X filter, policy=BOOK☆WALKER TW
+
 # 主站
-host,bookwalker.com.tw
-host,www.bookwalker.com.tw
+HOST,bookwalker.com.tw,BOOKWALKERTW
+HOST,www.bookwalker.com.tw,BOOKWALKERTW
 
 # API / 服务层
-host,api.bookwalker.com.tw
-host,service.bookwalker.com.tw
-host-suffix,bookwalker.com.tw
+HOST,api.bookwalker.com.tw,BOOKWALKERTW
+HOST,service.bookwalker.com.tw,BOOKWALKERTW
+HOST-SUFFIX,bookwalker.com.tw,BOOKWALKERTW
 
 # 登录 / 账号体系（独立）
-host,login.bookwalker.com.tw
-host,auth.bookwalker.com.tw
-host,member.bookwalker.com.tw
+HOST,login.bookwalker.com.tw,BOOKWALKERTW
+HOST,auth.bookwalker.com.tw,BOOKWALKERTW
+HOST,member.bookwalker.com.tw,BOOKWALKERTW
 
 # CDN / 图片
-host,cdn.bookwalker.com.tw
-host,img.bookwalker.com.tw
-host,rimg.bookwalker.com.tw
+HOST,cdn.bookwalker.com.tw,BOOKWALKERTW
+HOST,img.bookwalker.com.tw,BOOKWALKERTW
+HOST,rimg.bookwalker.com.tw,BOOKWALKERTW
 
-host-suffix,cdn.bookwalker.com.tw
-host-suffix,rimg.bookwalker.com.tw
+HOST-SUFFIX,cdn.bookwalker.com.tw,BOOKWALKERTW
+HOST-SUFFIX,rimg.bookwalker.com.tw,BOOKWALKERTW
 
 # 支付
-host,checkout.bookwalker.com.tw
-host,payment.bookwalker.com.tw
+HOST,checkout.bookwalker.com.tw,BOOKWALKERTW
+HOST,payment.bookwalker.com.tw,BOOKWALKERTW
