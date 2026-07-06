@@ -1,0 +1,27 @@
+# BOOK☆WALKER Taiwan
+
+# 主站
+host,bookwalker.com.tw
+host,www.bookwalker.com.tw
+
+# API / 服务层
+host,api.bookwalker.com.tw
+host,service.bookwalker.com.tw
+host-suffix,bookwalker.com.tw
+
+# 登录 / 账号体系（独立）
+host,login.bookwalker.com.tw
+host,auth.bookwalker.com.tw
+host,member.bookwalker.com.tw
+
+# CDN / 图片
+host,cdn.bookwalker.com.tw
+host,img.bookwalker.com.tw
+host,rimg.bookwalker.com.tw
+
+host-suffix,cdn.bookwalker.com.tw
+host-suffix,rimg.bookwalker.com.tw
+
+# 支付
+host,checkout.bookwalker.com.tw
+host,payment.bookwalker.com.tw
