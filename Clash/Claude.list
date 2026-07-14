@@ -10,6 +10,7 @@
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claude.app
 
 # 用户内容 / 附件 / 上传下载
 DOMAIN-SUFFIX,anthropicusercontent.com
@@ -104,6 +105,12 @@ DOMAIN,servd-anthropic-website.b-cdn.net
 
 # Trust / compliance center；已被 anthropic.com 覆盖，精确备用
 # DOMAIN,trust.anthropic.com
+
+# Claude Code 插件元数据、Artifact 上传
+# DOMAIN,storage.googleapis.com
+
+# Claude Code 更新后的 release notes
+# DOMAIN,raw.githubusercontent.com
 
 # --- Payment / analytics / broad third-party fallback ---
 # 这些是 QX 版里有、但 clean 版没有的泛第三方域名。
