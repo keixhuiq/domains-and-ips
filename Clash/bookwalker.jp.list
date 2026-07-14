@@ -6,9 +6,9 @@ DOMAIN,www.bookwalker.jp
 DOMAIN,global.bookwalker.jp
 DOMAIN-SUFFIX,bookwalker.com
 
-=========================
+# =========================
 # API
-=========================
+# =========================
 DOMAIN,api.bookwalker.jp
 DOMAIN,prx.bookwalker.jp
 DOMAIN,bookwalker.jp
