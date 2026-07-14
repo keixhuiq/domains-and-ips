@@ -46,6 +46,7 @@ DOMAIN-SUFFIX,ttapis.com
 DOMAIN-SUFFIX,ttdns2.com
 DOMAIN-SUFFIX,ttwstatic.com
 DOMAIN-SUFFIX,ttwebview.com
+DOMAIN-SUFFIX,tiktokapis.com
 
 # === C 类：字节国际化基础设施（i 前缀 / i18n / 海外）===
 DOMAIN-SUFFIX,ibytedtos.com
