@@ -5,6 +5,7 @@
 HOST-SUFFIX,anthropic.com,Claude
 HOST-SUFFIX,claude.ai,Claude
 HOST-SUFFIX,claude.com,Claude
+HOST-SUFFIX,claude.app,Claude
 HOST-SUFFIX,anthropicusercontent.com,Claude
 HOST-SUFFIX,claudeusercontent.com,Claude
 HOST-SUFFIX,statsigapi.net,Claude
