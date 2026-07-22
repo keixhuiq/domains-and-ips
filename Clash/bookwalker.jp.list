@@ -47,9 +47,9 @@ DOMAIN,order.bookwalker.jp
 # =========================
 # 可能的外部依赖
 # =========================
-DOMAIN,cdn.jsdelivr.net
-DOMAIN,fonts.googleapis.com
-DOMAIN,fonts.gstatic.com
+#DOMAIN,cdn.jsdelivr.net
+#DOMAIN,fonts.googleapis.com
+#DOMAIN,fonts.gstatic.com
 
 # =========================
 # 埋点 / 统计
