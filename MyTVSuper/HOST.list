@@ -1,0 +1,19 @@
+# NAME: MyTVSuper
+# SOURCE: MyTVSuper/DOMAIN.list
+# FORMAT: Quantumult X filter
+# POLICY: MyTVSuper
+
+# NAME: myTVSUPER
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:51
+# DOMAIN: 2
+# DOMAIN-KEYWORD: 2
+# DOMAIN-SUFFIX: 2
+# TOTAL: 6
+HOST,mytvsuperlimited.hb.omtrdc.net,MyTVSuper
+HOST,mytvsuperlimited.sc.omtrdc.net,MyTVSuper
+HOST-SUFFIX,mytvsuper.com,MyTVSuper
+HOST-SUFFIX,tvb.com,MyTVSuper
+HOST-KEYWORD,nowtv100,MyTVSuper
+HOST-KEYWORD,rthklive,MyTVSuper

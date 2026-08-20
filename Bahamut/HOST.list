@@ -1,0 +1,19 @@
+# NAME: Bahamut
+# SOURCE: Bahamut/DOMAIN.list
+# FORMAT: Quantumult X filter
+# POLICY: Bahamut
+
+# NAME: Bahamut
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:16:56
+# DOMAIN: 1
+# DOMAIN-SUFFIX: 6
+# TOTAL: 7
+HOST,bahamut.akamaized.net,Bahamut
+HOST-SUFFIX,bahamut.com.tw,Bahamut
+HOST-SUFFIX,digicert.com,Bahamut
+HOST-SUFFIX,gamer.com.tw,Bahamut
+HOST-SUFFIX,gvt1.com,Bahamut
+HOST-SUFFIX,hinet.net,Bahamut
+HOST-SUFFIX,viblast.com,Bahamut
