@@ -1,0 +1,37 @@
+# =========================
+# 主站入口
+# =========================
+DOMAIN,bookwalker.com.tw
+DOMAIN,www.bookwalker.com.tw
+
+# =========================
+# API / 服务层
+# =========================
+DOMAIN,api.bookwalker.com.tw
+DOMAIN,service.bookwalker.com.tw
+
+# 统一兜底
+DOMAIN-SUFFIX,bookwalker.com.tw
+
+# =========================
+# 登录 / 账号体系
+# =========================
+DOMAIN,login.bookwalker.com.tw
+DOMAIN,auth.bookwalker.com.tw
+DOMAIN,member.bookwalker.com.tw
+
+# =========================
+# CDN / 图片资源
+# =========================
+DOMAIN,cdn.bookwalker.com.tw
+DOMAIN,img.bookwalker.com.tw
+DOMAIN,rimg.bookwalker.com.tw
+
+DOMAIN-SUFFIX,cdn.bookwalker.com.tw
+DOMAIN-SUFFIX,rimg.bookwalker.com.tw
+
+# =========================
+# 支付 / 订单
+# =========================
+DOMAIN,checkout.bookwalker.com.tw
+DOMAIN,payment.bookwalker.com.tw

@@ -1,0 +1,28 @@
+# BOOK☆WALKER Taiwan
+# Format: Quantumult X filter, policy=BOOK☆WALKER TW
+
+# 主站
+HOST,bookwalker.com.tw,BOOKWALKERTW
+HOST,www.bookwalker.com.tw,BOOKWALKERTW
+
+# API / 服务层
+HOST,api.bookwalker.com.tw,BOOKWALKERTW
+HOST,service.bookwalker.com.tw,BOOKWALKERTW
+HOST-SUFFIX,bookwalker.com.tw,BOOKWALKERTW
+
+# 登录 / 账号体系（独立）
+HOST,login.bookwalker.com.tw,BOOKWALKERTW
+HOST,auth.bookwalker.com.tw,BOOKWALKERTW
+HOST,member.bookwalker.com.tw,BOOKWALKERTW
+
+# CDN / 图片
+HOST,cdn.bookwalker.com.tw,BOOKWALKERTW
+HOST,img.bookwalker.com.tw,BOOKWALKERTW
+HOST,rimg.bookwalker.com.tw,BOOKWALKERTW
+
+HOST-SUFFIX,cdn.bookwalker.com.tw,BOOKWALKERTW
+HOST-SUFFIX,rimg.bookwalker.com.tw,BOOKWALKERTW
+
+# 支付
+HOST,checkout.bookwalker.com.tw,BOOKWALKERTW
+HOST,payment.bookwalker.com.tw,BOOKWALKERTW

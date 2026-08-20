@@ -1,0 +1,35 @@
+# BOOK☆WALKER JP + Global
+# Format: Quantumult X filter, policy=BOOK☆WALKER JP
+
+# 主站
+HOST,bookwalker.jp,BOOKWALKERJP
+HOST,www.bookwalker.jp,BOOKWALKERJP
+HOST,global.bookwalker.jp,BOOKWALKERJP
+HOST-SUFFIX,bookwalker.com,BOOKWALKERJP
+
+# API / 核心接口
+HOST,api.bookwalker.jp,BOOKWALKERJP
+HOST,prx.bookwalker.jp,BOOKWALKERJP
+
+# 登录 / SSO
+HOST,auth.bookwalker.jp,BOOKWALKERJP
+HOST,account.bookwalker.jp,BOOKWALKERJP
+HOST,id.bookwalker.jp,BOOKWALKERJP
+HOST,login.bookwalker.jp,BOOKWALKERJP
+
+# CDN / 图片资源
+HOST,c.bookwalker.jp,BOOKWALKERJP
+HOST,rimg.bookwalker.jp,BOOKWALKERJP
+HOST,img.bookwalker.jp,BOOKWALKERJP
+HOST,cdn.bookwalker.jp,BOOKWALKERJP
+
+HOST-SUFFIX,rimg.bookwalker.jp,BOOKWALKERJP
+HOST-SUFFIX,c.bookwalker.jp,BOOKWALKERJP
+
+# 购买 / checkout
+HOST,checkout.bookwalker.jp,BOOKWALKERJP
+HOST,payment.bookwalker.jp,BOOKWALKERJP
+HOST,order.bookwalker.jp,BOOKWALKERJP
+
+# 兜底
+HOST-SUFFIX,bookwalker.jp,BOOKWALKERJP
