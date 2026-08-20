@@ -1,0 +1,18 @@
+[
+  {
+    "remarks": "UNEXT",
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:unext.jp",
+      "domain:nxtv.jp",
+      "domain:hnext.jp",
+      "domain:nx-cdn.com",
+      "keyword:unext",
+      "keyword:hnext",
+      "full:us-central1-u-next-apps.cloudfunctions.net",
+      "domain:unext-info.jp",
+      "domain:unext.co.jp"
+    ],
+    "enabled": true
+  }
+]

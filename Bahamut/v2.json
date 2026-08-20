@@ -1,0 +1,16 @@
+[
+  {
+    "remarks": "Bahamut",
+    "outboundTag": "proxy",
+    "domain": [
+      "full:bahamut.akamaized.net",
+      "domain:bahamut.com.tw",
+      "domain:digicert.com",
+      "domain:gamer.com.tw",
+      "domain:gvt1.com",
+      "domain:hinet.net",
+      "domain:viblast.com"
+    ],
+    "enabled": true
+  }
+]

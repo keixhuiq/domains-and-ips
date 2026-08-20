@@ -1,0 +1,40 @@
+[
+  {
+    "remarks": "Claude",
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:anthropic.com",
+      "domain:claude.ai",
+      "domain:claude.com",
+      "domain:claude.app",
+      "domain:anthropicusercontent.com",
+      "domain:claudeusercontent.com",
+      "domain:statsigapi.net",
+      "domain:statsig.com",
+      "domain:statsigcdn.com",
+      "domain:featuregates.org",
+      "domain:featureassets.org",
+      "domain:assetsconfigcdn.org",
+      "domain:prodregistryv2.org",
+      "domain:hcaptcha.com",
+      "domain:arkoselabs.com",
+      "domain:intercom.io",
+      "domain:intercomcdn.com",
+      "domain:intercom-sheets.com",
+      "full:status.claude.com",
+      "full:anthropic.statuspage.io",
+      "domain:clau.de",
+      "domain:modelcontextprotocol.io",
+      "domain:claudemcpclient.com",
+      "domain:claudemcpcontent.com",
+      "full:downloads.claude.ai",
+      "full:anthropic.auth0.com",
+      "full:statsig.anthropic.com",
+      "full:sentry.anthropic.com",
+      "full:anthropic-com.ghost.io",
+      "full:anthropic.com.cdn.cloudflare.net",
+      "full:servd-anthropic-website.b-cdn.net"
+    ],
+    "enabled": true
+  }
+]

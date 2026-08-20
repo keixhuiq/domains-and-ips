@@ -1,0 +1,13 @@
+[
+  {
+    "remarks": "PlayStation",
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:playstation.com",
+      "domain:playstation.net",
+      "domain:playstationnetwork.com",
+      "domain:sonyentertainmentnetwork.com"
+    ],
+    "enabled": true
+  }
+]

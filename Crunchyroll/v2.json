@@ -1,0 +1,17 @@
+[
+  {
+    "remarks": "Crunchyroll",
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:crunchyroll.com",
+      "domain:crunchyroll.net",
+      "domain:crunchyrollsvc.com",
+      "domain:gccrunchyroll.com",
+      "domain:crunchyrollcdn.com",
+      "domain:vrv.co",
+      "full:licensing.bitmovin.com",
+      "domain:litix.io"
+    ],
+    "enabled": true
+  }
+]

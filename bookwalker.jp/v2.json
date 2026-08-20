@@ -1,0 +1,32 @@
+[
+  {
+    "remarks": "bookwalker.jp",
+    "outboundTag": "proxy",
+    "domain": [
+      "full:bookwalker.jp",
+      "full:www.bookwalker.jp",
+      "full:global.bookwalker.jp",
+      "domain:bookwalker.com",
+      "full:api.bookwalker.jp",
+      "full:prx.bookwalker.jp",
+      "domain:bookwalker.jp",
+      "full:auth.bookwalker.jp",
+      "full:account.bookwalker.jp",
+      "full:id.bookwalker.jp",
+      "full:login.bookwalker.jp",
+      "full:c.bookwalker.jp",
+      "full:rimg.bookwalker.jp",
+      "full:img.bookwalker.jp",
+      "full:cdn.bookwalker.jp",
+      "full:assets.bookwalker.jp",
+      "domain:rimg.bookwalker.jp",
+      "domain:c.bookwalker.jp",
+      "full:checkout.bookwalker.jp",
+      "full:payment.bookwalker.jp",
+      "full:order.bookwalker.jp",
+      "full:analytics.bookwalker.jp",
+      "full:log.bookwalker.jp"
+    ],
+    "enabled": true
+  }
+]

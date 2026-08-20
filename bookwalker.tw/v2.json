@@ -1,0 +1,24 @@
+[
+  {
+    "remarks": "bookwalker.tw",
+    "outboundTag": "proxy",
+    "domain": [
+      "full:bookwalker.com.tw",
+      "full:www.bookwalker.com.tw",
+      "full:api.bookwalker.com.tw",
+      "full:service.bookwalker.com.tw",
+      "domain:bookwalker.com.tw",
+      "full:login.bookwalker.com.tw",
+      "full:auth.bookwalker.com.tw",
+      "full:member.bookwalker.com.tw",
+      "full:cdn.bookwalker.com.tw",
+      "full:img.bookwalker.com.tw",
+      "full:rimg.bookwalker.com.tw",
+      "domain:cdn.bookwalker.com.tw",
+      "domain:rimg.bookwalker.com.tw",
+      "full:checkout.bookwalker.com.tw",
+      "full:payment.bookwalker.com.tw"
+    ],
+    "enabled": true
+  }
+]

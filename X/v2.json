@@ -1,0 +1,44 @@
+[
+  {
+    "remarks": "X",
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:ads-twitter.com",
+      "domain:cms-twdigitalassets.com",
+      "domain:grok.com",
+      "domain:periscope.tv",
+      "domain:pscp.tv",
+      "domain:t.co",
+      "domain:tellapart.com",
+      "domain:tweetdeck.com",
+      "domain:twimg.co",
+      "domain:twimg.com",
+      "domain:twimg.org",
+      "domain:twitpic.com",
+      "domain:twitter.biz",
+      "domain:twitter.com",
+      "domain:twitter.jp",
+      "domain:twittercommunity.com",
+      "domain:twitterflightschool.com",
+      "domain:twitterinc.com",
+      "domain:twitteroauth.com",
+      "domain:twitterstat.us",
+      "domain:twtrdns.net",
+      "domain:twttr.com",
+      "domain:twttr.net",
+      "domain:twvid.com",
+      "domain:vine.co",
+      "domain:x.com",
+      "keyword:twitter"
+    ],
+    "ip": [
+      "192.133.76.0/22",
+      "199.59.148.0/22",
+      "199.96.56.0/21",
+      "202.160.128.0/22",
+      "209.237.192.0/19",
+      "69.195.160.0/19"
+    ],
+    "enabled": true
+  }
+]

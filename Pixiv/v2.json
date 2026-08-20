@@ -1,0 +1,17 @@
+[
+  {
+    "remarks": "Pixiv",
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:booth.pm",
+      "domain:fanbox.cc",
+      "domain:pixiv.cat",
+      "domain:pixiv.co.jp",
+      "domain:pixiv.me",
+      "domain:pixiv.net",
+      "domain:pixiv.org",
+      "domain:pximg.net"
+    ],
+    "enabled": true
+  }
+]
