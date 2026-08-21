@@ -1,10 +1,250 @@
 [
   {
+    "remarks": "Clash L1443: DOMAIN-KEYWORD,stun,REJECT",
+    "enabled": true,
+    "outboundTag": "block",
+    "domain": [
+      "keyword:stun"
+    ]
+  },
+  {
+    "remarks": "Clash L1444: DOMAIN-KEYWORD, turn, REJECT",
+    "enabled": true,
+    "outboundTag": "block",
+    "domain": [
+      "keyword:turn"
+    ]
+  },
+  {
+    "remarks": "Clash L1445: DOMAIN-SUFFIX, l.google.com, REJECT",
+    "enabled": true,
+    "outboundTag": "block",
+    "domain": [
+      "domain:l.google.com"
+    ]
+  },
+  {
+    "remarks": "Clash L1455: DOMAIN-SUFFIX,autodesk.com,REJECT-DROP",
+    "enabled": true,
+    "outboundTag": "block",
+    "domain": [
+      "domain:autodesk.com"
+    ]
+  },
+  {
+    "remarks": "Clash L1456: DOMAIN-SUFFIX,autocad.com,REJECT-DROP",
+    "enabled": true,
+    "outboundTag": "block",
+    "domain": [
+      "domain:autocad.com"
+    ]
+  },
+  {
+    "remarks": "Clash L1457: DOMAIN-SUFFIX,autodesk.net,REJECT-DROP",
+    "enabled": true,
+    "outboundTag": "block",
+    "domain": [
+      "domain:autodesk.net"
+    ]
+  },
+  {
+    "remarks": "Clash L1458: DOMAIN-SUFFIX,autodesk360.com,REJECT-DROP",
+    "enabled": true,
+    "outboundTag": "block",
+    "domain": [
+      "domain:autodesk360.com"
+    ]
+  },
+  {
+    "remarks": "Clash L1459: DOMAIN-SUFFIX,autodesksketchbook.com,REJECT-DROP",
+    "enabled": true,
+    "outboundTag": "block",
+    "domain": [
+      "domain:autodesksketchbook.com"
+    ]
+  },
+  {
+    "remarks": "Clash L1462: DOMAIN-SUFFIX,akamaiedge.net,REJECT-DROP",
+    "enabled": true,
+    "outboundTag": "block",
+    "domain": [
+      "domain:akamaiedge.net"
+    ]
+  },
+  {
+    "remarks": "Clash L1463: DOMAIN-SUFFIX,amazonaws.com,REJECT-DROP",
+    "enabled": true,
+    "outboundTag": "block",
+    "domain": [
+      "domain:amazonaws.com"
+    ]
+  },
+  {
+    "remarks": "Clash L1464: DOMAIN-SUFFIX,cloudfront.net,REJECT-DROP",
+    "enabled": true,
+    "outboundTag": "block",
+    "domain": [
+      "domain:cloudfront.net"
+    ]
+  },
+  {
+    "remarks": "Clash L1465: DOMAIN-SUFFIX,pubnub.com,REJECT-DROP",
+    "enabled": true,
+    "outboundTag": "block",
+    "domain": [
+      "domain:pubnub.com"
+    ]
+  },
+  {
+    "remarks": "Clash L1466: DOMAIN-SUFFIX,pubnubapi.com,REJECT-DROP",
+    "enabled": true,
+    "outboundTag": "block",
+    "domain": [
+      "domain:pubnubapi.com"
+    ]
+  },
+  {
+    "remarks": "Clash L1469: DOMAIN-SUFFIX,yachiyo.cloud,🎯Direct",
+    "enabled": true,
+    "outboundTag": "direct",
+    "domain": [
+      "domain:yachiyo.cloud"
+    ]
+  },
+  {
+    "remarks": "Clash L1470: DOMAIN-SUFFIX,yachiyo.online,🎯Direct",
+    "enabled": true,
+    "outboundTag": "direct",
+    "domain": [
+      "domain:yachiyo.online"
+    ]
+  },
+  {
+    "remarks": "Clash L1471: DOMAIN-SUFFIX,kaguya.life,🎯Direct",
+    "enabled": true,
+    "outboundTag": "direct",
+    "domain": [
+      "domain:kaguya.life"
+    ]
+  },
+  {
+    "remarks": "Clash L1472: DOMAIN-SUFFIX,yiuzllik.xyz,🎯Direct",
+    "enabled": true,
+    "outboundTag": "direct",
+    "domain": [
+      "domain:yiuzllik.xyz"
+    ]
+  },
+  {
+    "remarks": "Clash L1473: DOMAIN-SUFFIX,sbs,🎯Direct",
+    "enabled": true,
+    "outboundTag": "direct",
+    "domain": [
+      "domain:sbs"
+    ]
+  },
+  {
+    "remarks": "Clash L1483: DOMAIN-SUFFIX,browserleaks.com,Proxies",
+    "enabled": true,
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:browserleaks.com"
+    ]
+  },
+  {
+    "remarks": "Clash L1484: DOMAIN-KEYWORD,browserleaks,Proxies",
+    "enabled": true,
+    "outboundTag": "proxy",
+    "domain": [
+      "keyword:browserleaks"
+    ]
+  },
+  {
+    "remarks": "Clash L1485: DOMAIN-KEYWORD,surfshark,Proxies",
+    "enabled": true,
+    "outboundTag": "proxy",
+    "domain": [
+      "keyword:surfshark"
+    ]
+  },
+  {
+    "remarks": "Clash L1486: DOMAIN-SUFFIX,ping0.cc,Proxies",
+    "enabled": true,
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:ping0.cc"
+    ]
+  },
+  {
+    "remarks": "Clash L1487: DOMAIN-SUFFIX,signal.org,Proxies",
+    "enabled": true,
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:signal.org"
+    ]
+  },
+  {
+    "remarks": "Clash L1488: DOMAIN-KEYWORD,clashofclans,Proxies",
+    "enabled": true,
+    "outboundTag": "proxy",
+    "domain": [
+      "keyword:clashofclans"
+    ]
+  },
+  {
+    "remarks": "Clash L1489: DOMAIN-SUFFIX,cloudflare.com,Proxies",
+    "enabled": true,
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:cloudflare.com"
+    ]
+  },
+  {
+    "remarks": "Clash L1490: DOMAIN-SUFFIX,cloudflareinsights.com,Proxies",
+    "enabled": true,
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:cloudflareinsights.com"
+    ]
+  },
+  {
+    "remarks": "Clash L1498: DOMAIN-SUFFIX,snssdk.com,🎯Direct",
+    "enabled": true,
+    "outboundTag": "direct",
+    "domain": [
+      "domain:snssdk.com"
+    ]
+  },
+  {
+    "remarks": "Clash L1503: IP-CIDR,10.110.225.76/32,DIRECT,no-resolve",
+    "enabled": true,
+    "outboundTag": "direct",
+    "ip": [
+      "10.110.225.76/32"
+    ]
+  },
+  {
+    "remarks": "Clash L1504: IP-CIDR,10.110.6.251/32,DIRECT,no-resolve",
+    "enabled": true,
+    "outboundTag": "direct",
+    "ip": [
+      "10.110.6.251/32"
+    ]
+  },
+  {
+    "remarks": "Clash L1505: IP-CIDR,222.187.129.200/32,DIRECT,no-resolve",
+    "enabled": true,
+    "outboundTag": "direct",
+    "ip": [
+      "222.187.129.200/32"
+    ]
+  },
+  {
     "remarks": "Private",
     "ip": [
       "geoip:private"
     ],
-    "outboundTag": "Direct",
+    "outboundTag": "direct",
     "enabled": true
   },
   {
@@ -7970,7 +8210,7 @@
     "domain": [
       "geosite:cn"
     ],
-    "outboundTag": "Direct",
+    "outboundTag": "direct",
     "enabled": true
   },
   {
@@ -7978,13 +8218,13 @@
     "ip": [
       "geoip:cn"
     ],
-    "outboundTag": "Direct",
+    "outboundTag": "direct",
     "enabled": true
   },
   {
     "remarks": "Final",
     "network": "tcp,udp",
-    "outboundTag": "Final",
+    "outboundTag": "proxy",
     "enabled": true
   }
 ]
