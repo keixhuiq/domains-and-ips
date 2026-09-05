@@ -36,6 +36,8 @@ python tools/build-sing-box.py --sing-box /path/to/sing-box
 
 转换保留 DOMAIN、DOMAIN-SUFFIX、DOMAIN-KEYWORD、IP-CIDR 和 IP-CIDR6 的匹配条件。各类型独立成规则，保持原列表的 OR 语义。IP 网段规范化但不扩大范围；未知规则类型会报错。
 
+JSON 输出统一使用 UTF-8、LF 换行。清单中的文本 SHA-256 也按 UTF-8/LF（不含 BOM）计算，避免 Windows 的 CRLF 与 GitHub 的 LF 导致校验不一致；SRS 按原始二进制字节计算。
+
 普通 iOS App Store 客户端不支持进程匹配，因此 Crypto 中 3 条 PROCESS-NAME 规则不进入此 iOS 规则集，仍保留在原始 DOMAIN.list 中。逐项说明、来源和输出 SHA-256 见 `sing-box-manifest.json`。
 
 Mihomo 的 `no-resolve` 是路由解析行为，不能作为 SRS 匹配字段编码；使用者应在完整 sing-box 配置中安排 DNS 和路由解析。规则集不含路由动作，也不负责选择代理或直连。

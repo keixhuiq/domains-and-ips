@@ -46,24 +46,25 @@ def main():
     parser.add_argument('--sing-box', required=True, help='Path to sing-box 1.11+ executable')
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
-    manifest = {'format_version': 3, 'profile': 'iOS App Store', 'services': {}}
+    manifest = {'format_version': 3, 'profile': 'iOS App Store',
+                'text_hash_encoding': 'UTF-8 without BOM, LF line endings', 'services': {}}
     for service in SERVICES:
         source = root / service / 'DOMAIN.list'
         content, skipped = convert(source)
         target = source.with_name('sing-box.json')
-        target.write_text(json.dumps(content, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        target.write_text(json.dumps(content, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
         binary = source.with_name('sing-box.srs')
         subprocess.run([args.sing_box, 'rule-set', 'compile', '--output', str(binary), str(target)], check=True)
         manifest['services'][service] = {
             'source': f'{service}/DOMAIN.list',
-            'source_sha256': hashlib.sha256(source.read_bytes()).hexdigest(),
+            'source_sha256': hashlib.sha256(source.read_text(encoding='utf-8-sig').encode('utf-8')).hexdigest(),
             'rule_count': sum(len(v) for rule in content['rules'] for v in rule.values()),
             'json_sha256': hashlib.sha256(target.read_bytes()).hexdigest(),
             'srs_sha256': hashlib.sha256(binary.read_bytes()).hexdigest(),
             'omitted_rules': skipped,
         }
     (root / 'sing-box-manifest.json').write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
     print(f'Built {len(SERVICES)} source and binary rule sets.')
 
 
