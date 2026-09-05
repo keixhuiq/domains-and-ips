@@ -1,0 +1,113 @@
+{
+  "format_version": 3,
+  "profile": "iOS App Store",
+  "services": {
+    "Claude": {
+      "source": "Claude/DOMAIN.list",
+      "source_sha256": "f386bfe67059ead3e9782a84fff20b4d8cf7024ffb5bfe6ad27ce54de3aac3ba",
+      "rule_count": 31,
+      "json_sha256": "9e572c1a0f084e386de027f5dded7dea5a5570509c366b09061d2d3f78d9a462",
+      "srs_sha256": "91eb9449e7a9c02a77c451efd7c91a18ed9da32df8fa85735b6a729791350e55",
+      "omitted_rules": []
+    },
+    "OpenAI": {
+      "source": "OpenAI/DOMAIN.list",
+      "source_sha256": "4e728c890bf2865e2d0bd3d847cf8d4ae42201ed54afcbf919fd91dc7e1093cf",
+      "rule_count": 40,
+      "json_sha256": "4124718176a9b315356431201b02d0fb236904e3252d945af63d4be3766bd142",
+      "srs_sha256": "d87576ab141bd77a7a4e604a663e3b6a176c078297635acfce1b9d57c29e446c",
+      "omitted_rules": []
+    },
+    "TikTok": {
+      "source": "TikTok/DOMAIN.list",
+      "source_sha256": "67a7738fe5a0b6e709b45f9265d9578243ea435df95ca2e65eb5bbccaac5581e",
+      "rule_count": 119,
+      "json_sha256": "f39ecd523f6f07dc2c082ff0bb875ebee267f755877a3e0d161de01b385efec8",
+      "srs_sha256": "6f08eb733aaecd466ca6a8d72721521d1886b9b4f9267d53053e2c149c27f9da",
+      "omitted_rules": []
+    },
+    "Crunchyroll": {
+      "source": "Crunchyroll/DOMAIN.list",
+      "source_sha256": "55bcd8d21c53347cc9d0f34f5324ad7fd581c0dd9422b699357fe66f51a3fab7",
+      "rule_count": 8,
+      "json_sha256": "e240d001d7680f23fded3e30a6892c8bb27c02f10fabd3a3df82afe0fa2ade8c",
+      "srs_sha256": "5448d3a6fb20754a2f12a5330b4e008e503c27fa857c6dbf8e55c497d17881ac",
+      "omitted_rules": []
+    },
+    "Abema": {
+      "source": "Abema/DOMAIN.list",
+      "source_sha256": "b72fe59050925a802263c4462dd9b89ef387d910ee11a8306fd8191210f7a1c2",
+      "rule_count": 25,
+      "json_sha256": "d2aa04f7edfafa2820dabe42a22c98551bf8d3a0b206ea11661133284ed404fc",
+      "srs_sha256": "d365d901d0e1a7cc3fcea562db9661dfc4c87d17e3e575fb0e03e1be2d7c2bdc",
+      "omitted_rules": []
+    },
+    "UNEXT": {
+      "source": "UNEXT/DOMAIN.list",
+      "source_sha256": "83d550efd56056fe50299bcd1e8d251db7558f5533e826abda2d8978aa0d09ef",
+      "rule_count": 9,
+      "json_sha256": "5c63cd12498d66e9a953256792eeb7d5f189eda14580a0b6d08ab5f2de85fbe2",
+      "srs_sha256": "e85ed50fbf8d219e5129ba7906da80949958fd97460e3fef7fbdc68ccb97014f",
+      "omitted_rules": []
+    },
+    "bookwalker.jp": {
+      "source": "bookwalker.jp/DOMAIN.list",
+      "source_sha256": "b8e2a054c868b2c20cefd2a19df7a19621876fde7db9eb002a063095f6854346",
+      "rule_count": 23,
+      "json_sha256": "f62d1c3f10725c917f648f03a9e686fbc3f8bf5e3f1f40e684fd806b7077cb1c",
+      "srs_sha256": "114968b3242993c7e883f6571cd0993bbcf66d199ec664773ca007da08c2e236",
+      "omitted_rules": []
+    },
+    "bookwalker.tw": {
+      "source": "bookwalker.tw/DOMAIN.list",
+      "source_sha256": "13a0f4b5f2afffcdd64554ed6c5ea62e5e9c69d15d358b87bfc9aaf986bb2177",
+      "rule_count": 15,
+      "json_sha256": "a4e0c62c9233802405d9b6767ea5126e9098ad0ffc4fbb7ac2d1b7992cb16580",
+      "srs_sha256": "7921b53bf2514a376e0d9aa66d7d2b93c8f6ab2dd8b16472bd3348cc7fec75df",
+      "omitted_rules": []
+    },
+    "Amazon": {
+      "source": "Amazon/DOMAIN.list",
+      "source_sha256": "cfae4b816aadbc7fd43d480bb2063d7717243b068a9f74985ce5e9da0bfbc27a",
+      "rule_count": 210,
+      "json_sha256": "db33f8e2b38f94bd40e1cf10b1f2b27cc9e21f55b2adaa669c9c24ad15273669",
+      "srs_sha256": "7e2a39b69a93d6d8aec5df29209ec1b6c8fd8ab9f0db348e3a7e79f468681ab5",
+      "omitted_rules": []
+    },
+    "Crypto": {
+      "source": "Crypto/DOMAIN.list",
+      "source_sha256": "25af3b2a04487f78d67b11c6aa64736c842cb0ad7687ae293c2a51256addea30",
+      "rule_count": 329,
+      "json_sha256": "0525c76138b7432ec467a07ca5fd0cdda63c5909798ad8d3f3fd3c30d486eebe",
+      "srs_sha256": "14941d275d66fe7493abeb4411762206d8d7632ce378a7a5c0cdb040df67d258",
+      "omitted_rules": [
+        {
+          "line": 348,
+          "type": "PROCESS-NAME",
+          "value": "Binance.exe",
+          "reason": "Process matching is unavailable in the iOS App Store client."
+        },
+        {
+          "line": 349,
+          "type": "PROCESS-NAME",
+          "value": "Huobi.exe",
+          "reason": "Process matching is unavailable in the iOS App Store client."
+        },
+        {
+          "line": 350,
+          "type": "PROCESS-NAME",
+          "value": "OKX.exe",
+          "reason": "Process matching is unavailable in the iOS App Store client."
+        }
+      ]
+    },
+    "CustomProxy": {
+      "source": "CustomProxy/DOMAIN.list",
+      "source_sha256": "face72922c49bb20f39ffd80e6dcae7de5fda3644f51474becba627394829caa",
+      "rule_count": 1329,
+      "json_sha256": "64922a191a64010cc0326e459bb6aa251f4a8a4a10425d9bf6f172d3231d19fa",
+      "srs_sha256": "87b95f0afdafb0cebca1aa994fa2859728c05ae329394c4263a88bf258c1a79b",
+      "omitted_rules": []
+    }
+  }
+}

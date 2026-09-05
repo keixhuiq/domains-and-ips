@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "crunchyroll.com",
+        "crunchyroll.net",
+        "crunchyrollsvc.com",
+        "gccrunchyroll.com",
+        "crunchyrollcdn.com",
+        "vrv.co",
+        "litix.io"
+      ]
+    },
+    {
+      "domain": [
+        "licensing.bitmovin.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain": [
+        "bookwalker.jp",
+        "www.bookwalker.jp",
+        "global.bookwalker.jp",
+        "api.bookwalker.jp",
+        "prx.bookwalker.jp",
+        "auth.bookwalker.jp",
+        "account.bookwalker.jp",
+        "id.bookwalker.jp",
+        "login.bookwalker.jp",
+        "c.bookwalker.jp",
+        "rimg.bookwalker.jp",
+        "img.bookwalker.jp",
+        "cdn.bookwalker.jp",
+        "assets.bookwalker.jp",
+        "checkout.bookwalker.jp",
+        "payment.bookwalker.jp",
+        "order.bookwalker.jp",
+        "analytics.bookwalker.jp",
+        "log.bookwalker.jp"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bookwalker.com",
+        "bookwalker.jp",
+        "rimg.bookwalker.jp",
+        "c.bookwalker.jp"
+      ]
+    }
+  ]
+}

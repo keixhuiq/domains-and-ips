@@ -1,0 +1,28 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain": [
+        "bookwalker.com.tw",
+        "www.bookwalker.com.tw",
+        "api.bookwalker.com.tw",
+        "service.bookwalker.com.tw",
+        "login.bookwalker.com.tw",
+        "auth.bookwalker.com.tw",
+        "member.bookwalker.com.tw",
+        "cdn.bookwalker.com.tw",
+        "img.bookwalker.com.tw",
+        "rimg.bookwalker.com.tw",
+        "checkout.bookwalker.com.tw",
+        "payment.bookwalker.com.tw"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "bookwalker.com.tw",
+        "cdn.bookwalker.com.tw",
+        "rimg.bookwalker.com.tw"
+      ]
+    }
+  ]
+}

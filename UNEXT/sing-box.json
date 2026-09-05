@@ -1,0 +1,26 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "unext.jp",
+        "nxtv.jp",
+        "hnext.jp",
+        "nx-cdn.com",
+        "unext-info.jp",
+        "unext.co.jp"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "unext",
+        "hnext"
+      ]
+    },
+    {
+      "domain": [
+        "us-central1-u-next-apps.cloudfunctions.net"
+      ]
+    }
+  ]
+}
