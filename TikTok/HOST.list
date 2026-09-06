@@ -119,5 +119,5 @@ HOST,roovza-launches.appsflyersdk.com,TikTok
 HOST,roovza.inapps.appsflyersdk.com,TikTok
 HOST,roovza.launches.appsflyersdk.com,TikTok
 HOST,roovza.skadsdk.appsflyersdk.com,TikTok
-HOST-SUFFIX,tiktokapis.com,,TikTok
+HOST-SUFFIX,tiktokapis.com,TikTok
 HOST-KEYWORD,tiktok,TikTok
