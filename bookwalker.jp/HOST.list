@@ -1,35 +1,62 @@
-# BOOK☆WALKER JP + Global
-# Format: Quantumult X filter, policy=BOOK☆WALKER JP
+# bookwalker.jp for Quantumult X
+# Source of truth: bookwalker.jp/DOMAIN.list
+# Generated with the same rule order and duplicate entries as DOMAIN.list.
 
-# 主站
+# =========================
+# 主站入口
+# =========================
 HOST,bookwalker.jp,BOOKWALKERJP
 HOST,www.bookwalker.jp,BOOKWALKERJP
 HOST,global.bookwalker.jp,BOOKWALKERJP
 HOST-SUFFIX,bookwalker.com,BOOKWALKERJP
 
-# API / 核心接口
+# =========================
+# API
+# =========================
 HOST,api.bookwalker.jp,BOOKWALKERJP
 HOST,prx.bookwalker.jp,BOOKWALKERJP
+HOST,bookwalker.jp,BOOKWALKERJP
 
-# 登录 / SSO
+# API path fallback
+HOST-SUFFIX,bookwalker.jp,BOOKWALKERJP
+
+# =========================
+# 登录 / 账号系统（SSO）
+# =========================
 HOST,auth.bookwalker.jp,BOOKWALKERJP
 HOST,account.bookwalker.jp,BOOKWALKERJP
 HOST,id.bookwalker.jp,BOOKWALKERJP
 HOST,login.bookwalker.jp,BOOKWALKERJP
 
-# CDN / 图片资源
+# =========================
+# CDN / 图片 / 资源
+# =========================
 HOST,c.bookwalker.jp,BOOKWALKERJP
 HOST,rimg.bookwalker.jp,BOOKWALKERJP
 HOST,img.bookwalker.jp,BOOKWALKERJP
 HOST,cdn.bookwalker.jp,BOOKWALKERJP
+HOST,assets.bookwalker.jp,BOOKWALKERJP
 
+# 书籍封面/缩略图
 HOST-SUFFIX,rimg.bookwalker.jp,BOOKWALKERJP
 HOST-SUFFIX,c.bookwalker.jp,BOOKWALKERJP
 
-# 购买 / checkout
+# =========================
+# 购买 / 结算
+# =========================
 HOST,checkout.bookwalker.jp,BOOKWALKERJP
 HOST,payment.bookwalker.jp,BOOKWALKERJP
 HOST,order.bookwalker.jp,BOOKWALKERJP
 
-# 兜底
-HOST-SUFFIX,bookwalker.jp,BOOKWALKERJP
+# =========================
+# 可能的外部依赖
+# =========================
+#DOMAIN,cdn.jsdelivr.net
+#DOMAIN,fonts.googleapis.com
+#DOMAIN,fonts.gstatic.com
+
+# =========================
+# 埋点 / 统计
+# =========================
+HOST,analytics.bookwalker.jp,BOOKWALKERJP
+HOST,log.bookwalker.jp,BOOKWALKERJP

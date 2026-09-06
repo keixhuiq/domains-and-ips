@@ -17,7 +17,6 @@ HOST-SUFFIX,assetsconfigcdn.org,Claude
 HOST-SUFFIX,prodregistryv2.org,Claude
 HOST-SUFFIX,hcaptcha.com,Claude
 HOST-SUFFIX,arkoselabs.com,Claude
-HOST,challenges.cloudflare.com,Claude
 HOST-SUFFIX,intercom.io,Claude
 HOST-SUFFIX,intercomcdn.com,Claude
 HOST-SUFFIX,intercom-sheets.com,Claude
