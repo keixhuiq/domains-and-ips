@@ -11,7 +11,8 @@ DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,crixet.com
 DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.comDOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,chatgpt.site
 
 # Sora
