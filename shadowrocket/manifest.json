@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "sourceSnapshot": "20261008-live/post-deploy-v11",
+  "iosUpstreamCommit": "036c097eb26c6a52c4f04ebcb6633043cb942669",
+  "generatedAt": "2026-10-08T17:15:16Z",
+  "files": [
+    {
+      "path": "ABEMA.list",
+      "kind": "RULE-SET",
+      "rules": 30,
+      "sha256": "0e54c160b0b4402ce552223ea64ab3380573f103004130dc1e2cb36242a72135"
+    },
+    {
+      "path": "Amazon.list",
+      "kind": "RULE-SET",
+      "rules": 213,
+      "sha256": "a1cc803a06aeb794228459e178db56fbea959fa466fafd51197171366e958df7"
+    },
+    {
+      "path": "Apple.list",
+      "kind": "RULE-SET",
+      "rules": 43,
+      "sha256": "ba987972d22eecbdd5cf5350b6c323a37eb587bd2b9d3791c21620e244c2e87f"
+    },
+    {
+      "path": "Apple_Domain.list",
+      "kind": "DOMAIN-SET",
+      "rules": 1560,
+      "sha256": "0aed915051a222bf7cef41e57294b80606fcaf4cebdcfd2a85333a8c3e1a1016"
+    },
+    {
+      "path": "Bahamut.list",
+      "kind": "RULE-SET",
+      "rules": 8,
+      "sha256": "9f45a96f6104cc6b35dd5ea252f572262a3f085703aa361679bf156f0d243cc4"
+    },
+    {
+      "path": "Bilibili.list",
+      "kind": "RULE-SET",
+      "rules": 127,
+      "sha256": "7443a058bd3bbc2f6ecadda5b1f5a9e17cd03e28c1ec1763bb6a0adc53918581"
+    },
+    {
+      "path": "BookWalkerJP.list",
+      "kind": "RULE-SET",
+      "rules": 2,
+      "sha256": "2494443177f413d73e1406d22cf7dd5480314e744042c5d916a8090649633c48"
+    },
+    {
+      "path": "BookWalkerTW.list",
+      "kind": "RULE-SET",
+      "rules": 1,
+      "sha256": "ff6630aae2a9b4ae48d47ded55f65a5e735b464e0e55b4f37dbd902dbd3d9a72"
+    },
+    {
+      "path": "Block.list",
+      "kind": "RULE-SET",
+      "rules": 7,
+      "sha256": "554244414984432e12b9f8c55c0d2cc080b409838617ccefa9cf0f82e453f83a"
+    },
+    {
+      "path": "China.list",
+      "kind": "RULE-SET",
+      "rules": 9742,
+      "sha256": "fe6ee37049fe73685dca68e54fd9bdead567ff08710870b913fcafd8093c9af2"
+    },
+    {
+      "path": "China_Domain.list",
+      "kind": "DOMAIN-SET",
+      "rules": 111392,
+      "sha256": "2bdd54a27646ee2486114b11776a24ff14754c23c14034e3589262dcbe1a53fd"
+    },
+    {
+      "path": "Claude.list",
+      "kind": "RULE-SET",
+      "rules": 28,
+      "sha256": "bb8ff67f67b5e28067b489b69bf6de6bdf8539e2235552179221889d429b3a1b"
+    },
+    {
+      "path": "Crunchyroll.list",
+      "kind": "RULE-SET",
+      "rules": 8,
+      "sha256": "57534b5add38a14f6c663d5f50c995bbc11c7ada7f1568ae3dc6b80b6a79d59d"
+    },
+    {
+      "path": "Crypto.list",
+      "kind": "RULE-SET",
+      "rules": 415,
+      "sha256": "587df3423164fe3d032ffb18b7131a9900f1214fa8e5409b97b2f14128cbc3ac"
+    },
+    {
+      "path": "CustomProxy.list",
+      "kind": "RULE-SET",
+      "rules": 97,
+      "sha256": "02124359f7de0ea6a636f7a03b9781c4a3fb0942bce617f48f2bd288e29633a3"
+    },
+    {
+      "path": "CustomProxy_Domain.list",
+      "kind": "DOMAIN-SET",
+      "rules": 1225,
+      "sha256": "d737d413f928c9d3a16f4fe054c710203eb0abf1e40bce2d937879d8370b4c44"
+    },
+    {
+      "path": "Direct.list",
+      "kind": "RULE-SET",
+      "rules": 10,
+      "sha256": "89d7c1de864291de63794882683a5a7f418284fab3d72a8a3bc28c2c7e895b9b"
+    },
+    {
+      "path": "DisneyPlus.list",
+      "kind": "RULE-SET",
+      "rules": 173,
+      "sha256": "f742f95a388ac34f35deebe489d80a6b86efbf3f2bfc9ea481131679e57b3ec6"
+    },
+    {
+      "path": "Epic.list",
+      "kind": "RULE-SET",
+      "rules": 15,
+      "sha256": "50f7bc145cbf431d90e60162f89b8e7ecad7f69c6dbdb4feff09f1723a06fd87"
+    },
+    {
+      "path": "Google.list",
+      "kind": "RULE-SET",
+      "rules": 1095,
+      "sha256": "2e6b59a00d5fd29e98eca71ac7c1b82d08504adfa409d98d9b7f36913e9cc5c7"
+    },
+    {
+      "path": "HBO.list",
+      "kind": "RULE-SET",
+      "rules": 49,
+      "sha256": "d9301888bf32628a7238f1e26636fb513981877623a24c4fee4755db749e3667"
+    },
+    {
+      "path": "LINE.list",
+      "kind": "RULE-SET",
+      "rules": 24,
+      "sha256": "93d9e3343e1e12773e801a2be34486ae1d51694902287887cf2d811439f30703"
+    },
+    {
+      "path": "Meta.list",
+      "kind": "RULE-SET",
+      "rules": 564,
+      "sha256": "3ad62d556b54d15c1e56d966c5b93248cb7b0842fcfe07168905b854cb2f8cad"
+    },
+    {
+      "path": "Microsoft.list",
+      "kind": "RULE-SET",
+      "rules": 765,
+      "sha256": "6d499f8fc4e6aeac14253a1a15cd4f7be7fd416319bfdc3e8e0f59215fdc12d1"
+    },
+    {
+      "path": "MyTVSuper.list",
+      "kind": "RULE-SET",
+      "rules": 7,
+      "sha256": "e431159fb6a7b83403e35523486b3fd657b1df75fcb034863aaabac34634f3e8"
+    },
+    {
+      "path": "Netflix.list",
+      "kind": "RULE-SET",
+      "rules": 1157,
+      "sha256": "b6d50986f295cc1fb18fec9557e191ee28d38ddd787fa0df6c43c514751e541b"
+    },
+    {
+      "path": "NVIDIA.list",
+      "kind": "RULE-SET",
+      "rules": 65,
+      "sha256": "f8278da30ad736f0440df3befb7ac1a1d226914c95a4ddccfc9bf8da246ce9f3"
+    },
+    {
+      "path": "OpenAI.list",
+      "kind": "RULE-SET",
+      "rules": 50,
+      "sha256": "1c23d94116175719ea97b3b4bb9e5b3378ede271873a3267d4f3478ab7d96c78"
+    },
+    {
+      "path": "Pixiv.list",
+      "kind": "RULE-SET",
+      "rules": 8,
+      "sha256": "daf2fa930f7e730f456ef52e4efd23049fc39094c2b2086b7eef070f1adc63ee"
+    },
+    {
+      "path": "PlayStation.list",
+      "kind": "RULE-SET",
+      "rules": 4,
+      "sha256": "9efd5d7fd0eb5a6edf259103e632a56ce77085fd998251f8173c4866f8a8fa42"
+    },
+    {
+      "path": "Private.list",
+      "kind": "RULE-SET",
+      "rules": 18,
+      "sha256": "fa07dbce42aa0737cea659d5510868d6ab5323bbdb0cb07480f1d0ea4f809466"
+    },
+    {
+      "path": "Scholar.list",
+      "kind": "RULE-SET",
+      "rules": 231,
+      "sha256": "c8e6eb2dbd783541d1bead632b4b8080e3fbadfddc2629f14eb19bdec6cbd293"
+    },
+    {
+      "path": "Spotify.list",
+      "kind": "RULE-SET",
+      "rules": 30,
+      "sha256": "de9f9226d1aa196bdbfeeb99584075433740bcbc037ffca7ede5ab0702c7331d"
+    },
+    {
+      "path": "Steam.list",
+      "kind": "RULE-SET",
+      "rules": 54,
+      "sha256": "8c410b11e15023f416c1a958913f565d494afb4bd696932455a57fe7d7e927f9"
+    },
+    {
+      "path": "Telegram.list",
+      "kind": "RULE-SET",
+      "rules": 52,
+      "sha256": "62db405250b05ec606c6b4ee08bef6484836af244e4b019e1e1f00511dca56e2"
+    },
+    {
+      "path": "TikTok.list",
+      "kind": "RULE-SET",
+      "rules": 124,
+      "sha256": "94bb5d16df1c5a82e19d8a12294f708da2b16ccb0800cecea657d157bca97ff5"
+    },
+    {
+      "path": "UNEXT.list",
+      "kind": "RULE-SET",
+      "rules": 9,
+      "sha256": "92a3671cb83cee38d3cc95b3e51479d26d4f31d553e49809b58714dade356e86"
+    },
+    {
+      "path": "X.list",
+      "kind": "RULE-SET",
+      "rules": 41,
+      "sha256": "5dd73e5443e938b811d043dd01a14cb8718892964923a39178958a8341a9caeb"
+    },
+    {
+      "path": "Xbox.list",
+      "kind": "RULE-SET",
+      "rules": 42,
+      "sha256": "c7a834d3c0c970a90cf5f11a6721a74ecc8269b93f0d89d064032534ba618efe"
+    },
+    {
+      "path": "YouTube.list",
+      "kind": "RULE-SET",
+      "rules": 190,
+      "sha256": "5a03640f1e50e8427009fde3d0a3fb7a92ff910fb5b16cdb243497455bdf9e99"
+    }
+  ]
+}
