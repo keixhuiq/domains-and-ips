@@ -1,0 +1,841 @@
+{
+  "schemaVersion": 1,
+  "sourceSnapshot": "20261008-live/post-deploy-v11",
+  "iosUpstreamCommit": "036c097eb26c6a52c4f04ebcb6633043cb942669",
+  "generatedAt": "2026-10-08T17:15:16Z",
+  "sourceFiles": {
+    "ABEMA-domain.json": "a7053d34e2018bfa4a4e6a4026c3fd2289708f949e1b848d1908fdf10ba279c3",
+    "Amazon-domain.json": "4ab9826916d8db9cd1e76269c3209c40a19c47ff18026a88b7dc8f7386bd998f",
+    "Apple-domain.json": "f5a995fafd6a8969541046df50ffd2d0452942a65230a183283869923323d8cd",
+    "Apple-ip.json": "a90476e1726c67aca9c80f8e4bead41aa08a16e5ca54c7e94912641a31ea17b8",
+    "Bahamut-domain.json": "d19d5c47c45cde332c1da33a35466d76b1eb75af97087b93a3e7295e9e48501d",
+    "Bilibili-domain.json": "6bfe02df133e03cbfb408b1da56a356ee9e3734eff9bb531b9903769c172fcdb",
+    "Bilibili-ip.json": "17d421d28cb64350fbe2da96008733ad3039915041cbfd4283b0f6a66cb5f809",
+    "BookWalker-domain.json": "4acd9817f2c8a62ba3a5ea6b6a4c016b43b0136745850e2125f57ad16f45497d",
+    "block-domain.json": "376af326b9c688056c28a09bdfd4ce6d2fd3b076fff8b5303d225ee887b3e04d",
+    "block-ip.json": "ff5ca5d3ddb4823290b0b32ed62010dc193e0b5c352f4c5463cfd129cc44f462",
+    "China-domain.json": "2bd622d992aa49ab02a0470efe2f5e4928e658b66ef8ba2b1d72d3ec94bea7f8",
+    "China-ip.json": "cd8df83919714b13b075fe59657c294ab88c8b09e79d55942e440d4934e3b659",
+    "Claude-domain.json": "021d2c14b809280a984b3aa61aa3cc9bfce6b4250891ae464273090d2b88b0a1",
+    "Crunchyroll-domain.json": "8aa34d86cad58d794d8463fd04623396f020c34bf74a49b4ebc3f715e5a81b05",
+    "Crypto-domain.json": "367e8bbcf8c893f2d0a4720935464c7d67fb5a4ea77820a930bc80be65f3ff8b",
+    "CustomProxy-domain.json": "67efcb9555eaba8fe150cc6f90c34b5e40768ec794c498b8b7f8670da90c29de",
+    "CustomProxy-ip.json": "66b47444a1e6f0658125d5db764d0eba6f14a0eb7dcfb834c0b4a09f45aea1e9",
+    "direct-domain.json": "256fb4e449f4b6cc1d347187d6102ab503678c33112611c1ff9b5adb6bb4f617",
+    "direct-ip.json": "20200624d30b03314d0af05f421fb45ae3747d964aeefa0ac84e643290714be8",
+    "DisneyPlus-domain.json": "7fa6185dac619cb810f6e28d04a3b8599deefe00bb50372dd60466faa1dc50db",
+    "Epic-domain.json": "4fbff44886ffa17e6a12fc2e412501cd627f8f4c72184b868c3a8f5775179641",
+    "Google-domain.json": "7e78d47cb6d28fa49b0c1aeffb58f5f76d88dd5d686a54e2f5355bf6517754bf",
+    "Google-ip.json": "6b8be7e1c96affcbd0b2647f28808027be7c2f9979fafd3450e3e35275030571",
+    "HBO-domain.json": "4ba95babb777e96068ae409fd06358a2f7b818ffa6be6ebe982e4e8c92cfd290",
+    "LINE-domain.json": "4533951e8f5a1530ee83aa1c7ab548cdb869aa01b9d7354d5a0d17a44027621b",
+    "LINE-ip.json": "82c3badbf4ffeda9e02e538db5bbc608a1e7277d240caf7f6f95763856f7049c",
+    "Meta-domain.json": "cbefc89bc168ab31416144a09e1187b76d630d088112da35898b1d5914646270",
+    "Meta-ip.json": "989da761930a52a90cd37d7ab29f06b742975e2edce0914dc72b6608ba21c5ca",
+    "Microsoft-domain.json": "0d85dd4dbe66ecf2850f852c14edbb35b9ccd804f7dcad1a3963b7cb19a2b0f0",
+    "MyTVSuper-domain.json": "6ecd92ee8b9029e05cda336d9bba27c927d8d2a174c38cd187d7f18b277eafb1",
+    "Netflix-domain.json": "340d7f35680660d24d75a349eeae547d6ce208a5dc7b2672d5edf5ee51673dce",
+    "Netflix-ip.json": "8a919864c5f1fad5f984cead7e8034ffa4c2d570b632d539909a8e3ac3e91e6a",
+    "NVIDIA-domain.json": "5efb02074ef6f72fadb9361e7c1640088460f635a071d2d88812fb8a5c18a828",
+    "OpenAI-domain.json": "3f7201dc7b5beb7ebab50133daf4a79a472c677c39fbda051ac5d65dcd90bd25",
+    "Pixiv-domain.json": "773be883116a45871eeb73c647e46d45ee9d75da5f2a2a22366806602e2c4971",
+    "PlayStation-domain.json": "e0b9e577f93c3bceab048126b2cbe288b3d8b0a37ed69cafbf9987a2f1d9d003",
+    "Private-ip.json": "70377102be63cf8cf4d7fea221be16059a201793c6e4109e2315f8ec36178072",
+    "Scholar-domain.json": "a519a73dfd5e3d0e30a64e0f795cf4479fde4e9514757769fcff9867b4dda6d6",
+    "Spotify-domain.json": "f1d5604a5e5bfa8aabc4e5dfd382b7e27e917c9a971f5f6cccc98ee35950946d",
+    "Spotify-ip.json": "cef421f0d181d6ed5e820ed3cf6b8042f1263a6fa33d05b8429d1d0ecc269628",
+    "Steam-domain.json": "20a461d1095c8ada4a50f97de411e4cd71351475a33f3c3df2bac5c1ad9b28bb",
+    "Telegram-domain.json": "9830518f1f503e7f43f8b03d1cc75b727e57d8e54eb948b8e679d9ad534562b0",
+    "Telegram-ip.json": "1dbf6209a614bb90aea709e4d9651c6ebfdc41cb36449e811924276d656e17f1",
+    "TikTok-domain.json": "7a4645f992736af0d246193594b5f28777250a3e6210a8cb1e418ca7a1ad872e",
+    "U-NEXT-domain.json": "20667197c58085363331b31c6ed1564b8382500ec310dfa5007627a76a9801bb",
+    "X-domain.json": "67ca2158ff9d91d2e7fbed4ea9e96e8b59e417206c4425fbec5125524b548d63",
+    "X-ip.json": "7d1bf5dddad8f76915f4171d9979d4ab5a0b3a361bd6eb7fbb37e7748a797af8",
+    "Xbox-domain.json": "5c82f91a1897ba273d06ee99604ce219968959f89c8855627631290fe86cf815",
+    "YouTube-domain.json": "d67f8cfe0d0a76a4f2f33ff0df485b6c88108dbb0b94748f5977247d01390277",
+    "YouTube-ip.json": "bb70d5e2794abb6b6b911c95c7cac0cd3dee2bc1cf8cf441c616097319fcee79",
+    "direct-process.json": "e8c54a86fda6074e3c2777936f8290d25e978c12cb0a027279881697f07fd11a",
+    "block-port.json": "ddfd164429791522007c34e6b74012167f8a1a4bf1cf06e46ac13c973a2ffea5"
+  },
+  "iosSourceFiles": {
+    "Apple/Apple.list": "82ca6020a55441a968b586cdf49960e18f195f1d2a0a469f6864cbe85442e8fe",
+    "Bahamut/Bahamut.list": "84bc29e8617d710a2e10410fa00404d1802bf882513cb8ed3c6ef0cd4da913d7",
+    "BiliBili/BiliBili.list": "b3f001e20e94b38c6154fa47964857d873e3770f148639dc51d153a09a3a309b",
+    "ChinaMax/ChinaMax.list": "e8bbe64a466da3a6be49f9cf5de405416ef67d34b29b5f0e19bdea984de84be1",
+    "Disney/Disney.list": "4e801c8feb500f30fe0bfe1d0e398923968443bb06cdf762dc1ffbcc190a8497",
+    "Google/Google.list": "d3a755f8dc9ce286099f8c969820ae4c3159f3812c45b50c27601fe3eab2c03e",
+    "HBO/HBO.list": "9eb6d43931f8dbd21d8396983cf93f8ab3dbbac96b8fc13fb26182b9ce09524b",
+    "Facebook/Facebook.list": "292282d921879dd22e12fbd91afb688fa3e97f848d75c4d988186ceeed6f15e9",
+    "Instagram/Instagram.list": "ed75a21e7d7008e456bd008335aa5fd00bce90b4a14ac9e44b27022cb5adb3ac",
+    "Whatsapp/Whatsapp.list": "8774776f4eb6a9f605823ca68cd682991cf9a30ac6f55c74724e2de628849ce5",
+    "Microsoft/Microsoft.list": "e13b71233a960e935bef215147d79c77038250a50abb69192563e5cc2e7ed787",
+    "myTVSUPER/myTVSUPER.list": "adeb780c2009bbeb05a7e06a7008b3935d34a493712cbb12d1b89b228200edba",
+    "Netflix/Netflix.list": "6e99e9dae70e80ac7ead4f7b6b2905eae27938e4c798ab47ed27b91febc87e79",
+    "Spotify/Spotify.list": "f8d128c0d46ac610f5606f64687968f0d244e73ab4b3e3bcb682cdc3be54f103",
+    "Telegram/Telegram.list": "3d3b00c2ad6393c60fd896c16209cc9819a7ecb082ddf0805bc54e53592df642",
+    "YouTube/YouTube.list": "ce8666da646eb93945bca7a8e9f703638adbc97e75e6cba0e19536545c434fb8"
+  },
+  "intentionalExclusions": [
+    {
+      "source": "direct-process.json",
+      "count": 5,
+      "reason": "PROCESS-NAME is not supported by Shadowrocket and was explicitly excluded."
+    },
+    {
+      "source": "block-port.json",
+      "count": 5,
+      "reason": "The sing-box network=udp AND port-list predicate has no lossless standalone Shadowrocket RULE-SET conversion."
+    }
+  ],
+  "regexConversions": [
+    {
+      "service": "Block",
+      "source": "block-domain.json",
+      "input": "(^|\\.)turn[0-9]*\\.",
+      "output": [
+        "DOMAIN-KEYWORD,turn"
+      ],
+      "quality": "broader-existing-rule",
+      "note": "The existing local keyword rule already covers this TURN label regex."
+    },
+    {
+      "service": "China",
+      "source": "China-domain.json",
+      "input": ".+\\.awsdns-cn-[0-9][0-9]\\.(biz|com|net|top)$",
+      "output": [
+        "DOMAIN-WILDCARD,*.awsdns-cn-*.biz",
+        "DOMAIN-WILDCARD,*.awsdns-cn-*.com",
+        "DOMAIN-WILDCARD,*.awsdns-cn-*.net",
+        "DOMAIN-WILDCARD,*.awsdns-cn-*.top"
+      ],
+      "quality": "conservative-approximation",
+      "note": "The two-digit and TLD alternatives are represented with wildcard rules."
+    },
+    {
+      "service": "China",
+      "source": "China-domain.json",
+      "input": ".+\\.awsdns-cn-[0-9][a-e0-9]\\.cn$",
+      "output": [
+        "DOMAIN-WILDCARD,*.awsdns-cn-*.cn"
+      ],
+      "quality": "conservative-approximation",
+      "note": "The two-character class is represented with a wildcard."
+    },
+    {
+      "service": "China",
+      "source": "China-domain.json",
+      "input": "^(.+\\.)*zh\\.okaapps\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,zh.okaapps.com"
+      ],
+      "quality": "equivalent",
+      "note": "Apex and all subdomains map exactly to DOMAIN-SUFFIX."
+    },
+    {
+      "service": "China",
+      "source": "China-domain.json",
+      "input": "^.+-mihayo\\.akamaized\\.net$",
+      "output": [
+        "DOMAIN-WILDCARD,*-mihayo.akamaized.net"
+      ],
+      "quality": "conservative-approximation",
+      "note": "Shadowrocket wildcard replaces the source regular expression."
+    },
+    {
+      "service": "China",
+      "source": "China-domain.json",
+      "input": "^cdn\\d-epicgames-\\d+\\.file\\.myqcloud\\.com$",
+      "output": [
+        "DOMAIN-WILDCARD,cdn*-epicgames-*.file.myqcloud.com"
+      ],
+      "quality": "conservative-approximation",
+      "note": "Numeric regex tokens are represented with wildcards."
+    },
+    {
+      "service": "China",
+      "source": "China-domain.json",
+      "input": "^epicgames-download\\d-\\d+\\.file\\.myqcloud\\.com$",
+      "output": [
+        "DOMAIN-WILDCARD,epicgames-download*-*.file.myqcloud.com"
+      ],
+      "quality": "conservative-approximation",
+      "note": "Numeric regex tokens are represented with wildcards."
+    },
+    {
+      "service": "China",
+      "source": "China-domain.json",
+      "input": "^r+[0-9]+(---|\\.)sn-(2x3|ni5|j5o)\\w{5}\\.googlevideo\\.com$",
+      "output": [
+        "DOMAIN-WILDCARD,r*---sn-*.googlevideo.com",
+        "DOMAIN-WILDCARD,r*.sn-*.googlevideo.com"
+      ],
+      "quality": "conservative-approximation",
+      "note": "Alternation and character classes are represented with two wildcard rules."
+    },
+    {
+      "service": "China",
+      "source": "China-domain.json",
+      "input": "^r+[0-9]+(---|\\.)sn-(2x3|ni5|j5o)\\w{5}\\.xn--ngstr-lra8j\\.com$",
+      "output": [
+        "DOMAIN-WILDCARD,r*---sn-*.xn--ngstr-lra8j.com",
+        "DOMAIN-WILDCARD,r*.sn-*.xn--ngstr-lra8j.com"
+      ],
+      "quality": "conservative-approximation",
+      "note": "Alternation and character classes are represented with two wildcard rules."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.aadrm\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,aadrm.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.activity\\.windows\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,activity.windows.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.aria\\.microsoft\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,aria.microsoft.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.auth\\.microsoft\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,auth.microsoft.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.azurerms\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,azurerms.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.cloud\\.microsoft$",
+      "output": [
+        "DOMAIN-SUFFIX,cloud.microsoft"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.cortana\\.ai$",
+      "output": [
+        "DOMAIN-SUFFIX,cortana.ai"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.entrust\\.net$",
+      "output": [
+        "DOMAIN-SUFFIX,entrust.net"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.events\\.data\\.microsoft\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,events.data.microsoft.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.flow\\.microsoft\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,flow.microsoft.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.geotrust\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,geotrust.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.hip\\.live\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,hip.live.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.informationprotection\\.azure\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,informationprotection.azure.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.lync\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,lync.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.mail\\.protection\\.outlook\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,mail.protection.outlook.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.microsoftonline\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,microsoftonline.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.msauth\\.net$",
+      "output": [
+        "DOMAIN-SUFFIX,msauth.net"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.msauthimages\\.net$",
+      "output": [
+        "DOMAIN-SUFFIX,msauthimages.net"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.msecnd\\.net$",
+      "output": [
+        "DOMAIN-SUFFIX,msecnd.net"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.msftauth\\.net$",
+      "output": [
+        "DOMAIN-SUFFIX,msftauth.net"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.msftauthimages\\.net$",
+      "output": [
+        "DOMAIN-SUFFIX,msftauthimages.net"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.msftidentity\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,msftidentity.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.msidentity\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,msidentity.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.mx\\.microsoft$",
+      "output": [
+        "DOMAIN-SUFFIX,mx.microsoft"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.o365weve\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,o365weve.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.office365\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,office365.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.office\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,office.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.office\\.net$",
+      "output": [
+        "DOMAIN-SUFFIX,office.net"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.officeapps\\.live\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,officeapps.live.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.omniroot\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,omniroot.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.onenote\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,onenote.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.online\\.office\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,online.office.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.outlook\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,outlook.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.phonefactor\\.net$",
+      "output": [
+        "DOMAIN-SUFFIX,phonefactor.net"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.portal\\.cloudappsecurity\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,portal.cloudappsecurity.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.powerapps\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,powerapps.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.powerautomate\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,powerautomate.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.protection\\.office\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,protection.office.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.protection\\.outlook\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,protection.outlook.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.security\\.microsoft\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,security.microsoft.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.sharepoint\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,sharepoint.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.sharepointonline\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,sharepointonline.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.skype\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,skype.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.static\\.microsoft$",
+      "output": [
+        "DOMAIN-SUFFIX,static.microsoft"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.svc\\.ms$",
+      "output": [
+        "DOMAIN-SUFFIX,svc.ms"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.symcb\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,symcb.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.symcd\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,symcd.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.teams\\.cloud\\.microsoft$",
+      "output": [
+        "DOMAIN-SUFFIX,teams.cloud.microsoft"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.teams\\.microsoft\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,teams.microsoft.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.usercontent\\.microsoft$",
+      "output": [
+        "DOMAIN-SUFFIX,usercontent.microsoft"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.verisign\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,verisign.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.verisign\\.net$",
+      "output": [
+        "DOMAIN-SUFFIX,verisign.net"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft-domain.json",
+      "input": "^.+\\.wns\\.windows\\.com$",
+      "output": [
+        "DOMAIN-SUFFIX,wns.windows.com"
+      ],
+      "quality": "equivalent",
+      "note": "Simple subdomain regex expressed as a domain suffix; the source already includes the apex suffix."
+    },
+    {
+      "service": "OpenAI",
+      "source": "OpenAI-domain.json",
+      "input": "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$",
+      "output": [
+        "DOMAIN-WILDCARD,chatgpt-async-webps-prod-*-*.webpubsub.azure.com"
+      ],
+      "quality": "conservative-approximation",
+      "note": "Character classes are represented with wildcards."
+    }
+  ],
+  "logicalConversions": [
+    {
+      "service": "Google",
+      "source": "Google-domain.json",
+      "input": {
+        "mode": "and",
+        "rules": [
+          {
+            "domain_suffix": [
+              "google.com"
+            ]
+          },
+          {
+            "domain_suffix": [
+              "storage.cloud.google.com"
+            ],
+            "invert": true
+          }
+        ],
+        "type": "logical"
+      },
+      "output": [
+        "DOMAIN-SUFFIX,google.com"
+      ],
+      "companionConfigRule": "DOMAIN-SUFFIX,storage.cloud.google.com,FINAL-POLICY",
+      "note": "Shadowrocket list format cannot preserve the nested inverted predicate; the updated config places the excluded hostname before this rule set."
+    }
+  ],
+  "iosOnlyExtensions": [
+    {
+      "service": "Apple",
+      "source": "Apple/Apple.list",
+      "userAgent": 23,
+      "ipAsn": 0
+    },
+    {
+      "service": "Bahamut",
+      "source": "Bahamut/Bahamut.list",
+      "userAgent": 1,
+      "ipAsn": 0
+    },
+    {
+      "service": "Bilibili",
+      "source": "BiliBili/BiliBili.list",
+      "userAgent": 4,
+      "ipAsn": 0
+    },
+    {
+      "service": "China",
+      "source": "ChinaMax/ChinaMax.list",
+      "userAgent": 65,
+      "ipAsn": 1
+    },
+    {
+      "service": "DisneyPlus",
+      "source": "Disney/Disney.list",
+      "userAgent": 1,
+      "ipAsn": 0
+    },
+    {
+      "service": "Google",
+      "source": "Google/Google.list",
+      "userAgent": 3,
+      "ipAsn": 0
+    },
+    {
+      "service": "HBO",
+      "source": "HBO/HBO.list",
+      "userAgent": 2,
+      "ipAsn": 0
+    },
+    {
+      "service": "Meta",
+      "source": "Facebook/Facebook.list",
+      "userAgent": 0,
+      "ipAsn": 1
+    },
+    {
+      "service": "Microsoft",
+      "source": "Microsoft/Microsoft.list",
+      "userAgent": 3,
+      "ipAsn": 0
+    },
+    {
+      "service": "MyTVSuper",
+      "source": "myTVSUPER/myTVSUPER.list",
+      "userAgent": 1,
+      "ipAsn": 0
+    },
+    {
+      "service": "Netflix",
+      "source": "Netflix/Netflix.list",
+      "userAgent": 1,
+      "ipAsn": 0
+    },
+    {
+      "service": "Spotify",
+      "source": "Spotify/Spotify.list",
+      "userAgent": 1,
+      "ipAsn": 0
+    },
+    {
+      "service": "Telegram",
+      "source": "Telegram/Telegram.list",
+      "userAgent": 0,
+      "ipAsn": 5
+    },
+    {
+      "service": "YouTube",
+      "source": "YouTube/YouTube.list",
+      "userAgent": 7,
+      "ipAsn": 0
+    }
+  ]
+}

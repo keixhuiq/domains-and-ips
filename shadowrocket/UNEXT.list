@@ -1,0 +1,15 @@
+# NAME: UNEXT
+# FORMAT: Shadowrocket RULE-SET
+# SOURCE-SNAPSHOT: 20261008-live/post-deploy-v11
+# IOS-UPSTREAM: blackmatrix7/ios_rule_script@036c097eb26c6a52c4f04ebcb6633043cb942669
+# RULES: 9
+
+DOMAIN,us-central1-u-next-apps.cloudfunctions.net
+DOMAIN-KEYWORD,hnext
+DOMAIN-KEYWORD,unext
+DOMAIN-SUFFIX,hnext.jp
+DOMAIN-SUFFIX,nx-cdn.com
+DOMAIN-SUFFIX,nxtv.jp
+DOMAIN-SUFFIX,unext-info.jp
+DOMAIN-SUFFIX,unext.co.jp
+DOMAIN-SUFFIX,unext.jp
