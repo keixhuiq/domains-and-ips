@@ -1,0 +1,37 @@
+# NAME: ABEMA-domain
+# FORMAT: Shadowrocket RULE-SET
+# SOURCE: ABEMA-domain.json
+# SOURCE-SNAPSHOT: 20261008-live/post-deploy-v11
+# IOS-UPSTREAM: blackmatrix7/ios_rule_script@036c097eb26c6a52c4f04ebcb6633043cb942669
+# RULES: 30
+
+DOMAIN-KEYWORD,abematv
+DOMAIN-SUFFIX,abema-tv.com
+DOMAIN-SUFFIX,abema.io
+DOMAIN-SUFFIX,abema.jp
+DOMAIN-SUFFIX,abema.tv
+DOMAIN-SUFFIX,abematv.akamaized.net
+DOMAIN-SUFFIX,abematv.co.jp
+DOMAIN-SUFFIX,adx.promo
+DOMAIN-SUFFIX,ameba.jp
+DOMAIN-SUFFIX,amebame.com
+DOMAIN-SUFFIX,amebaownd.com
+DOMAIN-SUFFIX,amebaowndme.com
+DOMAIN-SUFFIX,ameblo.jp
+DOMAIN-SUFFIX,bucketeer.jp
+DOMAIN-SUFFIX,d1otoma47x30pg.cloudfront.net
+DOMAIN-SUFFIX,d2wy8f7a9ursnm.cloudfront.net
+DOMAIN-SUFFIX,dokusho-ojikan.jp
+DOMAIN-SUFFIX,ds-linear-abematv.akamaized.net
+DOMAIN-SUFFIX,ds-vod-abematv.akamaized.net
+DOMAIN-SUFFIX,hayabusa.dev
+DOMAIN-SUFFIX,hayabusa.io
+DOMAIN-SUFFIX,hayabusa.media
+DOMAIN-SUFFIX,linear-abematv.akamaized.net
+DOMAIN-SUFFIX,vod-abematv.akamaized.net
+DOMAIN-SUFFIX,winticket.jp
+DOMAIN,abematv.akamaized.net
+DOMAIN,ds-linear-abematv.akamaized.net
+DOMAIN,ds-vod-abematv.akamaized.net
+DOMAIN,linear-abematv.akamaized.net
+DOMAIN,vod-abematv.akamaized.net

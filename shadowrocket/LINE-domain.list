@@ -1,0 +1,15 @@
+# NAME: LINE-domain
+# FORMAT: Shadowrocket RULE-SET
+# SOURCE: LINE-domain.json
+# SOURCE-SNAPSHOT: 20261008-live/post-deploy-v11
+# IOS-UPSTREAM: blackmatrix7/ios_rule_script@036c097eb26c6a52c4f04ebcb6633043cb942669
+# RULES: 8
+
+DOMAIN-SUFFIX,lin.ee
+DOMAIN-SUFFIX,line-apps.com
+DOMAIN-SUFFIX,line-cdn.net
+DOMAIN-SUFFIX,line-scdn.net
+DOMAIN-SUFFIX,line.me
+DOMAIN-SUFFIX,linecorp.com
+DOMAIN-SUFFIX,naver.jp
+DOMAIN-SUFFIX,nhncorp.jp

@@ -1,0 +1,15 @@
+# NAME: Bahamut-domain
+# FORMAT: Shadowrocket RULE-SET
+# SOURCE: Bahamut-domain.json
+# SOURCE-SNAPSHOT: 20261008-live/post-deploy-v11
+# IOS-UPSTREAM: blackmatrix7/ios_rule_script@036c097eb26c6a52c4f04ebcb6633043cb942669
+# RULES: 8
+
+DOMAIN,bahamut.akamaized.net
+DOMAIN-SUFFIX,bahamut.com.tw
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,gamer.com.tw
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,hinet.net
+DOMAIN-SUFFIX,viblast.com
+USER-AGENT,Anime*

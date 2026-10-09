@@ -1,0 +1,8 @@
+# NAME: Meta-ip
+# FORMAT: Shadowrocket RULE-SET
+# SOURCE: Meta-ip.json
+# SOURCE-SNAPSHOT: 20261008-live/post-deploy-v11
+# IOS-UPSTREAM: blackmatrix7/ios_rule_script@036c097eb26c6a52c4f04ebcb6633043cb942669
+# RULES: 1
+
+IP-ASN,32934,no-resolve
