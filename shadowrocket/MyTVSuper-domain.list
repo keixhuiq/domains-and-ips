@@ -1,0 +1,14 @@
+# NAME: MyTVSuper-domain
+# FORMAT: Shadowrocket RULE-SET
+# SOURCE: MyTVSuper-domain.json
+# SOURCE-SNAPSHOT: 20261008-live/post-deploy-v11
+# IOS-UPSTREAM: blackmatrix7/ios_rule_script@036c097eb26c6a52c4f04ebcb6633043cb942669
+# RULES: 7
+
+DOMAIN,mytvsuperlimited.hb.omtrdc.net
+DOMAIN,mytvsuperlimited.sc.omtrdc.net
+DOMAIN-KEYWORD,nowtv100
+DOMAIN-KEYWORD,rthklive
+DOMAIN-SUFFIX,mytvsuper.com
+DOMAIN-SUFFIX,tvb.com
+USER-AGENT,mytv*

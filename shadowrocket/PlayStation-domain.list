@@ -1,0 +1,11 @@
+# NAME: PlayStation-domain
+# FORMAT: Shadowrocket RULE-SET
+# SOURCE: PlayStation-domain.json
+# SOURCE-SNAPSHOT: 20261008-live/post-deploy-v11
+# IOS-UPSTREAM: blackmatrix7/ios_rule_script@036c097eb26c6a52c4f04ebcb6633043cb942669
+# RULES: 4
+
+DOMAIN-SUFFIX,playstation.com
+DOMAIN-SUFFIX,playstation.net
+DOMAIN-SUFFIX,playstationnetwork.com
+DOMAIN-SUFFIX,sonyentertainmentnetwork.com

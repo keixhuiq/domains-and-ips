@@ -1,0 +1,57 @@
+# NAME: OpenAI-domain
+# FORMAT: Shadowrocket RULE-SET
+# SOURCE: OpenAI-domain.json
+# SOURCE-SNAPSHOT: 20261008-live/post-deploy-v11
+# IOS-UPSTREAM: blackmatrix7/ios_rule_script@036c097eb26c6a52c4f04ebcb6633043cb942669
+# RULES: 50
+
+DOMAIN,cdn.openaimerge.com
+DOMAIN,cdn.workos.com
+DOMAIN,challenges.cloudflare.com
+DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,client-api.arkoselabs.com
+DOMAIN,forwarder.workos.com
+DOMAIN,humb.apple.com
+DOMAIN,images.workoscdn.com
+DOMAIN,ios.chat.openai.com.cdn.cloudflare.net
+DOMAIN,js.stripe.com
+DOMAIN,o207216.ingest.sentry.io
+DOMAIN,o33249.ingest.sentry.io
+DOMAIN,openai-api.arkoselabs.com
+DOMAIN,openai.com.cdn.cloudflare.net
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN,openaiassets.blob.core.windows.net
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,openaicom.imgix.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN,setup.workos.com
+DOMAIN,workos.imgix.net
+DOMAIN-WILDCARD,chatgpt-async-webps-prod-*-*.webpubsub.azure.com
+DOMAIN-SUFFIX,algolia.net
+DOMAIN-SUFFIX,browser-intake-datadoghq.com
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,chatgpt.site
+DOMAIN-SUFFIX,crixet.com
+DOMAIN-SUFFIX,ct.sendgrid.net
+DOMAIN-SUFFIX,featureassets.org
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,livekit.cloud
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaistatsig.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,prodregistryv2.org
+DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN,browser-intake-datadoghq.com
+DOMAIN,openai.qualtrics.com
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
+DOMAIN-SUFFIX,turn.livekit.cloud

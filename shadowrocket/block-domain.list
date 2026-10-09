@@ -1,0 +1,14 @@
+# NAME: block-domain
+# FORMAT: Shadowrocket RULE-SET
+# SOURCE: block-domain.json
+# SOURCE-SNAPSHOT: 20261008-live/post-deploy-v11
+# IOS-UPSTREAM: blackmatrix7/ios_rule_script@036c097eb26c6a52c4f04ebcb6633043cb942669
+# RULES: 7
+
+DOMAIN-KEYWORD,stun
+DOMAIN-KEYWORD,turn
+DOMAIN-SUFFIX,autodesk.com
+DOMAIN-SUFFIX,autocad.com
+DOMAIN-SUFFIX,autodesk.net
+DOMAIN-SUFFIX,autodesk360.com
+DOMAIN-SUFFIX,autodesksketchbook.com

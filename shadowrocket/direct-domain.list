@@ -1,0 +1,14 @@
+# NAME: direct-domain
+# FORMAT: Shadowrocket RULE-SET
+# SOURCE: direct-domain.json
+# SOURCE-SNAPSHOT: 20261008-live/post-deploy-v11
+# IOS-UPSTREAM: blackmatrix7/ios_rule_script@036c097eb26c6a52c4f04ebcb6633043cb942669
+# RULES: 7
+
+DOMAIN-SUFFIX,yachiyo.online
+DOMAIN-SUFFIX,yiuzllik.xyz
+DOMAIN-SUFFIX,liminal.hair
+DOMAIN-SUFFIX,sbs
+DOMAIN-SUFFIX,yachiyo.cloud
+DOMAIN-SUFFIX,kaguya.life
+DOMAIN-SUFFIX,snssdk.com
