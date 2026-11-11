@@ -1,0 +1,6 @@
+# NAME: YouTube-ip
+# SOURCE: sing-box/YouTube-ip.json (sha256 bb70d5e2794abb6b6b911c95c7cac0cd3dee2bc1cf8cf441c616097319fcee79)
+# RULES: 3
+IP-CIDR,172.110.32.0/21,no-resolve
+IP-CIDR,216.73.80.0/20,no-resolve
+IP-CIDR6,2620:120:e000::/40,no-resolve

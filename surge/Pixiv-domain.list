@@ -1,0 +1,11 @@
+# NAME: Pixiv-domain
+# SOURCE: sing-box/Pixiv-domain.json (sha256 773be883116a45871eeb73c647e46d45ee9d75da5f2a2a22366806602e2c4971)
+# RULES: 8
+DOMAIN-SUFFIX,booth.pm
+DOMAIN-SUFFIX,fanbox.cc
+DOMAIN-SUFFIX,pixiv.cat
+DOMAIN-SUFFIX,pixiv.co.jp
+DOMAIN-SUFFIX,pixiv.me
+DOMAIN-SUFFIX,pixiv.net
+DOMAIN-SUFFIX,pixiv.org
+DOMAIN-SUFFIX,pximg.net

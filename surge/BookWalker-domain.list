@@ -1,0 +1,6 @@
+# NAME: BookWalker-domain
+# SOURCE: sing-box/BookWalker-domain.json (sha256 4acd9817f2c8a62ba3a5ea6b6a4c016b43b0136745850e2125f57ad16f45497d)
+# RULES: 3
+DOMAIN-SUFFIX,bookwalker.com
+DOMAIN-SUFFIX,bookwalker.com.tw
+DOMAIN-SUFFIX,bookwalker.jp

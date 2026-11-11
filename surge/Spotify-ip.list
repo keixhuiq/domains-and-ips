@@ -1,0 +1,5 @@
+# NAME: Spotify-ip
+# SOURCE: sing-box/Spotify-ip.json (sha256 cef421f0d181d6ed5e820ed3cf6b8042f1263a6fa33d05b8429d1d0ecc269628)
+# RULES: 2
+IP-CIDR,35.186.224.47/32,no-resolve
+IP-CIDR,104.154.127.126/32,no-resolve

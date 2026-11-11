@@ -1,0 +1,9 @@
+# NAME: MyTVSuper-domain
+# SOURCE: sing-box/MyTVSuper-domain.json (sha256 6ecd92ee8b9029e05cda336d9bba27c927d8d2a174c38cd187d7f18b277eafb1)
+# RULES: 6
+DOMAIN,mytvsuperlimited.hb.omtrdc.net
+DOMAIN,mytvsuperlimited.sc.omtrdc.net
+DOMAIN-SUFFIX,mytvsuper.com
+DOMAIN-SUFFIX,tvb.com
+DOMAIN-KEYWORD,nowtv100
+DOMAIN-KEYWORD,rthklive

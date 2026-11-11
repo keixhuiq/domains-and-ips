@@ -1,0 +1,43 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "anthropic-com.ghost.io",
+        "anthropic.auth0.com",
+        "anthropic.com.cdn.cloudflare.net",
+        "anthropic.statuspage.io",
+        "servd-anthropic-website.b-cdn.net"
+      ],
+      "domain_suffix": [
+        "anthropic.com",
+        "anthropicusercontent.com",
+        "arkoselabs.com",
+        "assetsconfigcdn.org",
+        "clau.de",
+        "claude.ai",
+        "claude.app",
+        "claude.com",
+        "claudemcpclient.com",
+        "claudemcpcontent.com",
+        "claudeusercontent.com",
+        "featureassets.org",
+        "featuregates.org",
+        "hcaptcha.com",
+        "intercom-sheets.com",
+        "intercom.io",
+        "intercomcdn.com",
+        "modelcontextprotocol.io",
+        "prodregistryv2.org",
+        "statsig.com",
+        "statsigapi.net",
+        "statsigcdn.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "claude.dev"
+      ]
+    }
+  ],
+  "version": 3
+}

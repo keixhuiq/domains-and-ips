@@ -1,0 +1,12 @@
+{
+  "rules": [
+    {
+      "domain_suffix": [
+        "bookwalker.com",
+        "bookwalker.com.tw",
+        "bookwalker.jp"
+      ]
+    }
+  ],
+  "version": 3
+}

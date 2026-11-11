@@ -1,0 +1,11 @@
+# NAME: Bilibili-ip
+# SOURCE: sing-box/Bilibili-ip.json (sha256 17d421d28cb64350fbe2da96008733ad3039915041cbfd4283b0f6a66cb5f809)
+# RULES: 8
+IP-CIDR,106.75.74.76/32,no-resolve
+IP-CIDR,111.206.25.147/32,no-resolve
+IP-CIDR,119.3.238.64/32,no-resolve
+IP-CIDR,120.92.108.182/32,no-resolve
+IP-CIDR,120.92.113.99/32,no-resolve
+IP-CIDR,120.92.153.217/32,no-resolve
+IP-CIDR,134.175.207.130/32,no-resolve
+IP-CIDR,203.107.1.0/24,no-resolve

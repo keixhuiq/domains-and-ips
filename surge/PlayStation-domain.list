@@ -1,0 +1,7 @@
+# NAME: PlayStation-domain
+# SOURCE: sing-box/PlayStation-domain.json (sha256 e0b9e577f93c3bceab048126b2cbe288b3d8b0a37ed69cafbf9987a2f1d9d003)
+# RULES: 4
+DOMAIN-SUFFIX,playstation.com
+DOMAIN-SUFFIX,playstation.net
+DOMAIN-SUFFIX,playstationnetwork.com
+DOMAIN-SUFFIX,sonyentertainmentnetwork.com

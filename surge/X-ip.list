@@ -1,0 +1,9 @@
+# NAME: X-ip
+# SOURCE: sing-box/X-ip.json (sha256 7d1bf5dddad8f76915f4171d9979d4ab5a0b3a361bd6eb7fbb37e7748a797af8)
+# RULES: 6
+IP-CIDR,69.195.160.0/19,no-resolve
+IP-CIDR,192.133.76.0/22,no-resolve
+IP-CIDR,199.59.148.0/22,no-resolve
+IP-CIDR,199.96.56.0/21,no-resolve
+IP-CIDR,202.160.128.0/22,no-resolve
+IP-CIDR,209.237.192.0/19,no-resolve

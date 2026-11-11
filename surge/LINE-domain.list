@@ -1,0 +1,11 @@
+# NAME: LINE-domain
+# SOURCE: sing-box/LINE-domain.json (sha256 4533951e8f5a1530ee83aa1c7ab548cdb869aa01b9d7354d5a0d17a44027621b)
+# RULES: 8
+DOMAIN-SUFFIX,lin.ee
+DOMAIN-SUFFIX,line-apps.com
+DOMAIN-SUFFIX,line-cdn.net
+DOMAIN-SUFFIX,line-scdn.net
+DOMAIN-SUFFIX,line.me
+DOMAIN-SUFFIX,linecorp.com
+DOMAIN-SUFFIX,naver.jp
+DOMAIN-SUFFIX,nhncorp.jp

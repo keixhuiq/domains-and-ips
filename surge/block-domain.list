@@ -1,0 +1,17 @@
+# NAME: block-domain
+# SOURCE: sing-box/block-domain.json (sha256 376af326b9c688056c28a09bdfd4ce6d2fd3b076fff8b5303d225ee887b3e04d)
+# RULES: 14
+DOMAIN-SUFFIX,autodesk.com
+DOMAIN-SUFFIX,autocad.com
+DOMAIN-SUFFIX,autodesk.net
+DOMAIN-SUFFIX,autodesk360.com
+DOMAIN-SUFFIX,autodesksketchbook.com
+DOMAIN-KEYWORD,stun
+DOMAIN-WILDCARD,turn.*
+DOMAIN-WILDCARD,turn[0-9].*
+DOMAIN-WILDCARD,turn[0-9][0-9].*
+DOMAIN-WILDCARD,turn[0-9][0-9][0-9].*
+DOMAIN-WILDCARD,*.turn.*
+DOMAIN-WILDCARD,*.turn[0-9].*
+DOMAIN-WILDCARD,*.turn[0-9][0-9].*
+DOMAIN-WILDCARD,*.turn[0-9][0-9][0-9].*

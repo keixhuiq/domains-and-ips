@@ -1,0 +1,190 @@
+{
+  "ABEMA-domain": {
+    "source_sha256": "a7053d34e2018bfa4a4e6a4026c3fd2289708f949e1b848d1908fdf10ba279c3",
+    "surge_rules": 30
+  },
+  "Amazon-domain": {
+    "source_sha256": "4ab9826916d8db9cd1e76269c3209c40a19c47ff18026a88b7dc8f7386bd998f",
+    "surge_rules": 213
+  },
+  "Anthropic-domain": {
+    "source_sha256": "021d2c14b809280a984b3aa61aa3cc9bfce6b4250891ae464273090d2b88b0a1",
+    "surge_rules": 28
+  },
+  "Apple-domain": {
+    "source_sha256": "f5a995fafd6a8969541046df50ffd2d0452942a65230a183283869923323d8cd",
+    "surge_rules": 1567
+  },
+  "Apple-ip": {
+    "source_sha256": "a90476e1726c67aca9c80f8e4bead41aa08a16e5ca54c7e94912641a31ea17b8",
+    "surge_rules": 13
+  },
+  "Bahamut-domain": {
+    "source_sha256": "d19d5c47c45cde332c1da33a35466d76b1eb75af97087b93a3e7295e9e48501d",
+    "surge_rules": 7
+  },
+  "Bilibili-domain": {
+    "source_sha256": "6bfe02df133e03cbfb408b1da56a356ee9e3734eff9bb531b9903769c172fcdb",
+    "surge_rules": 115
+  },
+  "Bilibili-ip": {
+    "source_sha256": "17d421d28cb64350fbe2da96008733ad3039915041cbfd4283b0f6a66cb5f809",
+    "surge_rules": 8
+  },
+  "block-domain": {
+    "source_sha256": "376af326b9c688056c28a09bdfd4ce6d2fd3b076fff8b5303d225ee887b3e04d",
+    "surge_rules": 14
+  },
+  "block-port": {
+    "source_sha256": "ddfd164429791522007c34e6b74012167f8a1a4bf1cf06e46ac13c973a2ffea5",
+    "surge_rules": 5
+  },
+  "BookWalker-domain": {
+    "source_sha256": "4acd9817f2c8a62ba3a5ea6b6a4c016b43b0136745850e2125f57ad16f45497d",
+    "surge_rules": 3
+  },
+  "China-domain": {
+    "source_sha256": "2bd622d992aa49ab02a0470efe2f5e4928e658b66ef8ba2b1d72d3ec94bea7f8",
+    "surge_rules": 111413
+  },
+  "China-ip": {
+    "source_sha256": "cd8df83919714b13b075fe59657c294ab88c8b09e79d55942e440d4934e3b659",
+    "surge_rules": 9663
+  },
+  "Crunchyroll-domain": {
+    "source_sha256": "8aa34d86cad58d794d8463fd04623396f020c34bf74a49b4ebc3f715e5a81b05",
+    "surge_rules": 8
+  },
+  "Crypto-domain": {
+    "source_sha256": "367e8bbcf8c893f2d0a4720935464c7d67fb5a4ea77820a930bc80be65f3ff8b",
+    "surge_rules": 415
+  },
+  "CustomProxy-domain": {
+    "source_sha256": "3d71ca713124dac1b7ec8aa967f035138ac6224ded04b5f83bf3d9a94cd8558c",
+    "surge_rules": 1257
+  },
+  "CustomProxy-ip": {
+    "source_sha256": "66b47444a1e6f0658125d5db764d0eba6f14a0eb7dcfb834c0b4a09f45aea1e9",
+    "surge_rules": 68
+  },
+  "DisneyPlus-domain": {
+    "source_sha256": "7fa6185dac619cb810f6e28d04a3b8599deefe00bb50372dd60466faa1dc50db",
+    "surge_rules": 172
+  },
+  "Epic-domain": {
+    "source_sha256": "4fbff44886ffa17e6a12fc2e412501cd627f8f4c72184b868c3a8f5775179641",
+    "surge_rules": 15
+  },
+  "Google-domain": {
+    "source_sha256": "7e78d47cb6d28fa49b0c1aeffb58f5f76d88dd5d686a54e2f5355bf6517754bf",
+    "surge_rules": 691
+  },
+  "Google-ip": {
+    "source_sha256": "6b8be7e1c96affcbd0b2647f28808027be7c2f9979fafd3450e3e35275030571",
+    "surge_rules": 401
+  },
+  "HBO-domain": {
+    "source_sha256": "4ba95babb777e96068ae409fd06358a2f7b818ffa6be6ebe982e4e8c92cfd290",
+    "surge_rules": 47
+  },
+  "LINE-domain": {
+    "source_sha256": "4533951e8f5a1530ee83aa1c7ab548cdb869aa01b9d7354d5a0d17a44027621b",
+    "surge_rules": 8
+  },
+  "LINE-ip": {
+    "source_sha256": "82c3badbf4ffeda9e02e538db5bbc608a1e7277d240caf7f6f95763856f7049c",
+    "surge_rules": 16
+  },
+  "Meta-domain": {
+    "source_sha256": "cbefc89bc168ab31416144a09e1187b76d630d088112da35898b1d5914646270",
+    "surge_rules": 563
+  },
+  "Microsoft-domain": {
+    "source_sha256": "0d85dd4dbe66ecf2850f852c14edbb35b9ccd804f7dcad1a3963b7cb19a2b0f0",
+    "surge_rules": 787
+  },
+  "MyTVSuper-domain": {
+    "source_sha256": "6ecd92ee8b9029e05cda336d9bba27c927d8d2a174c38cd187d7f18b277eafb1",
+    "surge_rules": 6
+  },
+  "Netflix-domain": {
+    "source_sha256": "340d7f35680660d24d75a349eeae547d6ce208a5dc7b2672d5edf5ee51673dce",
+    "surge_rules": 37
+  },
+  "Netflix-ip": {
+    "source_sha256": "8a919864c5f1fad5f984cead7e8034ffa4c2d570b632d539909a8e3ac3e91e6a",
+    "surge_rules": 1119
+  },
+  "NVIDIA-domain": {
+    "source_sha256": "5efb02074ef6f72fadb9361e7c1640088460f635a071d2d88812fb8a5c18a828",
+    "surge_rules": 65
+  },
+  "OpenAI-domain": {
+    "source_sha256": "3f7201dc7b5beb7ebab50133daf4a79a472c677c39fbda051ac5d65dcd90bd25",
+    "surge_rules": 50
+  },
+  "Pixiv-domain": {
+    "source_sha256": "773be883116a45871eeb73c647e46d45ee9d75da5f2a2a22366806602e2c4971",
+    "surge_rules": 8
+  },
+  "PlayStation-domain": {
+    "source_sha256": "e0b9e577f93c3bceab048126b2cbe288b3d8b0a37ed69cafbf9987a2f1d9d003",
+    "surge_rules": 4
+  },
+  "Private-ip": {
+    "source_sha256": "70377102be63cf8cf4d7fea221be16059a201793c6e4109e2315f8ec36178072",
+    "surge_rules": 17
+  },
+  "Scholar-domain": {
+    "source_sha256": "a519a73dfd5e3d0e30a64e0f795cf4479fde4e9514757769fcff9867b4dda6d6",
+    "surge_rules": 231
+  },
+  "Spotify-domain": {
+    "source_sha256": "f1d5604a5e5bfa8aabc4e5dfd382b7e27e917c9a971f5f6cccc98ee35950946d",
+    "surge_rules": 27
+  },
+  "Spotify-ip": {
+    "source_sha256": "cef421f0d181d6ed5e820ed3cf6b8042f1263a6fa33d05b8429d1d0ecc269628",
+    "surge_rules": 2
+  },
+  "Steam-domain": {
+    "source_sha256": "20a461d1095c8ada4a50f97de411e4cd71351475a33f3c3df2bac5c1ad9b28bb",
+    "surge_rules": 54
+  },
+  "Telegram-domain": {
+    "source_sha256": "9830518f1f503e7f43f8b03d1cc75b727e57d8e54eb948b8e679d9ad534562b0",
+    "surge_rules": 25
+  },
+  "Telegram-ip": {
+    "source_sha256": "1dbf6209a614bb90aea709e4d9651c6ebfdc41cb36449e811924276d656e17f1",
+    "surge_rules": 22
+  },
+  "TikTok-domain": {
+    "source_sha256": "7a4645f992736af0d246193594b5f28777250a3e6210a8cb1e418ca7a1ad872e",
+    "surge_rules": 124
+  },
+  "U-NEXT-domain": {
+    "source_sha256": "20667197c58085363331b31c6ed1564b8382500ec310dfa5007627a76a9801bb",
+    "surge_rules": 9
+  },
+  "X-domain": {
+    "source_sha256": "67ca2158ff9d91d2e7fbed4ea9e96e8b59e417206c4425fbec5125524b548d63",
+    "surge_rules": 35
+  },
+  "X-ip": {
+    "source_sha256": "7d1bf5dddad8f76915f4171d9979d4ab5a0b3a361bd6eb7fbb37e7748a797af8",
+    "surge_rules": 6
+  },
+  "Xbox-domain": {
+    "source_sha256": "5c82f91a1897ba273d06ee99604ce219968959f89c8855627631290fe86cf815",
+    "surge_rules": 42
+  },
+  "YouTube-domain": {
+    "source_sha256": "d67f8cfe0d0a76a4f2f33ff0df485b6c88108dbb0b94748f5977247d01390277",
+    "surge_rules": 180
+  },
+  "YouTube-ip": {
+    "source_sha256": "bb70d5e2794abb6b6b911c95c7cac0cd3dee2bc1cf8cf441c616097319fcee79",
+    "surge_rules": 3
+  }
+}

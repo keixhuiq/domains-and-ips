@@ -1,0 +1,22 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "us-central1-u-next-apps.cloudfunctions.net"
+      ],
+      "domain_keyword": [
+        "hnext",
+        "unext"
+      ],
+      "domain_suffix": [
+        "hnext.jp",
+        "nx-cdn.com",
+        "nxtv.jp",
+        "unext-info.jp",
+        "unext.co.jp",
+        "unext.jp"
+      ]
+    }
+  ],
+  "version": 3
+}

@@ -1,0 +1,12 @@
+# NAME: U-NEXT-domain
+# SOURCE: sing-box/U-NEXT-domain.json (sha256 20667197c58085363331b31c6ed1564b8382500ec310dfa5007627a76a9801bb)
+# RULES: 9
+DOMAIN,us-central1-u-next-apps.cloudfunctions.net
+DOMAIN-SUFFIX,hnext.jp
+DOMAIN-SUFFIX,nx-cdn.com
+DOMAIN-SUFFIX,nxtv.jp
+DOMAIN-SUFFIX,unext-info.jp
+DOMAIN-SUFFIX,unext.co.jp
+DOMAIN-SUFFIX,unext.jp
+DOMAIN-KEYWORD,hnext
+DOMAIN-KEYWORD,unext

@@ -1,5 +1,1 @@
-/.gitattributes text eol=lf
-shadowrocket/*.list text eol=lf
-shadowrocket/*.json text eol=lf
-shadowrocket/*.md text eol=lf
-tools/*shadowrocket*.ps1 text eol=lf
+* text=auto eol=lf

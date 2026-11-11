@@ -1,0 +1,10 @@
+# NAME: Bahamut-domain
+# SOURCE: sing-box/Bahamut-domain.json (sha256 d19d5c47c45cde332c1da33a35466d76b1eb75af97087b93a3e7295e9e48501d)
+# RULES: 7
+DOMAIN,bahamut.akamaized.net
+DOMAIN-SUFFIX,bahamut.com.tw
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,gamer.com.tw
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,hinet.net
+DOMAIN-SUFFIX,viblast.com

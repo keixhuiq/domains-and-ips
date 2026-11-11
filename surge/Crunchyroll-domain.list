@@ -1,0 +1,11 @@
+# NAME: Crunchyroll-domain
+# SOURCE: sing-box/Crunchyroll-domain.json (sha256 8aa34d86cad58d794d8463fd04623396f020c34bf74a49b4ebc3f715e5a81b05)
+# RULES: 8
+DOMAIN,licensing.bitmovin.com
+DOMAIN-SUFFIX,crunchyroll.com
+DOMAIN-SUFFIX,crunchyroll.net
+DOMAIN-SUFFIX,crunchyrollcdn.com
+DOMAIN-SUFFIX,crunchyrollsvc.com
+DOMAIN-SUFFIX,gccrunchyroll.com
+DOMAIN-SUFFIX,litix.io
+DOMAIN-SUFFIX,vrv.co
